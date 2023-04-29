@@ -104,7 +104,7 @@ proxy-groups:
 proxy-providers:
   sall2:
     type: http
-    url: "https://raw.githubusercontent.com/zanertz/zz/main/zfuty3com.yaml"
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3com.yaml"
     interval: 120
     path: ./sall2.yaml
     health-check:
