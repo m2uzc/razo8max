@@ -1,0 +1,238 @@
+proxies:
+
+##### Optional server
+
+- name: "OpenSg1"
+  server: ulist.com.my.sgv-5.openv2ray.com
+  port: 443
+  type: vmess
+  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /u/opentunnel.net-gandi42
+   headers:
+    Host: mm.net.my
+
+- name: "OpenSg2"
+  server: ulist.com.my.sgv-6.openv2ray.com
+  port: 443
+  type: vmess
+  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /u/opentunnel.net-gqnfi83
+   headers:
+    Host: mm.net.my
+
+- name: "LionSshVmes"
+  server: ulist.com.my.vm.sg.goserver.pw
+  port: 443
+  type: vmess
+  uuid: dccf12f5-f94c-4e1e-9d49-8e71d22a8fdc
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /v2ray-vmess/tls
+   headers:
+    Host: mm.net.my
+
+- name: "HowdyUdp1"
+  type: trojan
+  server: ulist.com.my.troh1.merutd.cloudns.nz
+  port: 443
+  password: 293d6b90-e088-11ed-b710-1239d0255272
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "RaceA"
+  type: trojan
+  server: ulist.com.my.sg-full.privateip.net
+  port: 443
+  password: d3f8852a-8f5f-459e-b295-0d76bec8795d
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "RaceB"
+  type: trojan
+  server: ulist.com.my.sg2-full.privateip.net
+  port: 443
+  password: 1e337a24-d64a-470a-be78-6de51394bdfe
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "WhySg1"
+  type: trojan
+  server: ulist.com.my.sg1.kitu.xyz
+  port: 443
+  password: whyvpn-kollojgyu
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "LionTrojan"
+  server: ulist.com.my.lion1.merutd.cloudns.nz
+  port: 443
+  type: trojan
+  password: dec5afcf-f3bc-44ef-ae3d-7789b9a38c4f
+  skip-cert-verify: true
+  sni: mm.net.my
+  network: ws
+  ws-opts:
+   path: /xray-trojan/tls
+   headers:
+    Host: mm.net.my
+  udp: true
+
+- name: "AsiaOneTcp"
+  type: trojan
+  server: ulist.com.my.asia1.oceis.netyyy
+  port: 443
+  password: 3ed2ef00-c698-11ed-b833-205c6d5f5d78
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "OvhObfsSg1"
+  type: trojan
+  server: ulist.com.my.sg1.socifiles.com
+  port: 443
+  password: 70a7bcb0-c45b-11ed-bf0f-1239d0255272
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+##### Timed server #####
+
+- name: "Fastdyna27march"
+  server: ulist.com.my.dynamic-sg2b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: 8a1824b5-a2bd-4093-a0f6-47e916ba96c5
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mm.net.my
+
+##### fastest server #####
+
+- name: "WhyGprcSg1"
+  server: ulist.com.my.sg1.kitu.xyz
+  port: 443
+  type: trojan
+  password: f6c4b48d-fedf-4800-93f2-4f32df9aea5b
+  skip-cert-verify: true
+  sni: mm.net.my
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: xray-trojan-grpc
+  udp: true
+
+- name: "TrogprcSgOne"
+  server: ulist.com.my.asia1.oceis.netyyy
+  port: 443
+  type: trojan
+  password: 91dfac70-cdab-11ed-b436-205c6d5f5d78
+  skip-cert-verify: true
+  sni: mm.net.my
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: trgrpc
+  udp: true
+
+- name: "TrogprcOvh"
+  server: sg1.socifiles.com
+  port: 443
+  type: trojan
+  password: 1c788980-c84a-11ed-8b9d-1239d0255272
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: trgrpc
+  udp: true
+
+##### Backup Server ######
+
+- name: "backserver"
+  server: ulist.com.my.sgv-3.openv2ray.com
+  port: 443
+  type: vmess
+  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /u/opentunnel.net-iltixc
+   headers:
+    Host: mm.net.my
+
+- name: "backserversk4-30apr"
+  server: ulist.com.my.shkit4.merutd.cloudns.nz
+  port: 443
+  type: vmess
+  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/6426feafd6e2a/
+   headers:
+    Host: mm.net.my
+
+
