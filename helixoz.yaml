@@ -25,21 +25,15 @@ dns:
     - 1.0.0.1
     - 1.0.0.2
   nameserver:
-    - https://cloudflare-dns.com/dns-query
-    - https://security.cloudflare-dns.com/dns-query
-    - https://family.cloudflare-dns.com/dns-query
-    - tls://1dot1dot1dot1.cloudflare-dns.com:853
-    - tls://security.cloudflare-dns.com:853
-    - tls://family.cloudflare-dns.com:853
+    - 1.1.1.1
+    - 1.1.1.2
+    - 1.0.0.1
+    - 1.0.0.2
   fallback:
     - tcp://1.1.1.1
     - tcp://1.1.1.2
     - tcp://1.0.0.1
     - tcp://1.0.0.2
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   - "+.*"
