@@ -173,19 +173,6 @@ proxies:
    grpc-service-name: xray-trojan-grpc
   udp: true
 
-- name: "TrogprcSgOne"
-  server: ulist.com.my.asia1.oceis.netyyy
-  port: 443
-  type: trojan
-  password: 91dfac70-cdab-11ed-b436-205c6d5f5d78
-  skip-cert-verify: true
-  sni: mm.net.my
-  network: grpc
-  grpc-opts:
-   grpc-mode: gun
-   grpc-service-name: trgrpc
-  udp: true
-
 - name: "TrogprcOvh"
   server: sg1.socifiles.com
   port: 443
@@ -201,23 +188,6 @@ proxies:
 
 ##### Backup Server ######
 
-- name: "backserver"
-  server: ulist.com.my.sgv-3.openv2ray.com
-  port: 443
-  type: vmess
-  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: mm.net.my
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /u/opentunnel.net-iltixc
-   headers:
-    Host: mm.net.my
-
 - name: "backserversk4-30apr"
   server: ulist.com.my.shkit4.merutd.cloudns.nz
   port: 443
@@ -231,7 +201,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/6426feafd6e2a/
+   path: /sshkit/1074999023/644f09cc9fd68/
    headers:
     Host: mm.net.my
 

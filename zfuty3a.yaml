@@ -186,38 +186,7 @@ proxies:
    grpc-service-name: trgrpc
   udp: true
 
-- name: "TrogprcOvh"
-  server: sg1.socifiles.com
-  port: 443
-  type: trojan
-  password: 1c788980-c84a-11ed-8b9d-1239d0255272
-  skip-cert-verify: true
-  sni: mobilelegends.com
-  network: grpc
-  grpc-opts:
-   grpc-mode: gun
-   grpc-service-name: trgrpc
-  udp: true
-
-
 ##### Backup Server ######
-
-- name: "backserver"
-  server: sgv-3.openv2ray.com
-  port: 443
-  type: vmess
-  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /u/opentunnel.net-iltixc
-   headers:
-    Host: mobilelegends.com
 
 - name: "backserversk4-30apr"
   server: sg4-v2ray.sshkit.org
@@ -232,7 +201,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/6426feafd6e2a/
+   path: /sshkit/1074999023/644f09cc9fd68/
    headers:
     Host: mobilelegends.com
 

@@ -154,7 +154,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/6426fe3064ba8/
+   path: /sshkit/1074999023/644f0985f3ae8/
    headers:
     Host: mobilelegends.com
 
