@@ -2,6 +2,43 @@ proxies:
 
 ##### Optional server
 
+- name: "RaceA"
+  type: trojan
+  server: ulist.com.my.sg-full.privateip.net
+  port: 443
+  password: d3f8852a-8f5f-459e-b295-0d76bec8795d
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "RaceB"
+  type: trojan
+  server: ulist.com.my.sg2-full.privateip.net
+  port: 443
+  password: 8076edd5-bde2-417b-a255-f4a21c4fecb2
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "WhyGprcSgDo"
+  server: ulist.com.my.sg2.kitu.xyz
+  port: 443
+  type: trojan
+  password: 8bb3d66d-5838-482f-ae1b-9850af9effed
+  skip-cert-verify: true
+  sni: mm.net.my
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: xray-trojan-grpc
+  udp: true
+
 - name: "OpenSg1"
   server: ulist.com.my.sgv-5.openv2ray.com
   port: 443
@@ -65,42 +102,6 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "RaceA"
-  type: trojan
-  server: ulist.com.my.sg-full.privateip.net
-  port: 443
-  password: d3f8852a-8f5f-459e-b295-0d76bec8795d
-  udp: true
-  sni: mm.net.my
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "RaceB"
-  type: trojan
-  server: ulist.com.my.sg2-full.privateip.net
-  port: 443
-  password: 1e337a24-d64a-470a-be78-6de51394bdfe
-  udp: true
-  sni: mm.net.my
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "WhySg1"
-  type: trojan
-  server: ulist.com.my.sg1.kitu.xyz
-  port: 443
-  password: whyvpn-kollojgyu
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
 - name: "LionTrojan"
   server: ulist.com.my.lion1.merutd.cloudns.nz
   port: 443
@@ -159,19 +160,6 @@ proxies:
     Host: mm.net.my
 
 ##### fastest server #####
-
-- name: "WhyGprcSg1"
-  server: ulist.com.my.sg1.kitu.xyz
-  port: 443
-  type: trojan
-  password: f6c4b48d-fedf-4800-93f2-4f32df9aea5b
-  skip-cert-verify: true
-  sni: mm.net.my
-  network: grpc
-  grpc-opts:
-   grpc-mode: gun
-   grpc-service-name: xray-trojan-grpc
-  udp: true
 
 - name: "TrogprcOvh"
   server: sg1.socifiles.com

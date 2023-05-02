@@ -2,6 +2,43 @@ proxies:
 
 ##### Optional server
 
+- name: "RaceA"
+  type: trojan
+  server: sg-full.privateip.net
+  port: 443
+  password: d3f8852a-8f5f-459e-b295-0d76bec8795d
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "RaceB"
+  type: trojan
+  server: sg2-full.privateip.net
+  port: 443
+  password: 8076edd5-bde2-417b-a255-f4a21c4fecb2
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "WhyGprcSgDo"
+  server: sg2.kitu.xyz
+  port: 443
+  type: trojan
+  password: 8bb3d66d-5838-482f-ae1b-9850af9effed
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: xray-trojan-grpc
+  udp: true
+
 - name: "OpenSg1"
   server: sgv-5.openv2ray.com
   port: 443
@@ -58,42 +95,6 @@ proxies:
   server: trojan1.udpgw.com
   port: 443
   password: 293d6b90-e088-11ed-b710-1239d0255272
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "RaceA"
-  type: trojan
-  server: sg-full.privateip.net
-  port: 443
-  password: d3f8852a-8f5f-459e-b295-0d76bec8795d
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "RaceB"
-  type: trojan
-  server: sg2-full.privateip.net
-  port: 443
-  password: 1e337a24-d64a-470a-be78-6de51394bdfe
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "WhySg1"
-  type: trojan
-  server: sg1.kitu.xyz
-  port: 443
-  password: whyvpn-kollojgyu
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -159,19 +160,6 @@ proxies:
     Host: mobilelegends.com
 
 ##### fastest server #####
-
-- name: "WhyGprcSg1"
-  server: sg1.kitu.xyz
-  port: 443
-  type: trojan
-  password: f6c4b48d-fedf-4800-93f2-4f32df9aea5b
-  skip-cert-verify: true
-  sni: mobilelegends.com
-  network: grpc
-  grpc-opts:
-   grpc-mode: gun
-   grpc-service-name: xray-trojan-grpc
-  udp: true
 
 - name: "TrogprcSgOne"
   server: asia1.oceis.netyyy

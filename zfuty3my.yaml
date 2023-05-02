@@ -4,7 +4,7 @@ proxies:
   server: my1.v2rayserv.com
   port: 443
   type: vmess
-  uuid: 512db7c7-177c-4c2c-a4bb-f18815170aef
+  uuid: 92e7eea3-5431-4eb2-9e65-5451e9cd9e64
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -35,7 +35,7 @@ proxies:
   server: my4.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: f783d82e-e69d-11ed-8e21-00163e006a08
+  uuid: 0650daf6-e936-11ed-9dcf-00163e006a08
   sni: mobilelegends.com
   alterId: 0
   cipher: auto

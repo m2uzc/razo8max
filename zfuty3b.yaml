@@ -2,6 +2,19 @@ proxies:
 
 ##### fastest server #####
 
+- name: "WhyCloudSg"
+  server: sg1.kitu.xyz
+  port: 443
+  type: trojan
+  password: 4e33f966-32f0-4d60-8b52-b574d2b78dac
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: xray-trojan-grpc
+  udp: true
+
 - name: "HowdyOvhVGprc"
   server: sg1.socifiles.com
   port: 443
