@@ -20,22 +20,16 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
+    - 76.76.2.2
+    - 76.76.10.2
   nameserver:
-    - https://dns.nextdns.io/f69682
-    - tls://f69682.dns.nextdns.io:853
+    - https://freedns.controld.com/p2
+    - tls://p2.freedns.controld.com:853
   fallback:
-    - tcp://1.1.1.1
-    - tcp://1.1.1.2
-    - tcp://1.0.0.1
-    - tcp://1.0.0.2
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
+    - tcp://76.76.2.2
+    - tcp://76.76.10.2
+    - 76.76.2.2
+    - 76.76.10.2
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   - "+.*"
@@ -69,8 +63,8 @@ dns:
 tun:
   enable: true
   dns-hijack:
-  - tcp://1.1.1.1:53
-  - tcp://1.1.1.2:53
+  - tcp://76.76.2.2:53
+  - tcp://76.76.10.2:53
   stack: system
   auto-route: true
 
@@ -104,7 +98,7 @@ proxy-groups:
 proxy-providers:
   sall2:
     type: http
-    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3com.yaml"
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3comx.yaml"
     interval: 120
     path: ./sall2.yaml
     health-check:
