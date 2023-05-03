@@ -1,0 +1,52 @@
+proxies:
+
+##### fastest server #####
+
+- name: "WhyCloudSg"
+  server: sg1.kitu.xyz
+  port: 443
+  type: trojan
+  password: 4e33f966-32f0-4d60-8b52-b574d2b78dac
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: xray-trojan-grpc
+  udp: true
+
+- name: "ovhtgprc"
+  server: sg1.socifiles.comyy
+  port: 443
+  type: trojan
+  password: 6ae736d0-e2ec-11ed-b155-1239d0255272
+  skip-cert-verify: true
+  sni: yahoo.com
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: trgrpc
+  udp: true
+
+- name: "Dyna1may"
+  server: dynamic-sg1b.obfs.xyzyy
+  port: 443
+  type: vmess
+  uuid: f4437f1f-ea10-47d8-92a5-6e40a63004ec
+  sni: yahoo.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: yahoo.com
+
+
+
+
+
+
