@@ -2,11 +2,11 @@ proxies:
 
 ##### fastest server #####
 
-- name: "HeSg20gb4Jun"
+- name: "OpenTr30gb4jun"
   type: trojan
-  server: sg1-trojan.bonds.id
+  server: sgt-1.opensvr.net
   port: 443
-  password: 49575a20-ea1d-11ed-ac1e-1239d0255272
+  password: opentunnel.net-elba83
   udp: true
   sni: google.com
   alpn:
