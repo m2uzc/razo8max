@@ -26,8 +26,25 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "Dyna16may"
+  server: ulist.com.my.dynamic-sg2b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: 6bad6982-4ff7-485c-a105-c27c24afe4b2
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mm.net.my
+
 - name: "WhyGprcSgDo"
-  server: ulist.com.my.sg2.kitu.xyz
+  server: ulist.com.my.sg2.kitu.xyztt
   port: 443
   type: trojan
   password: 8bb3d66d-5838-482f-ae1b-9850af9effed
@@ -142,22 +159,6 @@ proxies:
 
 ##### Timed server #####
 
-- name: "Fastdyna27march"
-  server: ulist.com.my.dynamic-sg2b.obfs.xyz
-  port: 443
-  type: vmess
-  uuid: 8a1824b5-a2bd-4093-a0f6-47e916ba96c5
-  sni: mm.net.my
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: mm.net.my
 
 ##### fastest server #####
 

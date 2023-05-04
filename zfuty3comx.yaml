@@ -2,17 +2,17 @@ proxies:
 
 ##### fastest server #####
 
-- name: "ovhtgprc"
-  server: sg1.socifiles.comyy
+- name: "WhyGprcSgDo"
+  server: ulist.com.my.sg2.kitu.xyz
   port: 443
   type: trojan
-  password: 6ae736d0-e2ec-11ed-b155-1239d0255272
+  password: 8bb3d66d-5838-482f-ae1b-9850af9effed
   skip-cert-verify: true
-  sni: yahoo.com
+  sni: mm.net.my
   network: grpc
   grpc-opts:
    grpc-mode: gun
-   grpc-service-name: trgrpc
+   grpc-service-name: xray-trojan-grpc
   udp: true
 
 - name: "OpenSgFsr1"
