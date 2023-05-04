@@ -8,12 +8,25 @@ proxies:
   type: trojan
   password: 4e33f966-32f0-4d60-8b52-b574d2b78dac
   skip-cert-verify: true
-  sni: mobilelegends.com
+  sni: fast.com
   network: grpc
   grpc-opts:
    grpc-mode: gun
    grpc-service-name: xray-trojan-grpc
   udp: true
+
+- name: "WhyCloudSgTrGfw"
+  type: trojan
+  server: sg1.kitu.xyz
+  port: 443
+  password: whyvpn-superbackupsg
+  udp: true
+  sni: fast.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 
 - name: "ovhtgprc"
   server: sg1.socifiles.comyy
@@ -21,7 +34,7 @@ proxies:
   type: trojan
   password: 6ae736d0-e2ec-11ed-b155-1239d0255272
   skip-cert-verify: true
-  sni: yahoo.com
+  sni: fast.com
   network: grpc
   grpc-opts:
    grpc-mode: gun
@@ -33,7 +46,7 @@ proxies:
   port: 443
   type: vmess
   uuid: f4437f1f-ea10-47d8-92a5-6e40a63004ec
-  sni: yahoo.com
+  sni: fast.com
   alterId: 0
   cipher: auto
   tls: true
@@ -43,7 +56,7 @@ proxies:
   ws-opts:
    path: /worryfree
    headers:
-    Host: yahoo.com
+    Host: fast.com
 
 
 

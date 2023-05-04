@@ -8,19 +8,31 @@ proxies:
   type: trojan
   password: 8bb3d66d-5838-482f-ae1b-9850af9effed
   skip-cert-verify: true
-  sni: mm.net.my
+  sni: fast.com
   network: grpc
   grpc-opts:
    grpc-mode: gun
    grpc-service-name: xray-trojan-grpc
   udp: true
 
+- name: "WhyCloudSgTrGfw"
+  type: trojan
+  server: sg2.kitu.xyz
+  port: 443
+  password: whyvpn-superdosg
+  udp: true
+  sni: fast.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "OpenSgFsr1"
   server: sgv-1.openv2ray.com
   port: 443
   type: vmess
   uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: yahoo.com
+  sni: fast.com
   alterId: 0
   cipher: auto
   tls: true
@@ -30,7 +42,7 @@ proxies:
   ws-opts:
    path: /u/opentunnel.net-pandora24
    headers:
-    Host: yahoo.com
+    Host: fast.com
 
 
 

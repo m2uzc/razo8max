@@ -8,7 +8,7 @@ proxies:
   port: 443
   password: opentunnel.net-elba83
   udp: true
-  sni: google.com
+  sni: fast.com
   alpn:
      - h2
      - http/1.1
