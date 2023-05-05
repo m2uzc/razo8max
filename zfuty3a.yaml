@@ -55,19 +55,6 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "WhyGprcSgDo"
-  server: sg2.kitu.xyztt
-  port: 443
-  type: trojan
-  password: 8bb3d66d-5838-482f-ae1b-9850af9effed
-  skip-cert-verify: true
-  sni: mobilelegends.com
-  network: grpc
-  grpc-opts:
-   grpc-mode: gun
-   grpc-service-name: xray-trojan-grpc
-  udp: true
-
 - name: "OpenSg1"
   server: sgv-5.openv2ray.com
   port: 443
@@ -102,60 +89,6 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "LionSshVmes"
-  server: vm.sg.goserver.pw
-  port: 443
-  type: vmess
-  uuid: dccf12f5-f94c-4e1e-9d49-8e71d22a8fdc
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /v2ray-vmess/tls
-   headers:
-    Host: mobilelegends.com
-
-- name: "LionTrojan"
-  server: tr.sg.goserver.pw
-  port: 443
-  type: trojan
-  password: dec5afcf-f3bc-44ef-ae3d-7789b9a38c4f
-  skip-cert-verify: true
-  sni: mobilelegends.com
-  network: ws
-  ws-opts:
-   path: /xray-trojan/tls
-   headers:
-    Host: mobilelegends.com
-  udp: true
-
-- name: "AsiaOneTcp"
-  type: trojan
-  server: asia1.oceis.netyyy
-  port: 443
-  password: 3ed2ef00-c698-11ed-b833-205c6d5f5d78
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "OvhObfs"
-  type: trojan
-  server: sg1.socifiles.com
-  port: 443
-  password: 70a7bcb0-c45b-11ed-bf0f-1239d0255272
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
 
 ##### Timed server #####
 
