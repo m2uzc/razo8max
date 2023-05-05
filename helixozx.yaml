@@ -142,7 +142,7 @@ proxy-groups:
   interval: 32
   strategy: consistent-hashing
   disable-udp: false
-  tolerance: 600
+  tolerance: 5000
   lazy: false
   proxies:
   - FallbackX
@@ -150,7 +150,7 @@ proxy-groups:
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3000
+  tolerance: 5000
   interval: 72
   lazy: false
   proxies:
@@ -159,7 +159,7 @@ proxy-groups:
 - name: FallbackY
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3000
+  tolerance: 5000
   interval: 72
   lazy: false
   proxies:
@@ -168,7 +168,7 @@ proxy-groups:
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3000
+  tolerance: 5000
   interval: 72
   lazy: false
   use: 
@@ -176,7 +176,7 @@ proxy-groups:
 - name: supercharged
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3000
+  tolerance: 5000
   interval: 72
   lazy: false
   proxies:
@@ -193,7 +193,7 @@ proxy-groups:
 - name: Fallback
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3000
+  tolerance: 5000
   interval: 72
   lazy: false
   use:

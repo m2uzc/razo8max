@@ -2,6 +2,18 @@ proxies:
 
 ##### Optional server
 
+- name: "Howdytro18may"
+  type: trojan
+  server: ulist.com.my.troh2.merutd.cloudns.nz
+  port: 443
+  password: 4e061fc0-eb3c-11ed-8cb3-1239d0255272
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "RaceA"
   type: trojan
   server: ulist.com.my.sg-full.privateip.net
@@ -106,18 +118,6 @@ proxies:
    path: /v2ray-vmess/tls
    headers:
     Host: mm.net.my
-
-- name: "HowdyUdp1"
-  type: trojan
-  server: ulist.com.my.troh1.merutd.cloudns.nz
-  port: 443
-  password: 293d6b90-e088-11ed-b710-1239d0255272
-  udp: true
-  sni: mm.net.my
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
 
 - name: "LionTrojan"
   server: ulist.com.my.lion1.merutd.cloudns.nz

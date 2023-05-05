@@ -2,6 +2,18 @@ proxies:
 
 ##### Optional server
 
+- name: "Howdytro18may"
+  type: trojan
+  server: trojan2.udpgw.com
+  port: 443
+  password: 4e061fc0-eb3c-11ed-8cb3-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "RaceA"
   type: trojan
   server: sg-full.privateip.net
@@ -106,18 +118,6 @@ proxies:
    path: /v2ray-vmess/tls
    headers:
     Host: mobilelegends.com
-
-- name: "HowdyUdp1"
-  type: trojan
-  server: trojan1.udpgw.com
-  port: 443
-  password: 293d6b90-e088-11ed-b710-1239d0255272
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
 
 - name: "LionTrojan"
   server: tr.sg.goserver.pw
