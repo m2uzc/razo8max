@@ -1,0 +1,138 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7893
+mixed-port: 7894
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+external-ui: folder
+interface-name: en0
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7895
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  default-nameserver:
+    - 76.76.2.2
+    - 76.76.10.2
+  nameserver:
+    - https://freedns.controld.com/p2
+    - tls://p2.freedns.controld.com:853
+  fallback:
+    - tcp://76.76.2.2
+    - tcp://76.76.10.2
+    - 76.76.2.2
+    - 76.76.10.2
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - "+.*"
+  - ntp7.*.com
+  - ntp6.*.com
+  - ntp5.*.com
+  - ntp4.*.com
+  - ntp3.*.com
+  - ntp2.*.com
+  - ntp1.*.com
+  - ntp.*.com
+  - time7.*.com
+  - time6.*.com
+  - time5.*.com
+  - time4.*.com
+  - time3.*.com
+  - time2.*.com
+  - time1.*.com
+  - time.*.apple.com
+  - time.*.edu.cn
+  - time.*.gov
+  - time.*.com
+  - "*.home.arpa"
+  - "*.local"
+  - "*.test"
+  - "*.localhost"
+  - "*.invalid"
+  - "*.example"
+  - "*.localdomain"
+  - "*.lan"
+tun:
+  enable: true
+  dns-hijack:
+  - tcp://76.76.2.2:53
+  - tcp://76.76.10.2:53
+  stack: system
+  auto-route: true
+
+proxy-groups: 
+- name: All 
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 500
+  proxies:
+  - DIRECT
+  - superfastlane
+- name: superfastlane
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 1200
+  interval: 5
+  lazy: false
+  use: 
+  - sall2
+
+proxy-providers:
+  sall2:
+    type: http
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3full.yaml"
+    interval: 120
+    path: ./sall2.yaml
+    health-check:
+      enable: true
+      interval: 120
+      lazy: true
+      url: https://duckduckgo.com
+
+rules:
+  - DOMAIN-SUFFIX,gdl.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,support0.bigo,REJECT
+  - DOMAIN-SUFFIX,activity.bigo.tv,REJECT
+  - DOMAIN-SUFFIX,graph.facebook.com,REJECT
+  - DOMAIN-SUFFIX,launches.appsflyersdk.com,REJECT
+  - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,api.likee.videoxxx,REJECT
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,exp.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,inapps.appsflyersdk.com,REJECT
+  - DOMAIN-SUFFIX,hotroom.live.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,flag.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,static.f2ecdn.com,REJECT
+  - DOMAIN-SUFFIX,support1.like.video,REJECT
+  - DOMAIN-SUFFIX,esx.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,static-fed.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,static-web.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,ta.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,support-json.like.video,REJECT
+  - DOMAIN-SUFFIX,newlbs.live.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - DOMAIN,analytics.google.com,REJECT
+  - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
+  - DOMAIN,analyticsreporting.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,REJECT
+  - DOMAIN-SUFFIX,googleadsserving.cn,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,googletagmanager.com,REJECT
+  - DOMAIN-SUFFIX,googletagservices.com,REJECT
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,analytics,REJECT
+  - DOMAIN-KEYWORD,analysis,REJECT
+  - MATCH,All
