@@ -2,8 +2,20 @@ proxies:
 
 ##### fastest server #####
 
-- name: : "WhyVGprcSgDo"
+- name: "WhyCloudSgTrGfw"
+  type: trojan
   server: sg2.kitu.xyz
+  port: 443
+  password: whyvpn-salimgto
+  udp: true
+  sni: fast.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: : "WhyVGprcSgDo"
+  server: sg2.kitu.xyzyy
   port: 443
   type: vless
   uuid: aa442879-d1e9-434c-bbb0-a146b8b94f53
@@ -30,17 +42,6 @@ proxies:
    grpc-service-name: xray-trojan-grpc
   udp: true
 
-- name: "WhyCloudSgTrGfw"
-  type: trojan
-  server: sg2.kitu.xyzyy
-  port: 443
-  password: whyvpn-superdosg
-  udp: true
-  sni: fast.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
 
 
 
