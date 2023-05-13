@@ -79,6 +79,7 @@ proxy-groups:
   type: select
   url: 'https://duckduckgo.com'
   interval: 500
+  proxies:
   - superfastlane
   - superfastlaneZ
   - DIRECT
