@@ -74,8 +74,8 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   interval: 500
   proxies:
-  - DIRECT
   - superfastlane
+  - DIRECT
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
