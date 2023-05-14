@@ -150,8 +150,8 @@ proxy-groups:
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 72
+  tolerance: 4200
+  interval: 32
   lazy: false
   proxies:
   - Manual
@@ -159,8 +159,8 @@ proxy-groups:
 - name: FallbackY
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 72
+  tolerance: 4200
+  interval: 32
   lazy: false
   proxies:
   - Manualx
@@ -168,37 +168,59 @@ proxy-groups:
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 72
+  tolerance: 4200
+  interval: 32
   lazy: false
-  use: 
-  - sall2
+  proxies:
+  - Fallbackb
+  - Fallbackc
 - name: supercharged
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 72
+  tolerance: 4200
+  interval: 32
   lazy: false
   proxies:
   - Manual1
   - Manual2
+  - Fallbackb
+  - Fallbackc
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 123
-  tolerance: 619
-  lazy: false
-  use:
-  - sall
-- name: Fallback
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 72
+  interval: 62
+  tolerance: 620
   lazy: false
   use:
   - sall
   - sall2
+  - sall3
+- name: Fallback
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 4200
+  interval: 32
+  lazy: false
+  use:
+  - sall
+  - sall2
+- name: Fallbackb
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 4200
+  interval: 32
+  lazy: false
+  use:
+  - sall2
+  - sall
+- name: Fallbackc
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 4200
+  interval: 32
+  lazy: false
+  use:
+  - sall3
 
 proxy-providers:
   sall:
@@ -216,6 +238,16 @@ proxy-providers:
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3b.yaml"
     interval: 120
     path: ./sall2.yaml
+    health-check:
+      enable: true
+      interval: 120
+      lazy: false
+      url: https://duckduckgo.com
+  sall3:
+    type: http
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3c.yaml"
+    interval: 120
+    path: ./sall3.yaml
     health-check:
       enable: true
       interval: 120

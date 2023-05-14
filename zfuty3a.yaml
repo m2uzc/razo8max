@@ -38,6 +38,18 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "WhyDoSgTrGfw"
+  type: trojan
+  server: sg2.kitu.xyz
+  port: 443
+  password: whyvpn-lasthopeserver
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "Dyna16may"
   server: dynamic-sg2b.obfs.xyz
   port: 443
@@ -89,42 +101,6 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-
-##### Timed server #####
-
-##### fastest server #####
-
-- name: "TrogprcSgOne"
-  server: asia1.oceis.netyyy
-  port: 443
-  type: trojan
-  password: 91dfac70-cdab-11ed-b436-205c6d5f5d78
-  skip-cert-verify: true
-  sni: mobilelegends.com
-  network: grpc
-  grpc-opts:
-   grpc-mode: gun
-   grpc-service-name: trgrpc
-  udp: true
-
-##### Backup Server ######
-
-- name: "backserversk4-30apr"
-  server: sg4-v2ray.sshkit.org
-  port: 443
-  type: vmess
-  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /sshkit/1074999023/644f09cc9fd68/
-   headers:
-    Host: mobilelegends.com
 
 
 
