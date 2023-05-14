@@ -97,6 +97,7 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   interval: 500
   proxies:
+  - FallbackMax
   - RobinZ
   - Fallback
   - FallbackX
@@ -183,6 +184,16 @@ proxy-groups:
   proxies:
   - Manual1
   - Manual2
+  - Fallbackb
+  - Fallbackc
+- name: FallbackMax
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 4200
+  interval: 32
+  lazy: false
+  proxies:
+  - Fallback
   - Fallbackb
   - Fallbackc
 - name: Ping++
