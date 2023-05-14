@@ -4,7 +4,7 @@ proxies:
   type: trojan
   server: sg2.kitu.xyz
   port: 443
-  password: whyvpn-salimgto
+  password: whyvpn-sonaroi35
   udp: true
   sni: fast.com
   alpn:
