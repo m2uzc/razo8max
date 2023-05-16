@@ -25,6 +25,7 @@ dns:
     - tls://1dot1dot1dot1.cloudflare-dns.com:853
     - tls://security.cloudflare-dns.com:853
     - tls://family.cloudflare-dns.com:853
+  #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
     - tcp://1.1.1.1
     - tcp://1.1.1.2

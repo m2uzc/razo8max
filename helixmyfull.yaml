@@ -25,6 +25,7 @@ dns:
   nameserver:
     - https://freedns.controld.com/p2
     - tls://p2.freedns.controld.com:853
+   #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
     - tcp://76.76.2.2
     - tcp://76.76.10.2

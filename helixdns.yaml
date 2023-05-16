@@ -75,44 +75,27 @@ tun:
   stack: system
   auto-route: true
 
+proxies:
+- name: "dummy"
+  type: trojan
+  server: trojan.bonds.idyt
+  port: 443
+  password: 07bfcfc0-e287-11ed-a4af-1239d0255272
+  udp: true
+  sni: whatsapp.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 proxy-groups: 
 - name: All 
   type: select
   url: 'https://duckduckgo.com'
   interval: 500
   proxies:
-  - superfastlane
-  - superfastlaneZ
   - DIRECT
-- name: superfastlane
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 500
-  interval: 5
-  lazy: false
-  proxies:
-  - superfastlaneZ
-  - DIRECT
-- name: superfastlaneZ
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 500
-  interval: 5
-  lazy: false
-  use: 
-  - sall2
-
-proxy-providers:
-  sall2:
-    type: http
-    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3lite.yaml"
-    interval: 120
-    path: ./sall2.yaml
-    health-check:
-      enable: true
-      interval: 120
-      lazy: true
-      url: https://duckduckgo.com
+  - dummy
 
 rules:
   - DOMAIN-SUFFIX,gdl.bigo.sg,REJECT
@@ -137,6 +120,9 @@ rules:
   - DOMAIN-SUFFIX,static-act.bigolive.tv,REJECT
   - DOMAIN-SUFFIX,support-json.like.video,REJECT
   - DOMAIN-SUFFIX,newlbs.live.bigo.sg,REJECT
+  - DOMAIN-KEYWORD,google,DIRECT
+  - DOMAIN-KEYWORD,gstatic,DIRECT
+  - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
   - DOMAIN-SUFFIX,raw.githubusercontent.com,DIRECT
   - DOMAIN-SUFFIX,ad.com,REJECT
   - DOMAIN,analytics.google.com,REJECT
@@ -152,4 +138,4 @@ rules:
   - DOMAIN-KEYWORD,adservice,REJECT
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
-  - MATCH,superfastlane
+  - MATCH,DIRECT
