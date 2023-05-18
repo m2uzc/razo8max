@@ -2,18 +2,6 @@ proxies:
 
 ##### Optional server
 
-- name: "Howdytro18may"
-  type: trojan
-  server: ulist.com.my.troh2.merutd.cloudns.nz
-  port: 443
-  password: 4e061fc0-eb3c-11ed-8cb3-1239d0255272
-  udp: true
-  sni: mm.net.my
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
 - name: "RaceA"
   type: trojan
   server: ulist.com.my.sg-full.privateip.net
@@ -50,11 +38,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "Dyna16may"
-  server: ulist.com.my.dynamic-sg2b.obfs.xyz
+- name: "Dyna30may"
+  server: ulist.com.my.dynamic-sg3b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 6bad6982-4ff7-485c-a105-c27c24afe4b2
+  uuid: 80d4f9c9-9a49-441a-bbb0-3161625bca9f
   sni: mm.net.my
   alterId: 0
   cipher: auto
