@@ -80,11 +80,11 @@ tun:
   auto-route: true
 
 proxies:
-- name: "howdyCanada20gb"
+- name: "HowdyTrojan30day_15-20gb"
   type: trojan
   server: api.whatsapp.com.ca-trojan.bonds.id
   port: 443
-  password: 07bfcfc0-e287-11ed-a4af-1239d0255272
+  password: 65f0adc0-f78a-11ed-a6b8-1239d0255272
   udp: true
   sni: whatsapp.com
   alpn:
@@ -109,7 +109,7 @@ proxy-groups:
   - superfastlane
   - supercharged
   - Ping++
-  - howdyCanada20gb
+  - HowdyTrojan30day_15-20gb
 - name: Manual 
   type: select
   url: 'https://duckduckgo.com'
@@ -148,7 +148,7 @@ proxy-groups:
   interval: 32
   strategy: round-robin
   disable-udp: false
-  tolerance: 4200
+  tolerance: 6200
   lazy: false
   proxies:
   - FallbackX
@@ -156,9 +156,9 @@ proxy-groups:
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
-  lazy: false
+  lazy: true
   proxies:
   - Manual
   - Fallback
@@ -167,29 +167,49 @@ proxy-groups:
 - name: FallbackY
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
-  lazy: false
+  lazy: true
   proxies:
   - Manualx
   - Fallback
   - Fallbackb
   - Fallbackc
 - name: superfastlane
+  type: load-balance
+  url: 'https://duckduckgo.com'
+  interval: 32
+  strategy: round-robin
+  disable-udp: false
+  tolerance: 6200
+  lazy: false
+  proxies:
+  - fastlane
+  - fastlaneb
+- name: fastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
-  lazy: false
+  lazy: true
+  proxies:
+  - Fallbackb
+  - Fallbackc
+- name: fastlaneb
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6200
+  interval: 32
+  lazy: true
   proxies:
   - Fallbackb
   - Fallbackc
 - name: supercharged
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
-  lazy: false
+  lazy: true
   proxies:
   - Manual1
   - Manual2
@@ -198,7 +218,7 @@ proxy-groups:
 - name: FallbackMax
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
   lazy: false
   proxies:
@@ -218,7 +238,7 @@ proxy-groups:
 - name: Fallback
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
   lazy: false
   use:
@@ -227,7 +247,7 @@ proxy-groups:
 - name: Fallbackb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
   lazy: false
   use:
@@ -236,7 +256,7 @@ proxy-groups:
 - name: Fallbackc
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 4200
+  tolerance: 6200
   interval: 32
   lazy: false
   use:
@@ -275,11 +295,11 @@ proxy-providers:
       url: https://duckduckgo.com
 
 rules:
-  - IP-CIDR,38.60.193.95/32,howdyCanada20gb
-  - IP-CIDR,47.254.192.14/32,howdyCanada20gb
-  - IP-CIDR,47.254.250.25/32,howdyCanada20gb
-  - IP-CIDR,47.254.230.116/32,howdyCanada20gb
-  - IP-CIDR,47.254.192.234/32,howdyCanada20gb
+  - IP-CIDR,38.60.193.95/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.192.14/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.250.25/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.230.116/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.192.234/32,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,support1.like.video,superfastlane
   - DOMAIN-SUFFIX,gdl.bigo.sg,superfastlane
   - DOMAIN-SUFFIX,activity.bigo.tv,superfastlane
@@ -322,9 +342,9 @@ rules:
   - DOMAIN-KEYWORD,ytimg,supercharged
   - DOMAIN-KEYWORD,instagram,superfastlane
   - DOMAIN-KEYWORD,image,supercharged
-  - DOMAIN-SUFFIX,duckduckgo.com,howdyCanada20gb
+  - DOMAIN-SUFFIX,duckduckgo.com,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
-  - DOMAIN-SUFFIX,raw.githubusercontent.com,howdyCanada20gb
+  - DOMAIN-SUFFIX,raw.githubusercontent.com,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,sg-3.test3.net,DIRECT
   - DOMAIN-SUFFIX,ad.com,REJECT
   - DOMAIN,analytics.google.com,REJECT

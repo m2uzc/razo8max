@@ -2,6 +2,19 @@ proxies:
 
 ##### fastest server #####
 
+- name: "WhyDoSg"
+  server: sg2.kitu.xyz
+  port: 443
+  type: trojan
+  password: e47d7b87-3002-4969-83b9-8488bd50f057
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: xray-trojan-grpc
+  udp: true
+
 - name: "Howdytro31may"
   type: trojan
   server: trojan3.udpgw.com
@@ -14,18 +27,19 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "WhyDoSg"
-  server: sg2.kitu.xyz
-  port: 443
+- name: "Dummy"
   type: trojan
-  password: 04a55668-40a3-4c21-a82f-ce0ea9e6687d
-  skip-cert-verify: true
-  sni: mobilelegends.com
-  network: grpc
-  grpc-opts:
-   grpc-mode: gun
-   grpc-service-name: xray-trojan-grpc
+  server: m.m
+  port: 443
+  password: 345d36c0-f569-11ed-8b63-1239d0255272
   udp: true
+  sni: m.m
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+
 
 
 
