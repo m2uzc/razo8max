@@ -68,7 +68,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-jimu32
+   path: /u/opentunnel.net-raden42
    headers:
     Host: mm.net.my
 
@@ -85,7 +85,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-ravy57
+   path: /u/opentunnel.net-lamsasa9
    headers:
     Host: mm.net.my
 
