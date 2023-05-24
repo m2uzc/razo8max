@@ -26,6 +26,18 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "Howdytro31may"
+  type: trojan
+  server: ulist.com.my.troh3.merutd.cloudns.nz
+  port: 443
+  password: 345d36c0-f569-11ed-8b63-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "WhyDoSgTrGfw"
   type: trojan
   server: ulist.com.my.sg2.kitu.xyz
@@ -37,23 +49,6 @@ proxies:
      - h2
      - http/1.1
   skip-cert-verify: true
-
-- name: "Dyna30may"
-  server: ulist.com.my.dynamic-sg3b.obfs.xyz
-  port: 443
-  type: vmess
-  uuid: 80d4f9c9-9a49-441a-bbb0-3161625bca9f
-  sni: mm.net.my
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: mm.net.my
 
 - name: "OpenSg1"
   server: ulist.com.my.sgv-5.openv2ray.com

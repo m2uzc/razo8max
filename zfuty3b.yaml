@@ -15,17 +15,22 @@ proxies:
    grpc-service-name: xray-trojan-grpc
   udp: true
 
-- name: "Howdytro31may"
-  type: trojan
-  server: trojan3.udpgw.com
+- name: "Dyna30may"
+  server: dynamic-sg3b.obfs.xyz
   port: 443
-  password: 345d36c0-f569-11ed-8b63-1239d0255272
-  udp: true
+  type: vmess
+  uuid: 80d4f9c9-9a49-441a-bbb0-3161625bca9f
   sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mobilelegends.com
 
 - name: "Dummy"
   type: trojan
