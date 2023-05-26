@@ -2,7 +2,19 @@ proxies:
 
 ##### fastest server #####
 
-- name: "WhyDoSg"
+- name: "WhyDoSgGfW"
+  type: trojan
+  server: sg2.kitu.xyz
+  port: 443
+  password: whyvpn-superisp
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "WhyDoSgGprc"
   server: sg2.kitu.xyz
   port: 443
   type: trojan
