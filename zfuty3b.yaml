@@ -27,11 +27,11 @@ proxies:
    grpc-service-name: xray-trojan-grpc
   udp: true
 
-- name: "Dyna30may"
-  server: dynamic-sg3b.obfs.xyz
+- name: "Dyna13jun"
+  server: dynamic-sg1b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 80d4f9c9-9a49-441a-bbb0-3161625bca9f
+  uuid: 30bf32bc-19dc-45ad-b330-4f5149e56876
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
