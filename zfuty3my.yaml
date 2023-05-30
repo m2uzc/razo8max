@@ -35,7 +35,7 @@ proxies:
   server: my2.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: 07f3a9dc-fb1b-11ed-b85f-00163e005b89
+  uuid: d5cb6780-fec9-11ed-879f-00163e005b89
   sni: fast.com
   alterId: 0
   cipher: auto
