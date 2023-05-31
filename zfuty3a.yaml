@@ -42,7 +42,7 @@ proxies:
   type: trojan
   server: sg2.kitu.xyz
   port: 443
-  password: whyvpn-lasthopeserver
+  password: whyvpn-best14dayssuper
   udp: true
   sni: mobilelegends.com
   alpn:
