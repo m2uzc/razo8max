@@ -2,7 +2,7 @@ proxies:
 
 ##### Backup Server ######
 
-- name: "backserversk3-30may"
+- name: "backserversk3-2july"
   server: sg3-v2ray.sshkit.org
   port: 443
   type: vmess
@@ -15,11 +15,11 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/644f0985f3ae8/
+   path: /sshkit/1074999023/64797143d9def/
    headers:
     Host: mobilelegends.com
 
-- name: "backserversk4-30may"
+- name: "backserversk4-2july"
   server: sg4-v2ray.sshkit.org
   port: 443
   type: vmess
@@ -32,7 +32,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/644f09cc9fd68/
+   path: /sshkit/1074999023/6479719097ae0/
    headers:
     Host: mobilelegends.com
 
