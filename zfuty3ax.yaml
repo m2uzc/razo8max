@@ -26,13 +26,13 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "Howdytro31may"
+- name: "Howdytro15jun"
   type: trojan
-  server: ulist.com.my.tr3hw.madihadi.eu.org
+  server: ulist.com.my.tr1hw.madihadi.eu.org
   port: 443
-  password: 345d36c0-f569-11ed-8b63-1239d0255272
+  password: aabf3360-01da-11ee-bbf1-1239d0255272
   udp: true
-  sni: mobilelegends.com
+  sni: mm.net.my
   alpn:
      - h2
      - http/1.1
