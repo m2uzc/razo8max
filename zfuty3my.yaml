@@ -1,22 +1,5 @@
 proxies:
 
-- name: "oceanbackserver"
-  server: my1.v2rayserv.com
-  port: 443
-  type: vmess
-  uuid: 174af070-1e99-4a97-aa11-3695ba461d4a
-  sni: fast.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: fast.com
-
 - name: "VpfmMy"
   server: myal2.vpn1.cloud
   port: 443
@@ -32,10 +15,10 @@ proxies:
   udp: true
 
 - name: "backserverjantit"
-  server: my2.vpnjantit.com
+  server: my3.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: d5cb6780-fec9-11ed-879f-00163e005b89
+  uuid: 628a9688-0405-11ee-8c61-00163e004ee0
   sni: fast.com
   alterId: 0
   cipher: auto
@@ -45,5 +28,22 @@ proxies:
   network: ws
   ws-opts:
    path: /vpnjantit
+   headers:
+    Host: fast.com
+
+- name: "oceanbackserver"
+  server: my1.v2rayserv.com
+  port: 443
+  type: vmess
+  uuid: ad65ebe8-53f3-41ae-9a8f-54bc28dd5639
+  sni: fast.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
    headers:
     Host: fast.com
