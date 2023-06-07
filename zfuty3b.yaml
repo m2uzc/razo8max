@@ -31,7 +31,7 @@ proxies:
   server: dynamic-sg1b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 30bf32bc-19dc-45ad-b330-4f5149e56876
+  uuid: ad447df4-0610-4396-bcc5-0c82c4f7810d
   sni: mobilelegends.com
   alterId: 0
   cipher: auto

@@ -1,7 +1,7 @@
 proxies:
 
 - name: "VpfmMy"
-  server: myal2.vpn1.cloud
+  server: myal2.vpn1.cloudyy
   port: 443
   type: trojan
   password: 6a2edc70-bbca-11ed-a250-f56c40e26e6e
