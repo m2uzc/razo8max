@@ -80,9 +80,21 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-helloguys75
+   path: /u/opentunnel.net-neverhd42
    headers:
     Host: mobilelegends.com
+
+- name: "indo"
+  type: trojan
+  server: id-full.privateip.net
+  port: 443
+  password: 703223cb-9311-4c17-8ca9-47e79091caac
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
 
 
 

@@ -80,9 +80,21 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-helloguys75
+   path: /u/opentunnel.net-neverhd42
    headers:
     Host: mm.net.my
+
+- name: "indo"
+  type: trojan
+  server: ulist.com.my.indo.madihadi.eu.org
+  port: 443
+  password: 703223cb-9311-4c17-8ca9-47e79091caac
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
 
 
 
