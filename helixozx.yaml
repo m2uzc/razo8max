@@ -82,11 +82,11 @@ tun:
 proxies:
 - name: "HowdyTrojan30day_15-20gb"
   type: trojan
-  server: ulist.com.my.ca-trojan.bonds.id
+  server: mm.net.my.ca-trojan.bonds.id
   port: 443
   password: 65f0adc0-f78a-11ed-a6b8-1239d0255272
   udp: true
-  sni: mm.net.my
+  sni: um.gz.net.my
   alpn:
      - h2
      - http/1.1
