@@ -8,7 +8,7 @@ proxies:
   port: 443
   password: whyvpn-superisp
   udp: true
-  sni: um.gz.net.my
+  sni: mm.net.my
   alpn:
      - h2
      - http/1.1
@@ -20,7 +20,7 @@ proxies:
   type: trojan
   password: e47d7b87-3002-4969-83b9-8488bd50f057
   skip-cert-verify: true
-  sni: um.gz.net.my
+  sni: mm.net.my
   network: grpc
   grpc-opts:
    grpc-mode: gun
@@ -32,7 +32,7 @@ proxies:
   port: 443
   type: vmess
   uuid: ad447df4-0610-4396-bcc5-0c82c4f7810d
-  sni: um.gz.net.my
+  sni: mm.net.my
   alterId: 0
   cipher: auto
   tls: true
@@ -42,7 +42,7 @@ proxies:
   ws-opts:
    path: /worryfree
    headers:
-    Host: um.gz.net.my
+    Host: mm.net.my
 
 - name: "Dummy"
   type: trojan

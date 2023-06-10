@@ -8,7 +8,7 @@ proxies:
   port: 443
   password: 3f17ab1c-7c19-4d58-b462-416fba7d02e0
   udp: true
-  sni: um.gz.net.my
+  sni: mm.net.my
   alpn:
      - h2
      - http/1.1
@@ -20,7 +20,7 @@ proxies:
   port: 443
   password: ff8eac9d-e9c4-4b0f-b384-c2f52feacae9
   udp: true
-  sni: um.gz.net.my
+  sni: mm.net.my
   alpn:
      - h2
      - http/1.1
@@ -32,7 +32,7 @@ proxies:
   port: 443
   password: aabf3360-01da-11ee-bbf1-1239d0255272
   udp: true
-  sni: um.gz.net.my
+  sni: mm.net.my
   alpn:
      - h2
      - http/1.1
@@ -44,7 +44,7 @@ proxies:
   port: 443
   password: whyvpn-best14dayssuper
   udp: true
-  sni: um.gz.net.my
+  sni: mm.net.my
   alpn:
      - h2
      - http/1.1
@@ -55,7 +55,7 @@ proxies:
   port: 443
   type: vmess
   uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: um.gz.net.my
+  sni: mm.net.my
   alterId: 0
   cipher: auto
   tls: true
@@ -65,14 +65,14 @@ proxies:
   ws-opts:
    path: /u/opentunnel.net-sexygirl32
    headers:
-    Host: um.gz.net.my
+    Host: mm.net.my
 
 - name: "OpenSg2"
   server: mm.net.my.sgv-6.openv2ray.com
   port: 443
   type: vmess
   uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: um.gz.net.my
+  sni: mm.net.my
   alterId: 0
   cipher: auto
   tls: true
@@ -82,7 +82,7 @@ proxies:
   ws-opts:
    path: /u/opentunnel.net-neverhd42
    headers:
-    Host: um.gz.net.my
+    Host: mm.net.my
 
 - name: "indo"
   type: trojan
@@ -90,7 +90,7 @@ proxies:
   port: 443
   password: 703223cb-9311-4c17-8ca9-47e79091caac
   udp: true
-  sni: um.gz.net.my
+  sni: mm.net.my
   alpn:
      - h2
      - http/1.1
