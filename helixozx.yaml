@@ -20,25 +20,17 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
+    - 8.8.8.8
+    - 8.8.4.4
   nameserver:
     - 8.8.8.8
     - 8.8.4.4
-    - 1.1.1.1
-    - 1.0.0.1
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://1.1.1.1
-    - tcp://1.1.1.2
-    - tcp://1.0.0.1
-    - tcp://1.0.0.2
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
+    - tcp://8.8.8.8
+    - tcp://8.8.4.4
+    - 8.8.8.8
+    - 8.8.4.4
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   - "+.*"
@@ -72,8 +64,8 @@ dns:
 tun:
   enable: true
   dns-hijack:
-  - tcp://1.1.1.1:53
-  - tcp://1.1.1.2:53
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53
   stack: system
   auto-route: true
 
@@ -344,7 +336,6 @@ rules:
   - DOMAIN-SUFFIX,duckduckgo.com,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
   - DOMAIN-SUFFIX,raw.githubusercontent.com,HowdyTrojan30day_15-20gb
-  - DOMAIN-SUFFIX,sg-3.test3.net,DIRECT
   - DOMAIN-SUFFIX,ad.com,REJECT
   - DOMAIN,analytics.google.com,REJECT
   - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
