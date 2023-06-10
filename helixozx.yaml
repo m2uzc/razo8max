@@ -276,7 +276,7 @@ proxy-providers:
       url: https://duckduckgo.com
   sall2:
     type: http
-    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3b.yaml"
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3bx.yaml"
     interval: 120
     path: ./sall2.yaml
     health-check:
@@ -286,7 +286,7 @@ proxy-providers:
       url: https://duckduckgo.com
   sall3:
     type: http
-    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3c.yaml"
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3cx.yaml"
     interval: 120
     path: ./sall3.yaml
     health-check:

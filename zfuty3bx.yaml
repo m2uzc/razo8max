@@ -1,0 +1,65 @@
+proxies:
+
+##### fastest server #####
+
+- name: "WhyDoSgGfW"
+  type: trojan
+  server: mm.net.my.sg2.kitu.xyz
+  port: 443
+  password: whyvpn-superisp
+  udp: true
+  sni: um.gz.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "WhyDoSgGprc"
+  server: mm.net.my.sg2.kitu.xyz
+  port: 443
+  type: trojan
+  password: e47d7b87-3002-4969-83b9-8488bd50f057
+  skip-cert-verify: true
+  sni: um.gz.net.my
+  network: grpc
+  grpc-opts:
+   grpc-mode: gun
+   grpc-service-name: xray-trojan-grpc
+  udp: true
+
+- name: "Dyna13jun"
+  server: mm.net.my.dynamic-sg1b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: ad447df4-0610-4396-bcc5-0c82c4f7810d
+  sni: um.gz.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: um.gz.net.my
+
+- name: "Dummy"
+  type: trojan
+  server: m.m
+  port: 443
+  password: 345d36c0-f569-11ed-8b63-1239d0255272
+  udp: true
+  sni: m.m
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+
+
+
+
+
+
+
