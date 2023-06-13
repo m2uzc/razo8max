@@ -80,7 +80,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-neverhd42
+   path: /u/opentunnel.net-loloadd42
    headers:
     Host: mobilelegends.com
 
