@@ -42,7 +42,7 @@ proxies:
   type: trojan
   server: sg2.kitu.xyz
   port: 443
-  password: whyvpn-best14dayssuper
+  password: whyvpn-megaserver
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -80,7 +80,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-loloadd42
+   path: /u/opentunnel.net-clashmetaback
    headers:
     Host: mobilelegends.com
 
