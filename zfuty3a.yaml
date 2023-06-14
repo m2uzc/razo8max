@@ -2,6 +2,18 @@ proxies:
 
 ##### Optional server
 
+- name: "sgindo"
+  type: trojan
+  server: asia1.oceis.net
+  port: 443
+  password: 044c5320-0b0d-11ee-b732-205c6d5f5d78
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "RaceA"
   type: trojan
   server: sg-full.privateip.net
