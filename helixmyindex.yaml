@@ -3,44 +3,92 @@ socks-port: 7891
 redir-port: 7892
 tproxy-port: 7893
 mixed-port: 7894
-allow-lan: false
+allow-lan: true
 mode: rule
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
+##external-controller: 0.0.0.0:9090
+bind-address: "*"
+unified-delay: true
 external-ui: folder
 interface-name: en0
 dns:
   enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
   listen: 0.0.0.0:53
+  fallback-filter:
+    geoip: true
+    geoip-code: MY
+    ipcidr:
+    - 240.0.0.0/4
+  domain:
+    - '+.google.com' 
+    - '+.facebook.com' 
+    - '+.youtube.com'
+    - '+.bigolive.tv' 
+    - '+.tiktok.com'
+    - '+.tiktokv.com' 
+    - '+.tiktocdn.com' 
+    - '+.instagram.com'
+    - '+.github.com' 
+    - '+.telegram.com'
+    - '+.duckduckgo.com'
+    - '+.teamviewer.com'
   default-nameserver:
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
+    - 8.8.8.8
   nameserver:
-    - https://cloudflare-dns.com/dns-query
-    - https://security.cloudflare-dns.com/dns-query
-    - https://family.cloudflare-dns.com/dns-query
-    - tls://1dot1dot1dot1.cloudflare-dns.com:853
-    - tls://security.cloudflare-dns.com:853
-    - tls://family.cloudflare-dns.com:853
-  #need dns encrypt to bypass bigo & tiktok proxy detection
+    - https://dns.google/dns-query
+    - tls://dns.google:853
+   #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://1.1.1.1
-    - tcp://1.1.1.2
-    - tcp://1.0.0.1
-    - tcp://1.0.0.2
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
+    - tcp://8.8.4.4
+    - 'tcp://8.8.4.4#en0'
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  fake-ip-filter:
+  - #### "+.*"
+  - ntp7.*.com
+  - ntp6.*.com
+  - ntp5.*.com
+  - ntp4.*.com
+  - ntp3.*.com
+  - ntp2.*.com
+  - ntp1.*.com
+  - ntp.*.com
+  - time7.*.com
+  - time6.*.com
+  - time5.*.com
+  - time4.*.com
+  - time3.*.com
+  - time2.*.com
+  - time1.*.com
+  - time.*.apple.com
+  - time.*.edu.cn
+  - time.*.gov
+  - time.*.com
+  - "*.home.arpa"
+  - "*.local"
+  - "*.test"
+  - "*.localhost"
+  - "*.invalid"
+  - "*.example"
+  - "*.localdomain"
+  - "*.lan"
+tun:
+  enable: true
+  dns-hijack:
+  - tcp://8.8.8.8:53
+  stack: system
+  auto-redir: true
+  auto-route: true
 
 proxy-groups: 
 - name: All 
   type: select
   url: 'https://duckduckgo.com'
-  interval: 200
+  interval: 62
   proxies:
   - Ping++
   - Fallback
@@ -48,20 +96,21 @@ proxy-groups:
 - name: Manual 
   type: select
   url: 'https://duckduckgo.com'
-  interval: 200
+  interval: 62
   use:
   - malaycffa
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 200
-  tolerance: 2000
+  interval: 62
+  tolerance: 6200
   use:
   - malaycffa
 - name: Fallback
   type: fallback
   url: 'https://duckduckgo.com'
-  interval: 200
+  interval: 62
+  tolerance: 6200
   lazy: false
   use:
   - malaycffa
@@ -70,11 +119,11 @@ proxy-providers:
   malaycffa:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3my.yaml"
-    interval: 123
+    interval: 132
     path: ./malaycffa.yaml
     health-check:
       enable: true
-      interval: 60
+      interval: 62
       lazy: false
       url: https://duckduckgo.com
 
@@ -88,15 +137,6 @@ rules:
   - DOMAIN-KEYWORD,myal,DIRECT
   - DOMAIN-KEYWORD,cloud,DIRECT
   - DOMAIN-KEYWORD,my,DIRECT
-  - IP-CIDR,192.168.0.0/16,REJECT,no-resolve
-  - IP-CIDR,10.0.0.0/8,REJECT,no-resolve
-  - IP-CIDR,172.16.0.0/12,REJECT,no-resolve
-  - IP-CIDR,127.0.0.0/8,REJECT,no-resolve
-  - IP-CIDR,100.64.0.0/10,REJECT,no-resolve
-  - IP-CIDR6,::1/128,REJECT,no-resolve
-  - IP-CIDR6,fc00::/7,REJECT,no-resolve
-  - IP-CIDR6,fe80::/10,REJECT,no-resolve
-  - IP-CIDR6,fd00::/8,REJECT,no-resolve
   - DOMAIN-SUFFIX,ad.com,REJECT
   - DOMAIN,analytics.google.com,REJECT
   - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
@@ -111,7 +151,5 @@ rules:
   - DOMAIN-KEYWORD,adservice,REJECT
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
-  - SRC-IP-CIDR,192.168.1.201/32,REJECT
-  - IP-CIDR,198.18.0.1/16,REJECT,REJECT
-  - GEOIP,IR,REJECT
+  - GEOIP,MY,Ping++
   - MATCH,Ping++
