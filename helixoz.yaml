@@ -8,42 +8,46 @@ mode: rule
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
+##external-controller: 0.0.0.0:9090
+bind-address: "*"
+unified-delay: true
 external-ui: folder
 interface-name: en0
 dns:
   enable: true
   ipv6: false
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:7895
+  listen: 0.0.0.0:53
   fallback-filter:
-    geoip: false
+    geoip: true
+    geoip-code: MY
     ipcidr:
     - 240.0.0.0/4
+  domain:
+    - '+.google.com' 
+    - '+.facebook.com' 
+    - '+.youtube.com'
+    - '+.bigolive.tv' 
+    - '+.tiktok.com'
+    - '+.tiktokv.com' 
+    - '+.tiktocdn.com' 
+    - '+.instagram.com'
+    - '+.github.com' 
+    - '+.telegram.com'
+    - '+.duckduckgo.com'
   default-nameserver:
     - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
   nameserver:
     - https://cloudflare-dns.com/dns-query
-    - https://security.cloudflare-dns.com/dns-query
-    - https://family.cloudflare-dns.com/dns-query
     - tls://1dot1dot1dot1.cloudflare-dns.com:853
-    - tls://security.cloudflare-dns.com:853
-    - tls://family.cloudflare-dns.com:853
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://1.1.1.1
-    - tcp://1.1.1.2
     - tcp://1.0.0.1
-    - tcp://1.0.0.2
-    - 1.1.1.1
-    - 1.1.1.2
-    - 1.0.0.1
-    - 1.0.0.2
+    - 'tcp://1.0.0.1#en0'
   fake-ip-range: 198.18.0.1/16
+  use-hosts: true
   fake-ip-filter:
-  - "+.*"
+  - #### "+.*"
   - ntp7.*.com
   - ntp6.*.com
   - ntp5.*.com
@@ -75,8 +79,8 @@ tun:
   enable: true
   dns-hijack:
   - tcp://1.1.1.1:53
-  - tcp://1.1.1.2:53
   stack: system
+  auto-redir: true
   auto-route: true
 
 proxies:
@@ -361,4 +365,9 @@ rules:
   - DOMAIN-KEYWORD,adservice,REJECT
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,192.168.43.1/8,DIRECT
+  - GEOIP,MY,DIRECT
+  - DST-PORT,80,DIRECT
+  - SRC-PORT,9090,DIRECT
   - MATCH,All
