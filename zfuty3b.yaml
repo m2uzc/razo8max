@@ -2,6 +2,18 @@ proxies:
 
 ##### fastest server #####
 
+- name: "howdyaxgn"
+  type: trojan
+  server: sg3.socifiles.com
+  port: 443
+  password: 85af3030-0b09-11ee-b52f-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "WhyDoSgGfW"
   type: trojan
   server: sg2.kitu.xyz
