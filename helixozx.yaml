@@ -35,6 +35,7 @@ dns:
     - '+.github.com' 
     - '+.telegram.com'
     - '+.duckduckgo.com'
+    - '+.teamviewer.com'
   default-nameserver:
     - 1.1.1.1
   nameserver:
@@ -364,10 +365,13 @@ rules:
   - DOMAIN-KEYWORD,adservice,REJECT
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
+  - DOMAIN-KEYWORD,teamviewer,DIRECT
+  - SRC-PORT,5938,DIRECT
+  - DST-PORT,5938,DIRECT
+  - IP-CIDR,178.77.120.0/24,DIRECT
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,192.168.43.1/8,DIRECT
   - GEOIP,MY,DIRECT
-  - DST-PORT,80,DIRECT
   - SRC-PORT,9090,DIRECT
   - DST-PORT,2222,DIRECT
   - SRC-PORT,2222,DIRECT
