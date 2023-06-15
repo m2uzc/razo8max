@@ -2,12 +2,12 @@ proxies:
 
 ##### Optional server
 
-- name: "StoreSg7"
-  server: sg7vm.cdn-03.live
+- name: "SgMel1"
+  server: mm.net.my.mel1.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: ec8b35cb-7650-46ee-b250-5469fca71635
-  sni: mobilelegends.com
+  uuid: 22ddcee7-cfe5-4971-968c-e3253be9b7c3
+  sni: mm.net.my
   alterId: 0
   cipher: auto
   tls: true
@@ -17,14 +17,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mobilelegends.com
+    Host: mm.net.my
 
-- name: "StoreSg8"
-  server: sg8vm.cdn-03.live
+- name: "SgMel2"
+  server: mm.net.my.mel2.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: 7d044454-6b15-4a30-bf93-19878f7d0f0e
-  sni: mobilelegends.com
+  uuid: 8d62aa2f-c212-493f-ac63-7171bdbbbb63
+  sni: mm.net.my
   alterId: 0
   cipher: auto
   tls: true
@@ -34,7 +34,7 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mobilelegends.com
+    Host: mm.net.my
 
 - name: "sgindo"
   type: trojan

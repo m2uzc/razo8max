@@ -2,11 +2,11 @@ proxies:
 
 ##### Optional server
 
-- name: "StoreSg7"
-  server: sg7vm.cdn-03.live
+- name: "SgMel1"
+  server: sg1-mlb.v2rayserv.com
   port: 443
   type: vmess
-  uuid: ec8b35cb-7650-46ee-b250-5469fca71635
+  uuid: 22ddcee7-cfe5-4971-968c-e3253be9b7c3
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -19,11 +19,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "StoreSg8"
-  server: sg8vm.cdn-03.live
+- name: "SgMel2"
+  server: sg2-mlb.v2rayserv.com
   port: 443
   type: vmess
-  uuid: 7d044454-6b15-4a30-bf93-19878f7d0f0e
+  uuid: 8d62aa2f-c212-493f-ac63-7171bdbbbb63
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
