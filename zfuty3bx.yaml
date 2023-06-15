@@ -39,11 +39,11 @@ proxies:
    grpc-service-name: xray-trojan-grpc
   udp: true
 
-- name: "Dyna13jun"
-  server: mm.net.my.dynamic-sg1b.obfs.xyz
+- name: "Dyna30jun"
+  server: mm.net.my.dynamic-sg2b.obfs.xyz
   port: 443
   type: vmess
-  uuid: ad447df4-0610-4396-bcc5-0c82c4f7810d
+  uuid: 071a1ee5-ee01-455b-b005-4b7a2e1c1048
   sni: mm.net.my
   alterId: 0
   cipher: auto
