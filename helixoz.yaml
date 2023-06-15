@@ -19,11 +19,11 @@ dns:
   enhanced-mode: fake-ip
   listen: 0.0.0.0:53
   fallback-filter:
-    geoip: false
+    geoip: true
     geoip-code: MY
     ipcidr:
     - 240.0.0.0/4
-  ##domain:
+  domain:
     - '+.google.com' 
     - '+.facebook.com' 
     - '+.youtube.com'
@@ -41,6 +41,7 @@ dns:
   nameserver:
     - https://cloudflare-dns.com/dns-query
     - tls://1dot1dot1dot1.cloudflare-dns.com:853
+    - 1.1.1.1
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
     - tcp://1.0.0.1
@@ -77,8 +78,9 @@ dns:
   - "*.localdomain"
   - "*.lan"
 tun:
-  enable: false
+  enable: true
   dns-hijack:
+  - 1.1.1.1:53
   - tcp://1.1.1.1:53
   stack: system
   auto-redir: true
@@ -351,7 +353,6 @@ rules:
   - DOMAIN-SUFFIX,duckduckgo.com,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
   - DOMAIN-SUFFIX,raw.githubusercontent.com,HowdyTrojan30day_15-20gb
-  - DOMAIN-SUFFIX,sg-3.test3.net,DIRECT
   - DOMAIN-SUFFIX,ad.com,REJECT
   - DOMAIN,analytics.google.com,REJECT
   - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
