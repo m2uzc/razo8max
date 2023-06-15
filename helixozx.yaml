@@ -19,11 +19,11 @@ dns:
   enhanced-mode: fake-ip
   listen: 0.0.0.0:53
   fallback-filter:
-    geoip: true
+    geoip: false
     geoip-code: MY
     ipcidr:
     - 240.0.0.0/4
-  domain:
+  ##domain:
     - '+.google.com' 
     - '+.facebook.com' 
     - '+.youtube.com'
@@ -77,7 +77,7 @@ dns:
   - "*.localdomain"
   - "*.lan"
 tun:
-  enable: true
+  enable: false
   dns-hijack:
   - tcp://1.1.1.1:53
   stack: system
