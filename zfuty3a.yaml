@@ -2,6 +2,40 @@ proxies:
 
 ##### Optional server
 
+- name: "StoreSg7"
+  server: sg7vm.xservs.xyz
+  port: 443
+  type: vmess
+  uuid: ec8b35cb-7650-46ee-b250-5469fca71635
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "StoreSg8"
+  server: sg8vm.xservs.xyz
+  port: 443
+  type: vmess
+  uuid: 7d044454-6b15-4a30-bf93-19878f7d0f0e
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "sgindo"
   type: trojan
   server: asia1.oceis.net
