@@ -2,7 +2,7 @@ proxies:
 
 ##### fastest server #####
 
-- name: "howdyaxgn"
+- name: "howdyaxgnvgprc"
   server: sg3.socifiles.com
   port: 443
   type: vless
