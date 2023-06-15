@@ -3,7 +3,7 @@ proxies:
 ##### Optional server
 
 - name: "StoreSg7"
-  server: mm.net.my.st8.madihadi.eu.org
+  server: sg7vm.cdn-03.live
   port: 443
   type: vmess
   uuid: ec8b35cb-7650-46ee-b250-5469fca71635
@@ -20,7 +20,7 @@ proxies:
     Host: mobilelegends.com
 
 - name: "StoreSg8"
-  server: mm.net.my.st8.madihadi.eu.org
+  server: sg8vm.cdn-03.live
   port: 443
   type: vmess
   uuid: 7d044454-6b15-4a30-bf93-19878f7d0f0e
