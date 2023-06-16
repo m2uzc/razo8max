@@ -2,6 +2,19 @@ proxies:
 
 ##### Optional server
 
+- name: "Dummy"
+  type: trojan
+  server: m.m
+  port: 443
+  password: 345d36c0-f569-11ed-8b63-1239d0255272
+  udp: true
+  sni: m.m
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+
 - name: "SgMel1"
   server: sg1-mlb.v2rayserv.com
   port: 443
@@ -36,17 +49,22 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "sgindo"
-  type: trojan
-  server: asia1.oceis.net
+- name: "SgMel3"
+  server: sg3-mlb.v2rayserv.com
   port: 443
-  password: 044c5320-0b0d-11ee-b732-205c6d5f5d78
-  udp: true
+  type: vmess
+  uuid: 46452775-e7c8-4647-a039-88b5c05b896a
   sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
 
 - name: "RaceA"
   type: trojan
@@ -72,11 +90,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "Howdytro15jun"
+- name: "Howdytro1july"
   type: trojan
-  server: trojan1.udpgw.com
+  server: trojan2.udpgw.com
   port: 443
-  password: aabf3360-01da-11ee-bbf1-1239d0255272
+  password: 203e1a60-0c11-11ee-8eb7-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:

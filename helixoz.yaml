@@ -24,6 +24,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   domain:
+    - '+.*'
     - '+.google.com' 
     - '+.facebook.com' 
     - '+.youtube.com'
@@ -89,9 +90,9 @@ tun:
 proxies:
 - name: "HowdyTrojan30day_15-20gb"
   type: trojan
-  server: ulist.com.my.ca-trojan.bonds.id
+  server: mm.net.my.ca-trojan.bonds.id
   port: 443
-  password: 65f0adc0-f78a-11ed-a6b8-1239d0255272
+  password: 45cd7000-0c15-11ee-a704-1239d0255272
   udp: true
   sni: mm.net.my
   alpn:
@@ -111,6 +112,7 @@ proxy-groups:
   - FallbackX
   - Manual
   - Manualx
+  - Manualx2
   - Manual1
   - Manual2
   - superfastlane
@@ -126,6 +128,14 @@ proxy-groups:
   - sall2
   - sall3
 - name: Manualx
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 500
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Manualx2
   type: select
   url: 'https://duckduckgo.com'
   interval: 500
@@ -160,6 +170,7 @@ proxy-groups:
   proxies:
   - FallbackX
   - FallbackY
+  - Manualx2
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
@@ -347,6 +358,10 @@ rules:
   - DOMAIN-KEYWORD,google,supercharged
   - DOMAIN-KEYWORD,gstatic,supercharged
   - DOMAIN-KEYWORD,youtube,supercharged
+  - DOMAIN-KEYWORD,bing,supercharged
+  - DOMAIN-KEYWORD,yahoo,supercharged
+  - DOMAIN-KEYWORD,android,supercharged
+  - DOMAIN-KEYWORD,gvt,supercharged
   - DOMAIN-KEYWORD,ytimg,supercharged
   - DOMAIN-KEYWORD,instagram,superfastlane
   - DOMAIN-KEYWORD,image,supercharged
@@ -367,6 +382,7 @@ rules:
   - DOMAIN-KEYWORD,adservice,REJECT
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
+  - DOMAIN-KEYWORD,ads,REJECT
   - DOMAIN-KEYWORD,teamviewer,DIRECT
   - SRC-PORT,5938,DIRECT
   - DST-PORT,5938,DIRECT
