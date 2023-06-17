@@ -90,11 +90,11 @@ tun:
 proxies:
 - name: "HowdyTrojan30day_15-20gb"
   type: trojan
-  server: mm.net.my.ca-trojan.bonds.id
+  server: mobilelegends.com.ca-trojan.bonds.id
   port: 443
   password: 45cd7000-0c15-11ee-a704-1239d0255272
   udp: true
-  sni: mm.net.my
+  sni: mobilelegends.com
   alpn:
      - h2
      - http/1.1
