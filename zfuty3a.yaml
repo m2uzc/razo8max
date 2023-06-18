@@ -90,6 +90,23 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "HowdyVr1july"
+  server: v2ray2.udpgw.com
+  port: 443
+  type: vmess
+  uuid: f677fa16-164f-42f9-ad9b-7e08c53e1d3e
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mobilelegends.com
+
 - name: "Howdytro1july"
   type: trojan
   server: trojan2.udpgw.com

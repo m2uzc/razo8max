@@ -90,6 +90,23 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "HowdyVr1july"
+  server: mm.net.my.vr2hw.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: f677fa16-164f-42f9-ad9b-7e08c53e1d3e
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mm.net.my
+
 - name: "Howdytro1july"
   type: trojan
   server: mm.net.my.tr2hw.madihadi.eu.org
