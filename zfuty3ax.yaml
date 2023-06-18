@@ -119,6 +119,23 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "SgCHP"
+  server: mm.net.my.chp.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 617b3e2e-8997-46a1-abb1-e0d7acd0bd5b
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess/
+   headers:
+    Host: mm.net.my
+
 - name: "WhyDoSgTrGfw"
   type: trojan
   server: mm.net.my.sg2.kitu.xyz

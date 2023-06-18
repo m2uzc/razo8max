@@ -119,6 +119,23 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "SgCHP"
+  server: sg1.kitu.xyz
+  port: 443
+  type: vmess
+  uuid: 617b3e2e-8997-46a1-abb1-e0d7acd0bd5b
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess/
+   headers:
+    Host: mobilelegends.com
+
 - name: "WhyDoSgTrGfw"
   type: trojan
   server: sg2.kitu.xyz
