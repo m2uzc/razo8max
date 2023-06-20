@@ -64,7 +64,7 @@ proxies:
   server: mm.net.my.chp1.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: 22ddcee7-cfe5-4971-968c-e3253be9b7c3
+  uuid: 921dadc4-4191-4dd9-952f-6e19e787925b
   sni: mm.net.my
   alterId: 0
   cipher: auto

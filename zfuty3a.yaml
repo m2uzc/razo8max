@@ -61,10 +61,10 @@ proxies:
     Host: mobilelegends.com
 
 - name: "SgCHP1"
-  server: sgmws.mainssh.xyzyyyy
+  server: sgmws.mainssh.xyz
   port: 443
   type: vmess
-  uuid: 22ddcee7-cfe5-4971-968c-e3253be9b7c3
+  uuid: 921dadc4-4191-4dd9-952f-6e19e787925b
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
