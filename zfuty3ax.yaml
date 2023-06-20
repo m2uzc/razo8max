@@ -14,6 +14,86 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "HowdyVr1july"
+  server: mm.net.my.vr2hw.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: f677fa16-164f-42f9-ad9b-7e08c53e1d3e
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mm.net.my
+
+- name: "Howdytro1july"
+  type: trojan
+  server: mm.net.my.tr2hw.madihadi.eu.org
+  port: 443
+  password: 203e1a60-0c11-11ee-8eb7-1239d0255272
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "SgCHP1"
+  server: mm.net.my.chp1.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 22ddcee7-cfe5-4971-968c-e3253be9b7c3
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "SgCHP2"
+  server: mm.net.my.chp2.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: c01f37fe-6b53-4676-8346-bec72923235f
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "SgCHP3"
+  server: mm.net.my.chp3.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 13d67d9f-8b38-4d0b-af3f-5bc59391f835
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
 
 - name: "SgMel1"
   server: mm.net.my.mel1.madihadi.eu.org
@@ -83,35 +163,6 @@ proxies:
   server: mm.net.my.sg2-full.privateip.net
   port: 443
   password: ff8eac9d-e9c4-4b0f-b384-c2f52feacae9
-  udp: true
-  sni: mm.net.my
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "HowdyVr1july"
-  server: mm.net.my.vr2hw.madihadi.eu.org
-  port: 443
-  type: vmess
-  uuid: f677fa16-164f-42f9-ad9b-7e08c53e1d3e
-  sni: mm.net.my
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: mm.net.my
-
-- name: "Howdytro1july"
-  type: trojan
-  server: mm.net.my.tr2hw.madihadi.eu.org
-  port: 443
-  password: 203e1a60-0c11-11ee-8eb7-1239d0255272
   udp: true
   sni: mm.net.my
   alpn:
