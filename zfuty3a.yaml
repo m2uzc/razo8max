@@ -43,6 +43,23 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "SgIndo"
+  server: asia1.oceis.net
+  port: 443
+  type: vmess
+  uuid: 44697c90-0f99-11ee-b937-205c6d5f5d78
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmws
+   headers:
+    Host: mobilelegends.com
+
 - name: "SgCHP1"
   server: sgmws.mainssh.xyzyyyy
   port: 443
@@ -150,7 +167,7 @@ proxies:
   type: trojan
   server: sg-full.privateip.net
   port: 443
-  password: 3f17ab1c-7c19-4d58-b462-416fba7d02e0
+  password: f7f573de-150b-445e-b61a-d5c2d8887ec5
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -162,7 +179,7 @@ proxies:
   type: trojan
   server: sg2-full.privateip.net
   port: 443
-  password: ff8eac9d-e9c4-4b0f-b384-c2f52feacae9
+  password: 9824e438-7120-4ec3-b72e-aa8274836b05
   udp: true
   sni: mobilelegends.com
   alpn:
