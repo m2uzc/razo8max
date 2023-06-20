@@ -108,6 +108,7 @@ proxy-groups:
   proxies:
   - FallbackMax
   - RobinZ
+  - RobinNovaUnstable
   - Fallback
   - FallbackX
   - Manual
@@ -171,6 +172,18 @@ proxy-groups:
   - FallbackX
   - FallbackY
   - Manualx2
+- name: RobinNovaUnstable
+  type: load-balance
+  url: 'https://duckduckgo.com'
+  interval: 32
+  strategy: round-robin
+  disable-udp: false
+  tolerance: 320
+  lazy: false
+  use:
+  - sall
+  - sall2
+  - sall3
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
