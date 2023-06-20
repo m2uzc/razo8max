@@ -111,7 +111,7 @@ proxy-groups:
   - RobinNovaUnstable
   - Fallback
   - FallbackX
-  - ManualRobinNovaUnstable
+  - Manual
   - Manualx
   - Manualx2
   - Manual1
