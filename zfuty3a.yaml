@@ -43,57 +43,6 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "SgIndo"
-  server: asia1.oceis.net
-  port: 443
-  type: vmess
-  uuid: 44697c90-0f99-11ee-b937-205c6d5f5d78
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmws
-   headers:
-    Host: mobilelegends.com
-
-- name: "SgAu1"
-  server: au1.v2rayserv.comyy
-  port: 443
-  type: vmess
-  uuid: de8cb5bf-8902-40e5-8f67-939562e40798
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
-
-- name: "SgAu2"
-  server: au2.v2rayserv.com
-  port: 443
-  type: vmess
-  uuid: 070bb94a-f238-4c16-802f-96c85ab5911a
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
-
 - name: "SgAu3"
   server: au3.v2rayserv.com
   port: 443
@@ -111,45 +60,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "In1"
-  server: in1.v2rayserv.com
-  port: 443
-  type: vmess
-  uuid: 3d9bb9a3-fdb7-4751-b9e0-ecd891d8bc11
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
-
-- name: "In2"
+- name: "Indi2"
   server: in2.v2rayserv.com
   port: 443
   type: vmess
   uuid: 5c1eda59-7277-4136-8e97-44ff2e03c111
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
-
-- name: "In3"
-  server: in3.v2rayserv.com
-  port: 443
-  type: vmess
-  uuid: f9979fb5-80e1-44fd-8ebf-f1a49ca788c8
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
