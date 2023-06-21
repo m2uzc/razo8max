@@ -111,7 +111,7 @@ proxies:
    headers:
     Host: mm.net.my
 
-- name: "in1"
+- name: "In1"
   server: mm.net.my.in1.madihadi.eu.org
   port: 443
   type: vmess
@@ -128,7 +128,7 @@ proxies:
    headers:
     Host: mm.net.my
 
-- name: "in2"
+- name: "In2"
   server: mm.net.my.in2.madihadi.eu.org
   port: 443
   type: vmess
@@ -145,7 +145,7 @@ proxies:
    headers:
     Host: mm.net.my
 
-- name: "in3"
+- name: "In3"
   server: mm.net.my.in3.madihadi.eu.org
   port: 443
   type: vmess
@@ -161,7 +161,6 @@ proxies:
    path: /vmess
    headers:
     Host: mm.net.my
-
 
 - name: "SgCHP1"
   server: mm.net.my.chp1.madihadi.eu.org
@@ -213,7 +212,6 @@ proxies:
    path: /vmess
    headers:
     Host: mm.net.my
-
 
 - name: "SgMel1"
   server: mm.net.my.mel1.madihadi.eu.org
@@ -319,36 +317,6 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "OpenSgCHP1"
-  server: mm.net.my.sgx-3.openv2ray.comyy
-  port: 443
-  type: vless
-  uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mm.net.my
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: /u/opentunnel.net-garmonoa
-  udp: true
-
-- name: "OpenSgCHP2"
-  server: mm.net.my.sgx-3.openv2ray.com
-  port: 443
-  type: vless
-  uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mm.net.my
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: /u/opentunnel.net-garmonoa
-  udp: true
-
 - name: "OpenSg1"
   server: mm.net.my.sgv-5.openv2ray.com
   port: 443
@@ -382,18 +350,6 @@ proxies:
    path: /u/opentunnel.net-randity3
    headers:
     Host: mm.net.my
-
-- name: "indo"
-  type: trojan
-  server: mm.net.my.iindo.madihadi.eu.org
-  port: 443
-  password: 703223cb-9311-4c17-8ca9-47e79091caac
-  udp: true
-  sni: mm.net.my
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
 
  name: "Usa1"
   server: mm.net.my.us2.oceis.net
