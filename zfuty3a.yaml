@@ -64,7 +64,7 @@ proxies:
   server: au1.v2rayserv.comyy
   port: 443
   type: vmess
-  uuid: 921dadc4-4191-4dd9-952f-6e19e787925b
+  uuid: de8cb5bf-8902-40e5-8f67-939562e40798
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -78,10 +78,10 @@ proxies:
     Host: mobilelegends.com
 
 - name: "SgAu2"
-  server: au2.v2rayserv.comyy
+  server: au2.v2rayserv.com
   port: 443
   type: vmess
-  uuid: c01f37fe-6b53-4676-8346-bec72923235f
+  uuid: 070bb94a-f238-4c16-802f-96c85ab5911a
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -99,6 +99,57 @@ proxies:
   port: 443
   type: vmess
   uuid: 44619a65-92f8-4b65-ba47-4e7e67576f0e
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "in1"
+  server: in1.v2rayserv.com
+  port: 443
+  type: vmess
+  uuid: 3d9bb9a3-fdb7-4751-b9e0-ecd891d8bc11
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "in2"
+  server: in2.v2rayserv.com
+  port: 443
+  type: vmess
+  uuid: 5c1eda59-7277-4136-8e97-44ff2e03c111
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "in3"
+  server: in3.v2rayserv.com
+  port: 443
+  type: vmess
+  uuid: f9979fb5-80e1-44fd-8ebf-f1a49ca788c8
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -331,18 +382,35 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "indo"
-  type: trojan
-  server: id-full.privateip.net
+ name: "Usa1"
+  server: us2.oceis.net
   port: 443
-  password: 703223cb-9311-4c17-8ca9-47e79091caac
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
+  type: vless
+  uuid: 92fddbf0-1059-11ee-b236-205c6d5f5d78
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
 
+- name: "Usa2"
+  server: us5.socifiles.com
+  port: 443
+  type: vless
+  uuid: 20553810-105a-11ee-bd93-1239d0255272
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
 
 
 

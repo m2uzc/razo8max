@@ -111,6 +111,58 @@ proxies:
    headers:
     Host: mm.net.my
 
+- name: "in1"
+  server: mm.net.my.in1.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 3d9bb9a3-fdb7-4751-b9e0-ecd891d8bc11
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "in2"
+  server: mm.net.my.in2.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 5c1eda59-7277-4136-8e97-44ff2e03c111
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "in3"
+  server: mm.net.my.in3.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: f9979fb5-80e1-44fd-8ebf-f1a49ca788c8
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+
 - name: "SgCHP1"
   server: mm.net.my.chp1.madihadi.eu.org
   port: 443
@@ -342,6 +394,36 @@ proxies:
      - h2
      - http/1.1
   skip-cert-verify: true
+
+ name: "Usa1"
+  server: mm.net.my.us2.oceis.net
+  port: 443
+  type: vless
+  uuid: 92fddbf0-1059-11ee-b236-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+- name: "Usa2"
+  server: mm.net.my.us5.socifiles.com
+  port: 443
+  type: vless
+  uuid: 20553810-105a-11ee-bd93-1239d0255272
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
 
 
 
