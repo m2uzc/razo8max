@@ -83,6 +83,21 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "indoSGvgprc"
+  server: mm.net.my.asia1.oceis.net
+  port: 443
+  type: vless
+  uuid: ffd793b0-1028-11ee-b236-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mm.net.my
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
 
 
 
