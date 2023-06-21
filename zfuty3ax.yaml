@@ -60,6 +60,57 @@ proxies:
    headers:
     Host: mm.net.my
 
+- name: "SgAu1"
+  server: mm.net.my.au1.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 921dadc4-4191-4dd9-952f-6e19e787925b
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "SgAu2"
+  server: mm.net.my.au2.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: c01f37fe-6b53-4676-8346-bec72923235f
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "SgAu3"
+  server: mm.net.my.au3.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 44619a65-92f8-4b65-ba47-4e7e67576f0e
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
 - name: "SgCHP1"
   server: mm.net.my.chp1.madihadi.eu.org
   port: 443
@@ -165,7 +216,7 @@ proxies:
 
 - name: "RaceA"
   type: trojan
-  server: mm.net.my.sg-full.privateip.net
+  server: sg-full.privateip.net
   port: 443
   password: f7f573de-150b-445e-b61a-d5c2d8887ec5
   udp: true
@@ -215,6 +266,36 @@ proxies:
      - h2
      - http/1.1
   skip-cert-verify: true
+
+- name: "OpenSgCHP1"
+  server: mm.net.my.sgx-3.openv2ray.comyy
+  port: 443
+  type: vless
+  uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mm.net.my
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /u/opentunnel.net-garmonoa
+  udp: true
+
+- name: "OpenSgCHP2"
+  server: mm.net.my.sgx-3.openv2ray.com
+  port: 443
+  type: vless
+  uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mm.net.my
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /u/opentunnel.net-garmonoa
+  udp: true
 
 - name: "OpenSg1"
   server: mm.net.my.sgv-5.openv2ray.com
