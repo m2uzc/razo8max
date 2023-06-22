@@ -376,7 +376,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mobilelegends.com
+  servername: mm.net.my
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -391,9 +391,27 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mobilelegends.com
+  servername: mm.net.my
   network: grpc
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: vlgrpc
   udp: true
+
+- name: "USM"
+  server: mm.net.my.usm.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 80c8d8b9-19f7-450b-a7c4-54df17e5f3d7
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
