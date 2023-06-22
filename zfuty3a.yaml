@@ -331,7 +331,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-pinjuta41y
+   path: /u/opentunnel.net-grenda75
    headers:
     Host: mobilelegends.com
 
@@ -348,7 +348,24 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-randity3
+   path: /u/opentunnel.net-reventy77
+   headers:
+    Host: mobilelegends.com
+
+- name: "OpenAu"
+  server: auv-1.openv2ray.com
+  port: 443
+  type: vmess
+  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /u/opentunnel.net-bobpou32
    headers:
     Host: mobilelegends.com
 
