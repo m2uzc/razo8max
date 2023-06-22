@@ -14,6 +14,66 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "Aurc1"
+  server: au-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: e4940936-8968-44b6-8057-014fdea8773e
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "Aurc2"
+  server: au2-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: aa9bb095-1871-413e-b35d-0cde1d8cadb3
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "Usrc1"
+  server: us-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 834eefec-b880-4419-b258-5e0bcec05b37
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "Usrc2"
+  server: us2-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 9c61cbf5-a49e-4c98-aa6a-9d6ee23d7e8a
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
 - name: "HowdyVr1july"
   server: v2ray2.udpgw.com
   port: 443
