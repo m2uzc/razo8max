@@ -54,6 +54,22 @@ proxies:
    grpc-service-name: xray-trojan-grpc
   udp: true
 
+- name: "indoSGvgprc"
+  server: asia1.oceis.net
+  port: 443
+  type: vless
+  uuid: 1d0bae70-11bd-11ee-b432-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+
 - name: "Dyna30jun"
   server: dynamic-sg2b.obfs.xyz
   port: 443
@@ -82,22 +98,6 @@ proxies:
      - h2
      - http/1.1
   skip-cert-verify: true
-
-
-- name: "indoSGvgprc"
-  server: asia1.oceis.net
-  port: 443
-  type: vless
-  uuid: 77eb1270-10ff-11ee-b934-205c6d5f5d78
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
 
 
 
