@@ -391,7 +391,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-grenda75
+   path: /u/opentunnel.net-gamdisy
    headers:
     Host: mobilelegends.com
 
@@ -408,7 +408,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-reventy77
+   path: /u/opentunnel.net-stallop
    headers:
     Host: mobilelegends.com
 
