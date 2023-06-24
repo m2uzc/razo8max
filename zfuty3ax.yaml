@@ -429,10 +429,10 @@ proxies:
     Host: mm.net.my
 
 - name: "Usa1"
-  server: mm.net.my.us2.oceis.net
+  server: us2.oceis.net
   port: 443
   type: vless
-  uuid: 6771c7b0-11bd-11ee-b436-205c6d5f5d78
+  uuid: 0c01deb0-128d-11ee-b131-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -444,10 +444,25 @@ proxies:
   udp: true
 
 - name: "Usa2"
-  server: mm.net.my.us5.socifiles.com
+  server: us4.socifiles.com
   port: 443
   type: vless
-  uuid: 20553810-105a-11ee-bd93-1239d0255272
+  uuid: 5815f250-128c-11ee-9cd1-1239d0255272
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mm.net.my
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+- name: "Usa3"
+  server: us5.socifiles.com
+  port: 443
+  type: vless
+  uuid: 8c901140-128c-11ee-8734-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
