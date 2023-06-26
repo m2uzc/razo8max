@@ -69,6 +69,18 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
+- name: "Howdytro11july"
+  type: trojan
+  server: mm.net.my.tr3hw.madihadi.eu.org
+  port: 443
+  password: 10b225b0-1421-11ee-b0a8-1239d0255272
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "Dyna30jun"
   server: mm.net.my.dynamic-sg2b.obfs.xyz
   port: 443
