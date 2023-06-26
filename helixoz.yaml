@@ -82,7 +82,7 @@ tun:
   dns-hijack:
   - 1.1.1.1:53
   - tcp://1.1.1.1:53
-  stack: gvisor
+  stack: system
   auto-redir: true
   auto-route: true
   auto-detect-interface: true
@@ -368,6 +368,11 @@ rules:
   - DOMAIN-KEYWORD,akamai.net,superfastlane
   - DOMAIN-KEYWORD,akamaiedge.net,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
+  - DOMAIN-KEYWORD,shazam,superfastlane
+  - DOMAIN-KEYWORD,scdnco,superfastlane
+  - DOMAIN-KEYWORD,scdn,superfastlane
+  - DOMAIN-KEYWORD,Spotify,superfastlane
+  - DOMAIN-KEYWORD,spotifycdn,superfastlane
   - DOMAIN-KEYWORD,google,supercharged
   - DOMAIN-KEYWORD,gstatic,supercharged
   - DOMAIN-KEYWORD,youtube,supercharged
