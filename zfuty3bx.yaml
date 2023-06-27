@@ -58,7 +58,7 @@ proxies:
   server: mm.net.my.asia1.oceis.net
   port: 443
   type: vless
-  uuid: 1d0bae70-11bd-11ee-b432-205c6d5f5d78
+  uuid: 0f9cd2c0-14fd-11ee-b234-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true

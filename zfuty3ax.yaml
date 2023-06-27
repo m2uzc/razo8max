@@ -474,10 +474,10 @@ proxies:
     Host: mm.net.my
 
 - name: "Usa1"
-  server: us2.oceis.net
+  server: mm.net.my.us2.oceis.net
   port: 443
   type: vless
-  uuid: 0c01deb0-128d-11ee-b131-205c6d5f5d78
+  uuid: c7cf4c10-14fc-11ee-b139-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -489,10 +489,10 @@ proxies:
   udp: true
 
 - name: "Usa2"
-  server: us4.socifiles.com
+  server: mm.net.my.us4.socifiles.com
   port: 443
   type: vless
-  uuid: 5815f250-128c-11ee-9cd1-1239d0255272
+  uuid: a4537780-14fb-11ee-94a7-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -504,10 +504,10 @@ proxies:
   udp: true
 
 - name: "Usa3"
-  server: us5.socifiles.com
+  server: mm.net.my.us5.socifiles.com
   port: 443
   type: vless
-  uuid: 8c901140-128c-11ee-8734-1239d0255272
+  uuid: e4b1d100-14fb-11ee-aedd-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
