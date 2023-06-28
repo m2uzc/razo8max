@@ -242,11 +242,19 @@ proxy-groups:
   interval: 16
   lazy: false
   proxies:
-  - Manual1
-  - Manual2
+  - chargedx
   - superfastlane
   - Fallbackb
   - Fallbackc
+- name: chargedx
+  type: url-test
+  url: 'https://duckduckgo.com'
+  interval: 16
+  tolerance: 320
+  lazy: false
+  proxies:
+  - Manual1
+  - Manual2
 - name: FallbackMax
   type: fallback
   url: 'https://duckduckgo.com'

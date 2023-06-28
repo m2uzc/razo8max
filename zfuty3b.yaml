@@ -83,6 +83,23 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "chsg3"
+  server: sg3.createxray.me
+  port: 443
+  type: vmess
+  uuid: 71b15559-b4e2-442f-b570-d692e6cc947b
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "Dyna30jun"
   server: dynamic-sg2b.obfs.xyz
   port: 443

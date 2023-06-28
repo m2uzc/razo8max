@@ -82,7 +82,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mobilelegends.com
+  servername: mm.net.my
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -97,7 +97,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mobilelegends.com
+  servername: mm.net.my
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -112,12 +112,80 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mobilelegends.com
+  servername: mm.net.my
   network: grpc
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: grpc
   udp: true
+
+- name: "chau"
+  server: mm.net.my.chau.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 1aa93b85-d6e9-4b12-9e34-180b54fb9149
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "chnl"
+  server: mm.net.my.chnl.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 6cd7e9fd-11c7-4ec0-9504-0b10def2212d
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "chind"
+  server: mm.net.my.chind.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 5c5e8e61-446c-44bf-a4cf-6845001c2928
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "chus"
+  server: mm.net.my.chus.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: b5ba2196-9fdc-4a46-940b-e26da4dffc87
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
 
 - name: "HowdyVr1july"
   server: mm.net.my.vr2hw.madihadi.eu.org

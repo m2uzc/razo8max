@@ -81,6 +81,23 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "chsg3"
+  server: mm.net.my.chsg3.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 71b15559-b4e2-442f-b570-d692e6cc947b
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
 - name: "Dyna30jun"
   server: mm.net.my.dynamic-sg2b.obfs.xyz
   port: 443
