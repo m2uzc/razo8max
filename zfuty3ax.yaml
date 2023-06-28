@@ -18,7 +18,7 @@ proxies:
   server: mm.net.my.au-full.privateip.net
   port: 2003
   type: vless
-  uuid: e4940936-8968-44b6-8057-014fdea8773e
+  uuid: ed712cdf-ab40-40ac-8baf-981406dbdeaf
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -48,7 +48,7 @@ proxies:
   server: mm.net.my.us-full.privateip.net
   port: 2003
   type: vless
-  uuid: 834eefec-b880-4419-b258-5e0bcec05b37
+  uuid: 1ebbd129-2a0f-48ef-9083-3cf4e0d9e3f3
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -78,7 +78,7 @@ proxies:
   server: mm.net.my.nl-full.privateip.net
   port: 2003
   type: vless
-  uuid: a1a27691-7688-4aa7-8dc0-8ca565a5bafd
+  uuid: b57bf738-e5e8-4ff2-9fcb-03664badb19b
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -460,23 +460,6 @@ proxies:
      - h2
      - http/1.1
   skip-cert-verify: true
-
-- name: "SgCHP"
-  server: mm.net.my.chp.madihadi.eu.org
-  port: 443
-  type: vmess
-  uuid: 617b3e2e-8997-46a1-abb1-e0d7acd0bd5b
-  sni: mm.net.my
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess/
-   headers:
-    Host: mm.net.my
 
 - name: "WhyDoSgTrGfw"
   type: trojan
