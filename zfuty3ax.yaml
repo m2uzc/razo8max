@@ -187,6 +187,23 @@ proxies:
    headers:
     Host: mm.net.my
 
+- name: "chca"
+  server: mm.net.my.chca.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 091d0363-cc84-4199-9928-7c0ef80f348d
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
 - name: "HowdyVr1july"
   server: mm.net.my.vr2hw.madihadi.eu.org
   port: 443

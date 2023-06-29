@@ -187,6 +187,23 @@ proxies:
    headers:
     Host: mobilelegends.com
 
+- name: "chca"
+  server: ca.createxray.me
+  port: 443
+  type: vmess
+  uuid: 091d0363-cc84-4199-9928-7c0ef80f348d
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "HowdyVr1july"
   server: v2ray2.udpgw.com
   port: 443
