@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: true
 
 - name: "CfSg"
-  server: mm.net.my.cfsg.madihadi.eu.org
+  server: vless.kurosogood.pw
   port: 443
   type: vless
   uuid: 9fba6e37-a1c7-47c5-b6ba-524773eb882d
