@@ -135,6 +135,23 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "chge"
+  server: mm.net.my.chde.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 37930e2d-ec23-4fee-9d5d-9c578b1acd7d
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
 - name: "chau"
   server: mm.net.my.chau.madihadi.eu.org
   port: 443

@@ -135,6 +135,23 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "chge"
+  server: ge.createxray.me
+  port: 443
+  type: vmess
+  uuid: 37930e2d-ec23-4fee-9d5d-9c578b1acd7d
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "chau"
   server: au.createxray.me
   port: 443
