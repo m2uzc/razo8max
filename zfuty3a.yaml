@@ -14,6 +14,22 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "CfSg"
+  server: vless.kurosogood.pw
+  port: 443
+  type: vless
+  uuid: 9fba6e37-a1c7-47c5-b6ba-524773eb882d
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mobilelegends.com
+  udp: true
+
 - name: "Aurc1"
   server: au-full.privateip.net
   port: 2003
