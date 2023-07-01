@@ -14,22 +14,6 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "CfSg"
-  server: vless.kurosogood.pw
-  port: 443
-  type: vless
-  uuid: 9fba6e37-a1c7-47c5-b6ba-524773eb882d
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: mobilelegends.com
-  udp: true
-
 - name: "Aurc1"
   server: au-full.privateip.net
   port: 2003
@@ -488,6 +472,74 @@ proxies:
    headers:
     Host: mobilelegends.com
 
+- name: "MGE"
+  server: gemws.mainssh.xyz
+  port: 443
+  type: vmess
+  uuid: c6e10eea-c67f-48d0-9378-1a6632dc436e
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "MCA"
+  server: camws.mainssh.xyz
+  port: 443
+  type: vmess
+  uuid: 36628a44-a6d7-4721-a046-153e08979e93
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "MUS"
+  server: usmws.mainssh.xyz
+  port: 443
+  type: vmess
+  uuid: 7e976285-7512-4c6c-bc87-a4114f67e3c3
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "MFR"
+  server: frmws.mainssh.xyz
+  port: 443
+  type: vmess
+  uuid: f9f78b95-ccda-4116-bcdc-93df50df7db5
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "RaceA"
   type: trojan
   server: sg-full.privateip.net
@@ -619,20 +671,3 @@ proxies:
     grpc-mode: gun
     grpc-service-name: vlgrpc
   udp: true
-
-- name: "USM"
-  server: usmws.mainssh.xyz
-  port: 443
-  type: vmess
-  uuid: 80c8d8b9-19f7-450b-a7c4-54df17e5f3d7
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
