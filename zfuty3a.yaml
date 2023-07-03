@@ -170,6 +170,40 @@ proxies:
    headers:
     Host: mobilelegends.com
 
+- name: "chindo"
+  server: id.createxray.me
+  port: 443
+  type: vmess
+  uuid: 9d02d9bb-f0fe-487a-a448-73429d20b48f
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "chindo2"
+  server: id2.createxray.me
+  port: 443
+  type: vmess
+  uuid: 2db114b8-8e38-4c0a-a651-3c7fdf5a3750
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "chind"
   server: in.createxray.me
   port: 443

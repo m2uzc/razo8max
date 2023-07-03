@@ -170,6 +170,40 @@ proxies:
    headers:
     Host: mm.net.my
 
+- name: "chindo"
+  server: mm.net.my.chindo.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 9d02d9bb-f0fe-487a-a448-73429d20b48f
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "chindo2"
+  server: mm.net.my.chindo2.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 2db114b8-8e38-4c0a-a651-3c7fdf5a3750
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
 - name: "chind"
   server: mm.net.my.chind.madihadi.eu.org
   port: 443
