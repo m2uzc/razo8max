@@ -140,7 +140,7 @@ proxies:
   server: au.createxray.me
   port: 443
   type: vmess
-  uuid: 1aa93b85-d6e9-4b12-9e34-180b54fb9149
+  uuid: 525213d4-4fd9-4b21-8598-d44da156fa6f
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -242,7 +242,7 @@ proxies:
   server: ca.createxray.me
   port: 443
   type: vmess
-  uuid: 091d0363-cc84-4199-9928-7c0ef80f348d
+  uuid: e6d62c65-66fa-4676-9608-464c495c2340
   sni: mobilelegends.com
   alterId: 0
   cipher: auto

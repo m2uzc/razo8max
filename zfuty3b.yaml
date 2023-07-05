@@ -76,17 +76,51 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "Howdytro11july"
+- name: "Howdytro19july"
   type: trojan
-  server: trojan3.udpgw.com
+  server: trojan1.udpgw.com
   port: 443
-  password: 10b225b0-1421-11ee-b0a8-1239d0255272
+  password: cf6c8650-1ad5-11ee-9c7e-1239d0255272
   udp: true
-  sni: mm.net.my
+  sni: mobilelegends.com
   alpn:
      - h2
      - http/1.1
   skip-cert-verify: true
+
+- name: "HowdyVr19july"
+  server: v2ray1.udpgw.com
+  port: 443
+  type: vmess
+  uuid: 2401999f-7895-431f-a41e-7c894a61e4e1
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mobilelegends.com
+
+- name: "chsg1"
+  server: sg1.createxray.me
+  port: 443
+  type: vmess
+  uuid: 71b15559-b4e2-442f-b570-d692e6cc947b
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
 
 - name: "chsg3"
   server: sg3.createxray.me
