@@ -401,11 +401,17 @@ rules:
   - DOMAIN-KEYWORD,akamai.net,superfastlane
   - DOMAIN-KEYWORD,akamaiedge.net,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
-  - DOMAIN,mtalk.google.com,special
-  - DOMAIN-SUFFIX,firestore.googleapis.com,special
-  - DOMAIN-SUFFIX,redirector.googlevideo.com,multimedia
-  - DOMAIN-SUFFIX,i.ytimg.com,multimedia
-  - DOMAIN-SUFFIX,s.youtube.com,multimedia
+  - DOMAIN-SUFFIX,google.com,special
+  - DOMAIN-SUFFIX,m.google.com,special
+  - DOMAIN-KEYWORD,google.com,special
+  - DOMAIN-KEYWORD,googleapis.com,special
+  - DOMAIN-KEYWORD,googlevideo.com,multimedia
+  - DOMAIN-KEYWORD,googleapis,special
+  - DOMAIN-KEYWORD,googlevideo,multimedia
+  - DOMAIN-KEYWORD,ytimg,multimedia
+  - DOMAIN-KEYWORD,youtube,multimedia
+  - DOMAIN-KEYWORD,ytimg.com,multimedia
+  - DOMAIN-KEYWORD,youtube.com,multimedia
   - DOMAIN-KEYWORD,gvt,multimedia
   - DOMAIN-KEYWORD,shazam,multimedia
   - DOMAIN-KEYWORD,scdnco,multimedia
@@ -413,7 +419,6 @@ rules:
   - DOMAIN-KEYWORD,Spotify,multimedia
   - DOMAIN-KEYWORD,spotifycdn,multimedia
   - DOMAIN-KEYWORD,gstatic,multimedia
-  - DOMAIN-SUFFIX,suggestqueries.google.com,superfastlane
   - DOMAIN-KEYWORD,bing,superfastlane
   - DOMAIN-KEYWORD,yahoo,superfastlane
   - DOMAIN-KEYWORD,instagram,superfastlane
