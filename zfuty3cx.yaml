@@ -2,7 +2,7 @@ proxies:
 
 ##### Backup Server ######
 
-- name: "backserversk3-2july"
+- name: "backserversk3-5ogos"
   server: mm.net.my.shkit3.madihadi.eu.org
   port: 443
   type: vmess
@@ -15,11 +15,11 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/64797143d9def/
+   path: /sshkit/1074999023/64a5a50ea32b5/
    headers:
     Host: mm.net.my
 
-- name: "backserversk4-2july"
+- name: "backserversk4-5ogos"
   server: mm.net.my.shkit4.madihadi.eu.org
   port: 443
   type: vmess
@@ -32,7 +32,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/6479719097ae0/
+   path: /sshkit/1074999023/64a5a4e573a7d/
    headers:
     Host: mm.net.my
 
