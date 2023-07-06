@@ -47,7 +47,7 @@ dns:
     - https://cloudflare-dns.com/dns-query
     - tls://1dot1dot1dot1.cloudflare-dns.com:853
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
+  use-hosts: false
   fake-ip-filter:
   - #### "+.*"
   - ntp7.*.com
@@ -106,7 +106,6 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   interval: 32
   proxies:
-  - FallbackMax
   - RobinZ
   - RobinNovaUnstable
   - Fallback
@@ -117,10 +116,8 @@ proxy-groups:
   - Manual1x
   - Manual2x
   - Manual3x
-  - Manual1v
-  - Manual2v
   - superfastlane
-  - supercharged
+  - multimedia
   - Ping++
   - HowdyTrojan30day_15-20gb
 - name: Manual1
@@ -164,22 +161,6 @@ proxy-groups:
   - sall2
   - sall3
 - name: Manual3x
-  type: select
-  url: 'https://duckduckgo.com'
-  interval: 32
-  use:
-  - sall
-  - sall2
-  - sall3
-- name: Manual1v
-  type: select
-  url: 'https://duckduckgo.com'
-  interval: 32
-  use:
-  - sall
-  - sall2
-  - sall3
-- name: Manual2v
   type: select
   url: 'https://duckduckgo.com'
   interval: 32
@@ -273,36 +254,15 @@ proxy-groups:
   proxies:
   - Fallbackb
   - Fallbackc
-- name: supercharged
+- name: multimedia
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 3200
-  interval: 32
+  interval: 62
   lazy: true
   proxies:
-  - chargedx
-  - superfastlane
+  - PingMedia
   - Fallbackb
-  - Fallbackc
-- name: chargedx
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 1600
-  interval: 16
-  lazy: true
-  proxies:
-  - Manual1v
-  - Manual2v
-- name: FallbackMax
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 12000
-  interval: 12
-  lazy: true
-  proxies:
-  - RobinZ
-  - Ping++
-  - superfastlane
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
@@ -312,6 +272,15 @@ proxy-groups:
   use:
   - sall
   - sall2
+  - sall3
+- name: PingMedia
+  type: url-test
+  url: 'https://duckduckgo.com'
+  interval: 32
+  tolerance: 320
+  lazy: false
+  use:
+  - sall
   - sall3
 - name: Fallback
   type: fallback
@@ -339,6 +308,15 @@ proxy-groups:
   lazy: false
   use:
   - sall3
+- name: special
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 300
+  interval: 6
+  lazy: false
+  use:
+  - sall4
+
 
 proxy-providers:
   sall:
@@ -371,6 +349,16 @@ proxy-providers:
       interval: 120
       lazy: false
       url: https://duckduckgo.com
+  sall4:
+    type: http
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty4cx.yaml"
+    interval: 120
+    path: ./sall4.yaml
+    health-check:
+      enable: true
+      interval: 120
+      lazy: false
+      url: https://duckduckgo.com
 
 rules:
   - IP-CIDR,38.60.193.95/32,HowdyTrojan30day_15-20gb
@@ -394,7 +382,6 @@ rules:
   - DOMAIN-SUFFIX,support1.like.video,superfastlane
   - DOMAIN-SUFFIX,esx.bigolive.tv,superfastlane
   - DOMAIN-SUFFIX,esx.bigo.sg,superfastlane
-  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com,superfastlane
   - DOMAIN-SUFFIX,static-fed.bigolive.tv,superfastlane
   - DOMAIN-SUFFIX,static-web.bigolive.tv,superfastlane
   - DOMAIN-SUFFIX,ta.bigolive.tv,superfastlane
@@ -414,21 +401,23 @@ rules:
   - DOMAIN-KEYWORD,akamai.net,superfastlane
   - DOMAIN-KEYWORD,akamaiedge.net,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
-  - DOMAIN-KEYWORD,shazam,superfastlane
-  - DOMAIN-KEYWORD,scdnco,superfastlane
-  - DOMAIN-KEYWORD,scdn,superfastlane
-  - DOMAIN-KEYWORD,Spotify,superfastlane
-  - DOMAIN-KEYWORD,spotifycdn,superfastlane
-  - DOMAIN-KEYWORD,google,supercharged
-  - DOMAIN-KEYWORD,gstatic,supercharged
-  - DOMAIN-KEYWORD,youtube,supercharged
-  - DOMAIN-KEYWORD,bing,supercharged
-  - DOMAIN-KEYWORD,yahoo,supercharged
-  - DOMAIN-KEYWORD,android,supercharged
-  - DOMAIN-KEYWORD,gvt,supercharged
-  - DOMAIN-KEYWORD,ytimg,supercharged
+  - DOMAIN,mtalk.google.com,special
+  - DOMAIN-SUFFIX,firestore.googleapis.com,special
+  - DOMAIN-SUFFIX,redirector.googlevideo.com,multimedia
+  - DOMAIN-SUFFIX,i.ytimg.com,multimedia
+  - DOMAIN-SUFFIX,s.youtube.com,multimedia
+  - DOMAIN-KEYWORD,gvt,multimedia
+  - DOMAIN-KEYWORD,shazam,multimedia
+  - DOMAIN-KEYWORD,scdnco,multimedia
+  - DOMAIN-KEYWORD,scdn,multimedia
+  - DOMAIN-KEYWORD,Spotify,multimedia
+  - DOMAIN-KEYWORD,spotifycdn,multimedia
+  - DOMAIN-KEYWORD,gstatic,multimedia
+  - DOMAIN-SUFFIX,suggestqueries.google.com,superfastlane
+  - DOMAIN-KEYWORD,bing,superfastlane
+  - DOMAIN-KEYWORD,yahoo,superfastlane
   - DOMAIN-KEYWORD,instagram,superfastlane
-  - DOMAIN-KEYWORD,image,supercharged
+  - DOMAIN-KEYWORD,image,superfastlane
   - DOMAIN-SUFFIX,duckduckgo.com,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
   - DOMAIN-SUFFIX,raw.githubusercontent.com,HowdyTrojan30day_15-20gb

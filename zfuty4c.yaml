@@ -1,0 +1,29 @@
+proxies:
+
+- name: "HeSg1-7ogos"
+  type: trojan
+  server: sg1-trojan.bonds.id
+  port: 443
+  password: 1045cc40-1c1f-11ee-a4fc-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+
+- name: "AmpSg4-7ogos"
+  type: trojan
+  server: sg-4.test3.net
+  port: 443
+  password: 9531e420-1c1f-11ee-8a76-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+
+
