@@ -118,6 +118,7 @@ proxy-groups:
   - Manual3x
   - superfastlane
   - multimedia
+  - special
   - Ping++
   - HowdyTrojan30day_15-20gb
 - name: Manual1
