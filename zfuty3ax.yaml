@@ -458,7 +458,7 @@ proxies:
   server: mm.net.my.mel1.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: 22ddcee7-cfe5-4971-968c-e3253be9b7c3
+  uuid: 487577d3-035e-4769-b180-8314dbf9cb75
   sni: mm.net.my
   alterId: 0
   cipher: auto
@@ -475,7 +475,7 @@ proxies:
   server: mm.net.my.mel2.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: d2c4e95b-eae0-4d7c-ab9f-ea8c8d581f27
+  uuid: faf4f8a2-3399-49a9-b2e3-c9bed353ca35
   sni: mm.net.my
   alterId: 0
   cipher: auto
@@ -492,7 +492,7 @@ proxies:
   server: mm.net.my.mel3.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: 2a268f26-4426-4e4d-8c77-abc95f722eda
+  uuid: 98e5711d-0a7d-461b-8ca6-b03c8ff6b10c
   sni: mm.net.my
   alterId: 0
   cipher: auto
