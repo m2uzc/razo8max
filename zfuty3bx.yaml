@@ -2,11 +2,26 @@ proxies:
 
 ##### fastest server #####
 
+- name: "SGHvgprc"
+  server: mm.net.my.asia.oceis.net
+  port: 443
+  type: vless
+  uuid: 96551fc0-1dfa-11ee-b330-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mm.net.my
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
 - name: "howdyaxgnvgprc"
   server: mm.net.my.sg3.socifiles.com
   port: 443
   type: vless
-  uuid: fa766790-135e-11ee-ad5a-1239d0255272
+  uuid: 97b5ce00-1df9-11ee-9a47-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -57,21 +72,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: grpc
-  udp: true
-
-- name: "indoSGvgprc"
-  server: mm.net.my.asia1.oceis.net
-  port: 443
-  type: vless
-  uuid: 0f9cd2c0-14fd-11ee-b234-205c6d5f5d78
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mm.net.my
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
   udp: true
 
 - name: "Howdytro19july"
