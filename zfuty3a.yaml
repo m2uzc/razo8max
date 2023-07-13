@@ -424,7 +424,7 @@ proxies:
   server: sg2mws.mainssh.xyz
   port: 443
   type: vmess
-  uuid: 56833451-890e-47f6-8f46-dad7b25d5422
+  uuid: 0a9b3be0-57f2-4c82-afaf-1c94b1adf895
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -441,7 +441,7 @@ proxies:
   server: sg3mws.mainssh.xyz
   port: 443
   type: vmess
-  uuid: acfbd36f-8dc0-4178-8e86-7e2db2785168
+  uuid: e7d1fbd5-7b28-40a0-9d0a-6b14520909fc
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -476,7 +476,7 @@ proxies:
   server: sg2-mlb.v2rayserv.com
   port: 443
   type: vmess
-  uuid: faf4f8a2-3399-49a9-b2e3-c9bed353ca35
+  uuid: 2ea2efbb-da4c-499d-b50a-ebfb9ad280a9
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -493,7 +493,7 @@ proxies:
   server: sg3-mlb.v2rayserv.com
   port: 443
   type: vmess
-  uuid: 98e5711d-0a7d-461b-8ca6-b03c8ff6b10c
+  uuid: 4981e1c3-c9c2-4ce7-bd0b-19a9e98807c0
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
