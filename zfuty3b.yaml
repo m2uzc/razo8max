@@ -2,36 +2,6 @@ proxies:
 
 ##### fastest server #####
 
-- name: "SGHvgprc"
-  server: asia.oceis.netyy
-  port: 443
-  type: vless
-  uuid: 96551fc0-1dfa-11ee-b330-205c6d5f5d78
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
-
-- name: "howdyaxgnvgprc"
-  server: sg3.socifiles.comyy
-  port: 443
-  type: vless
-  uuid: 97b5ce00-1df9-11ee-9a47-1239d0255272
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
-
 - name: "howdyaxgn"
   type: trojan
   server: sg3.socifiles.com
@@ -184,7 +154,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-omiyh6
+   path: /u/opentunnel.net-sayurte11
    headers:
     Host: mobilelegends.com
 
