@@ -137,7 +137,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-lohax6
+   path: /u/opentunnel.net-reegina
    headers:
     Host: mm.net.my
 
