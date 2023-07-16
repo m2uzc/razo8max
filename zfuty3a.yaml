@@ -14,6 +14,57 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "feu2"
+  server: eu-2.0rd.net
+  port: 443
+  type: vmess
+  uuid: 5ea024b0-2388-11ee-b633-205c6d5f5d78
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /jdtazkgy
+   headers:
+    Host: mobilelegends.com
+
+- name: "feu"
+  server: eu-1.0rd.net
+  port: 443
+  type: vmess
+  uuid: be38f9c0-2387-11ee-b638-205c6d5f5d78
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /v8rmqj4n
+   headers:
+    Host: mobilelegends.com
+
+- name: "fus"
+  server: us-netflix.0rd.net
+  port: 443
+  type: vmess
+  uuid: 0b15bfe0-2388-11ee-b039-205c6d5f5d78
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /obmp6li7
+   headers:
+    Host: mobilelegends.com
+
 - name: "Aurc1"
   server: au-full.privateip.net
   port: 2003

@@ -14,6 +14,58 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "feu2"
+  server: mm.net.my.feu2.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 5ea024b0-2388-11ee-b633-205c6d5f5d78
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /jdtazkgy
+   headers:
+    Host: mm.net.my
+
+- name: "feu"
+  server: mm.net.my.feu.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: be38f9c0-2387-11ee-b638-205c6d5f5d78
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /v8rmqj4n
+   headers:
+    Host: mm.net.my
+
+- name: "fus"
+  server: mm.net.my.fus.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 0b15bfe0-2388-11ee-b039-205c6d5f5d78
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /obmp6li7
+   headers:
+    Host: mm.net.my
+
+
 - name: "Aurc1"
   server: mm.net.my.au-full.privateip.net
   port: 2003
