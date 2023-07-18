@@ -107,11 +107,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "Dyna12july"
+- name: "Dyna31july"
   server: dynamic-sg1b.obfs.xyz
   port: 443
   type: vmess
-  uuid: ff6a77fb-35ec-4863-9c68-5a9d10976cb8
+  uuid: ba6843e0-b346-4a7a-a61d-ef166fa60968
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
