@@ -18,7 +18,7 @@ proxies:
   server: mm.net.my.feu2.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: 421c1e10-245e-11ee-b838-205c6d5f5d78
+  uuid: 7c3410c0-25de-11ee-b033-205c6d5f5d78
   sni: mm.net.my
   alterId: 0
   cipher: auto
@@ -27,7 +27,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /jdtazkgy
+   path: /i5cfyx90
    headers:
     Host: mm.net.my
 
