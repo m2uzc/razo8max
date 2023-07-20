@@ -44,11 +44,11 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
-- name: "Howdytro19july"
+- name: "Howdytro31july"
   type: trojan
-  server: mm.net.my.tr1hw.madihadi.eu.org
+  server: mm.net.my.tr3hw.madihadi.eu.org
   port: 443
-  password: cf6c8650-1ad5-11ee-9c7e-1239d0255272
+  password: 0b5c2550-26d9-11ee-bdf8-1239d0255272
   udp: true
   sni: mm.net.my
   alpn:
@@ -56,11 +56,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "HowdyVr19july"
-  server: mm.net.my.vr1hw.madihadi.eu.org
+- name: "HowdyVr31july"
+  server: mm.net.my.vr3hw.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: 2401999f-7895-431f-a41e-7c894a61e4e1
+  uuid: f1ed8c16-cf98-41b5-b6ca-a91ef88130b6
   sni: mm.net.my
   alterId: 0
   cipher: auto
