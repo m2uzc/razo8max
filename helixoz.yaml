@@ -176,7 +176,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   tolerance: 6200
-  lazy: true
+  lazy: false
   proxies:
   - FallbackX
   - FallbackY
@@ -233,7 +233,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   tolerance: 1200
-  lazy: true
+  lazy: false
   proxies:
   - fastlane
   - fastlaneb
@@ -260,7 +260,7 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   tolerance: 3200
   interval: 62
-  lazy: true
+  lazy: false
   proxies:
   - PingMedia
   - Fallbackb

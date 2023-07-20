@@ -527,7 +527,7 @@ proxies:
   server: sg2-mlb.v2rayserv.com
   port: 443
   type: vmess
-  uuid: 2ea2efbb-da4c-499d-b50a-ebfb9ad280a9
+  uuid: 0584ef2f-3eac-4f85-ad46-35c13bca25a6
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -544,7 +544,7 @@ proxies:
   server: sg3-mlb.v2rayserv.com
   port: 443
   type: vmess
-  uuid: 4981e1c3-c9c2-4ce7-bd0b-19a9e98807c0
+  uuid: bc3f9048-f797-47d9-86e3-8c087b06e5c3
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
