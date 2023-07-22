@@ -176,7 +176,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   tolerance: 6200
-  lazy: false
+  lazy: true
   proxies:
   - FallbackX
   - FallbackY
@@ -187,8 +187,8 @@ proxy-groups:
   interval: 32
   strategy: round-robin
   disable-udp: false
-  tolerance: 320
-  lazy: false
+  tolerance: 360
+  lazy: true
   use:
   - sall
   - sall2
@@ -233,14 +233,14 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   tolerance: 1200
-  lazy: false
+  lazy: true
   proxies:
   - fastlane
   - fastlaneb
 - name: fastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 120
+  tolerance: 360
   interval: 16
   lazy: false
   proxies:
@@ -249,7 +249,7 @@ proxy-groups:
 - name: fastlaneb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 120
+  tolerance: 360
   interval: 16
   lazy: false
   proxies:
@@ -260,7 +260,7 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   tolerance: 3200
   interval: 62
-  lazy: false
+  lazy: true
   proxies:
   - PingMedia
   - Fallbackb
@@ -268,7 +268,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   interval: 16
-  tolerance: 120
+  tolerance: 620
   lazy: false
   use:
   - sall
@@ -278,8 +278,8 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   interval: 32
-  tolerance: 320
-  lazy: false
+  tolerance: 620
+  lazy: true
   use:
   - sall
   - sall3
@@ -304,7 +304,7 @@ proxy-groups:
 - name: Fallbackc
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 120
+  tolerance: 1200
   interval: 16
   lazy: false
   use:
@@ -312,9 +312,9 @@ proxy-groups:
 - name: special
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 300
+  tolerance: 620
   interval: 6
-  lazy: false
+  lazy: true
   use:
   - sall4
 
