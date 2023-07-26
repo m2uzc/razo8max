@@ -154,7 +154,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /u/opentunnel.net-sayurte11
+   path: /u/opentunnel.net-naginiza
    headers:
     Host: mobilelegends.com
 

@@ -67,14 +67,14 @@ proxies:
 
 
 - name: "Aurc1"
-  server: mm.net.my.au-full.privateip.net
+  server: au-full.privateip.net
   port: 2003
   type: vless
   uuid: ed712cdf-ab40-40ac-8baf-981406dbdeaf
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -82,14 +82,14 @@ proxies:
   udp: true
 
 - name: "Aurc2"
-  server: mm.net.my.au2-full.privateip.net
+  server: au2-full.privateip.net
   port: 2003
   type: vless
   uuid: aa9bb095-1871-413e-b35d-0cde1d8cadb3
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -97,14 +97,14 @@ proxies:
   udp: true
 
 - name: "Usrc1"
-  server: mm.net.my.us-full.privateip.net
+  server: us-full.privateip.net
   port: 2003
   type: vless
   uuid: 1ebbd129-2a0f-48ef-9083-3cf4e0d9e3f3
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -112,14 +112,14 @@ proxies:
   udp: true
 
 - name: "Usrc2"
-  server: mm.net.my.us2-full.privateip.net
+  server: us2-full.privateip.net
   port: 2003
   type: vless
   uuid: 9c61cbf5-a49e-4c98-aa6a-9d6ee23d7e8a
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -127,14 +127,14 @@ proxies:
   udp: true
 
 - name: "Nlrc1"
-  server: mm.net.my.nl-full.privateip.net
+  server: nl-full.privateip.net
   port: 2003
   type: vless
   uuid: b57bf738-e5e8-4ff2-9fcb-03664badb19b
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -142,14 +142,14 @@ proxies:
   udp: true
 
 - name: "Nlrc2"
-  server: mm.net.my.nl2-full.privateip.net
+  server: nl2-full.privateip.net
   port: 2003
   type: vless
   uuid: 6a390853-697f-409d-95de-c712c0856cab
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -157,14 +157,14 @@ proxies:
   udp: true
 
 - name: "Nlrc3"
-  server: mm.net.my.nl3-full.privateip.net
+  server: nl3-full.privateip.net
   port: 2003
   type: vless
   uuid: 017f53aa-324d-4a8c-83d3-d7bf895a054e
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun

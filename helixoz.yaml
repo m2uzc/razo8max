@@ -312,8 +312,8 @@ proxy-groups:
 - name: special
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 620
-  interval: 6
+  tolerance: 1200
+  interval: 32
   lazy: true
   use:
   - sall4
@@ -403,6 +403,8 @@ rules:
   - DOMAIN-KEYWORD,bigo,superfastlane
   - DOMAIN-SUFFIX,google.com,special
   - DOMAIN-SUFFIX,m.google.com,special
+  - DOMAIN-SUFFIX,mobile-gtalk.l.google.com,special
+  - DOMAIN-KEYWORD,clients,special
   - DOMAIN-KEYWORD,google.com,special
   - DOMAIN-KEYWORD,googleapis.com,special
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
