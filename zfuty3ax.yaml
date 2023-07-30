@@ -775,7 +775,7 @@ proxies:
   server: mm.net.my.us2.oceis.net
   port: 443
   type: vless
-  uuid: 9331bfa0-2177-11ee-b838-205c6d5f5d78
+  uuid: dbdea570-2ebc-11ee-b037-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
