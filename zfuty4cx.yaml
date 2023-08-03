@@ -1,10 +1,10 @@
 proxies:
 
-- name: "HeSg1-7ogos"
+- name: "HeSg1-3sep"
   type: trojan
   server: sg1-trojan.bonds.id
   port: 443
-  password: 1045cc40-1c1f-11ee-a4fc-1239d0255272
+  password: d8e98940-3194-11ee-941b-1239d0255272
   udp: true
   sni: mm.net.my
   alpn:
@@ -13,11 +13,11 @@ proxies:
   skip-cert-verify: true
 
 
-- name: "AmpSg4-7ogos"
+- name: "AmpSg2-3sep"
   type: trojan
-  server: sg-4.test3.net
+  server: sg-2.test3.net
   port: 443
-  password: 9531e420-1c1f-11ee-8a76-1239d0255272
+  password: 36aca710-3195-11ee-af62-1239d0255272
   udp: true
   sni: mm.net.my
   alpn:

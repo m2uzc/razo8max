@@ -92,7 +92,7 @@ proxies:
   type: trojan
   server: mm.net.my.ca-trojan.bonds.id
   port: 443
-  password: 057fae40-1ad9-11ee-853a-1239d0255272
+  password: 7e7433f0-3193-11ee-8277-1239d0255272
   udp: true
   sni: mm.net.my
   alpn:
@@ -112,10 +112,10 @@ proxy-groups:
   - FallbackX
   - Manual1
   - Manual2
-  - Manual3
   - Manual1x
   - Manual2x
-  - Manual3x
+  - Manual1y
+  - Manual2y
   - superfastlane
   - multimedia
   - special
@@ -130,14 +130,6 @@ proxy-groups:
   - sall2
   - sall3
 - name: Manual2
-  type: select
-  url: 'https://duckduckgo.com'
-  interval: 32
-  use:
-  - sall
-  - sall2
-  - sall3
-- name: Manual3
   type: select
   url: 'https://duckduckgo.com'
   interval: 32
@@ -161,7 +153,15 @@ proxy-groups:
   - sall
   - sall2
   - sall3
-- name: Manual3x
+- name: Manual1y
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 32
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Manual2y
   type: select
   url: 'https://duckduckgo.com'
   interval: 32
@@ -180,7 +180,6 @@ proxy-groups:
   proxies:
   - FallbackX
   - FallbackY
-  - FallbackZ
 - name: RobinNovaUnstable
   type: load-balance
   url: 'https://duckduckgo.com'
@@ -202,6 +201,7 @@ proxy-groups:
   proxies:
   - Manual1
   - Manual1x
+  - Manual1y
   - Fallback
   - Fallbackb
   - Fallbackc
@@ -214,18 +214,10 @@ proxy-groups:
   proxies:
   - Manual2
   - Manual2x
+  - Manual2y
   - Fallback
   - Fallbackb
   - Fallbackc
-- name: FallbackZ
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 6200
-  interval: 16
-  lazy: false
-  proxies:
-  - Manual3
-  - Manual3x
 - name: superfastlane
   type: load-balance
   url: 'https://duckduckgo.com'
