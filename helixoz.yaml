@@ -116,6 +116,7 @@ proxy-groups:
   - Manual2x
   - Manual1y
   - Manual2y
+  - Youtube
   - superfastlane
   - multimedia
   - special
@@ -162,6 +163,14 @@ proxy-groups:
   - sall2
   - sall3
 - name: Manual2y
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 32
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Youtube
   type: select
   url: 'https://duckduckgo.com'
   interval: 32
@@ -254,6 +263,7 @@ proxy-groups:
   interval: 62
   lazy: true
   proxies:
+  - Youtube
   - PingMedia
   - Fallbackb
 - name: Ping++
