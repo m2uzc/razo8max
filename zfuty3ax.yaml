@@ -351,11 +351,11 @@ proxies:
    headers:
     Host: mm.net.my
 
-- name: "HowdyVr1july"
-  server: mm.net.my.vr2hw.madihadi.eu.org
+- name: "HowdyVr3sep"
+  server: mm.net.my.vr1hw.madihadi.eu.org
   port: 443
   type: vmess
-  uuid: f677fa16-164f-42f9-ad9b-7e08c53e1d3e
+  uuid: f544822e-f454-4a3c-934d-488cd4e090ff
   sni: mm.net.my
   alterId: 0
   cipher: auto
@@ -368,11 +368,11 @@ proxies:
    headers:
     Host: mm.net.my
 
-- name: "Howdytro1july"
+- name: "Howdytro3sep"
   type: trojan
-  server: mm.net.my.tr2hw.madihadi.eu.org
+  server: mm.net.my.tr1hw.madihadi.eu.org
   port: 443
-  password: 203e1a60-0c11-11ee-8eb7-1239d0255272
+  password: f1cf9a80-34e2-11ee-b1ed-1239d0255272
   udp: true
   sni: mm.net.my
   alpn:

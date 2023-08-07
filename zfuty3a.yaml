@@ -351,11 +351,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "HowdyVr1july"
-  server: v2ray2.udpgw.com
+- name: "HowdyVr3sep"
+  server: v2ray1.udpgw.com
   port: 443
   type: vmess
-  uuid: f677fa16-164f-42f9-ad9b-7e08c53e1d3e
+  uuid: f544822e-f454-4a3c-934d-488cd4e090ff
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -368,11 +368,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "Howdytro1july"
+- name: "Howdytro3sep"
   type: trojan
-  server: trojan2.udpgw.com
+  server: trojan1.udpgw.com
   port: 443
-  password: 203e1a60-0c11-11ee-8eb7-1239d0255272
+  password: f1cf9a80-34e2-11ee-b1ed-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
