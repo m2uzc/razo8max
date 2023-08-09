@@ -14,6 +14,36 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "sg1"
+  server: sg1-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: cd0c223f-f17d-40ec-bd18-65912741b4e8
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "sg2"
+  server: sg2-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: dcacefde-6be0-4865-b0e6-2354ff6e990e
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
 - name: "CHPwhySG"
   server: sg1.kitu.xyz
   port: 443

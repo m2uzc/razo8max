@@ -65,26 +65,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "sg2"
-  server: sg2-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 892b969f-d2b0-4b2c-bf65-6b96b50abf09
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
 - name: "Aurc1"
   server: au-full.privateip.net
   port: 2003
   type: vless
-  uuid: ed712cdf-ab40-40ac-8baf-981406dbdeaf
+  uuid: 13492392-6d27-4cca-b13b-5c30d353626b
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -129,7 +114,7 @@ proxies:
   server: us2-full.privateip.net
   port: 2003
   type: vless
-  uuid: e91adaee-5138-462f-8584-b3ce998bbcfc
+  uuid: a9f7a563-fd3d-4d06-9def-03cae65c4562
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -174,7 +159,7 @@ proxies:
   server: de2-full.privateip.net
   port: 2003
   type: vless
-  uuid: d7948373-5ddd-456c-bc3e-695468b14f3f
+  uuid: d8ade3b1-99b6-409b-a034-4bbfa0beb388
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -185,11 +170,26 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "de3"
+  server: mm.net.my.de3-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: fb52761a-9838-45b2-9573-b32e02ae8aa3
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mm.net.my
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
 - name: "Nlrc2"
   server: nl2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 28f843fc-ef36-4d59-bfea-e92bd0d1ae69
+  uuid: bfba88d7-beae-49de-9957-bc6da4aa840c
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -204,7 +204,7 @@ proxies:
   server: nl3-full.privateip.net
   port: 2003
   type: vless
-  uuid: 017f53aa-324d-4a8c-83d3-d7bf895a054e
+  uuid: 5bb19ae1-d739-4413-b0fc-e7475d9c608b
   cipher: auto
   tls: true
   skip-cert-verify: true

@@ -212,7 +212,6 @@ proxy-groups:
   - Manual1x
   - Manual1y
   - Fallback
-  - Fallbackb
   - Fallbackc
 - name: FallbackY
   type: fallback
@@ -225,7 +224,6 @@ proxy-groups:
   - Manual2x
   - Manual2y
   - Fallback
-  - Fallbackb
   - Fallbackc
 - name: superfastlane
   type: load-balance
