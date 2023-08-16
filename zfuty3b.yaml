@@ -18,7 +18,7 @@ proxies:
   server: sg1-full.privateip.net
   port: 2003
   type: vless
-  uuid: cd0c223f-f17d-40ec-bd18-65912741b4e8
+  uuid: 1921264f-05d2-4c0c-a26d-506fd8e19435
   cipher: auto
   tls: true
   skip-cert-verify: true
