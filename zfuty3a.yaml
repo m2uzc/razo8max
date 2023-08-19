@@ -791,7 +791,7 @@ proxies:
   server: us4.socifiles.com
   port: 443
   type: vless
-  uuid: 457cf850-3d65-11ee-a954-1239d0255272
+  uuid: ffbc5e70-3e29-11ee-9621-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -806,7 +806,7 @@ proxies:
   server: us5.socifiles.com
   port: 443
   type: vless
-  uuid: cb809760-3beb-11ee-9c3e-1239d0255272
+  uuid: d0027920-3e29-11ee-99af-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
