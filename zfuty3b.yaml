@@ -137,11 +137,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "Dyna15ogo"
-  server: dynamic-sg1b.obfs.xyz
+- name: "Dyna29ogo"
+  server: dynamic-sg2b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 6b3c05ae-ddf6-4605-b9f6-b9bac521c7ac
+  uuid: 23e0243f-bb1b-490c-b74e-744e538e43e3
   sni: mobilelegends.com
   alterId: 0
   cipher: auto

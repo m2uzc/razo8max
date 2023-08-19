@@ -137,11 +137,11 @@ proxies:
    headers:
     Host: mm.net.my
 
-- name: "Dyna15ogo"
+- name: "Dyna29ogo"
   server: mm.net.my.dynamic-sg1b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 6b3c05ae-ddf6-4605-b9f6-b9bac521c7ac
+  uuid: 23e0243f-bb1b-490c-b74e-744e538e43e3
   sni: mm.net.my
   alterId: 0
   cipher: auto
