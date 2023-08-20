@@ -1,0 +1,203 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7893
+mixed-port: 7894
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+##external-controller: 0.0.0.0:9090
+bind-address: "*"
+unified-delay: true
+external-ui: folder
+interface-name: en0
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:53
+  fallback-filter:
+    geoip: true
+    geoip-code: MY
+    ipcidr:
+    - 240.0.0.0/4
+  domain:
+    - '+.*'
+    - '+.google.com' 
+    - '+.facebook.com' 
+    - '+.youtube.com'
+    - '+.bigolive.tv' 
+    - '+.tiktok.com'
+    - '+.tiktokv.com' 
+    - '+.tiktocdn.com' 
+    - '+.instagram.com'
+    - '+.github.com' 
+    - '+.telegram.com'
+    - '+.duckduckgo.com'
+    - '+.teamviewer.com'
+  default-nameserver:
+    - 1.1.1.1
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com:853
+   #need dns encrypt to bypass bigo & tiktok proxy detection
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com:853
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: false
+  fake-ip-filter:
+  - #### "+.*"
+  - ntp7.*.com
+  - ntp6.*.com
+  - ntp5.*.com
+  - ntp4.*.com
+  - ntp3.*.com
+  - ntp2.*.com
+  - ntp1.*.com
+  - ntp.*.com
+  - time7.*.com
+  - time6.*.com
+  - time5.*.com
+  - time4.*.com
+  - time3.*.com
+  - time2.*.com
+  - time1.*.com
+  - time.*.apple.com
+  - time.*.edu.cn
+  - time.*.gov
+  - time.*.com
+  - "*.home.arpa"
+  - "*.local"
+  - "*.test"
+  - "*.localhost"
+  - "*.invalid"
+  - "*.example"
+  - "*.localdomain"
+  - "*.lan"
+tun:
+  enable: true
+  dns-hijack:
+  - 1.1.1.1:53
+  - tcp://1.1.1.1:53
+  stack: system
+  auto-redir: true
+  auto-route: true
+  auto-detect-interface: true
+
+proxies:
+- name: "http"
+  type: http
+  server: 192.168.49.1
+  port: 8282
+    # username: username
+    # password: password
+    # tls: true
+    # skip-cert-verify: true
+    # udp: true
+  skip-cert-verify: true
+
+- name: "socks"
+  type: socks5
+  server: 192.168.49.1
+  port: 8282
+    # username: username
+    # password: password
+    # tls: true
+    # skip-cert-verify: true
+    # udp: true
+
+proxy-groups: 
+- name: All 
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 5
+  proxies:
+  - available
+  - http
+  - socks
+  - DIRECT
+- name: available
+  type: fallback
+  url: 'https://duckduckgo.com'
+  interval: 5
+  tolerance: 2000
+  lazy: false
+  proxies:
+  - http
+  - socks
+  - DIRECT
+
+rules:
+  - DOMAIN-SUFFIX,gdl.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,support0.bigo,REJECT
+  - DOMAIN-SUFFIX,activity.bigo.tv,REJECT
+  - DOMAIN-SUFFIX,graph.facebook.com,REJECT
+  - DOMAIN-SUFFIX,launches.appsflyersdk.com,REJECT
+  - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,api.likee.videoxxx,REJECT
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,exp.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,inapps.appsflyersdk.com,REJECT
+  - DOMAIN-SUFFIX,hotroom.live.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,flag.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,static.f2ecdn.com,REJECT
+  - DOMAIN-SUFFIX,support1.like.video,REJECT
+  - DOMAIN-SUFFIX,esx.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,static-fed.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,static-web.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,ta.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,REJECT
+  - DOMAIN-SUFFIX,support-json.like.video,REJECT
+  - DOMAIN-SUFFIX,newlbs.live.bigo.sg,REJECT
+  - DOMAIN-KEYWORD,gdl.bigo.sg,REJECT
+  - DOMAIN-KEYWORD,support0.bigo,REJECT
+  - DOMAIN-KEYWORD,activity.bigo.tv,REJECT
+  - DOMAIN-KEYWORD,graph.facebook.com,REJECT
+  - DOMAIN-KEYWORD,launches.appsflyersdk.com,REJECT
+  - DOMAIN-KEYWORD,giftesx.bigo.sg,REJECT
+  - DOMAIN-KEYWORD,api.likee.videoxxx,REJECT
+  - DOMAIN-KEYWORD,static-act.bigolive.tv,REJECT
+  - DOMAIN-KEYWORD,exp.bigo.sg,REJECT
+  - DOMAIN-KEYWORD,inapps.appsflyersdk.com,REJECT
+  - DOMAIN-KEYWORD,hotroom.live.bigo.sg,REJECT
+  - DOMAIN-KEYWORD,flag.bigo.sg,REJECT
+  - DOMAIN-KEYWORD,static.f2ecdn.com,REJECT
+  - DOMAIN-KEYWORD,support1.like.video,REJECT
+  - DOMAIN-KEYWORD,esx.bigolive.tv,REJECT
+  - DOMAIN-KEYWORD,firebaseremoteconfig.googleapis.com,REJECT
+  - DOMAIN-KEYWORD,static-fed.bigolive.tv,REJECT
+  - DOMAIN-KEYWORD,static-web.bigolive.tv,REJECT
+  - DOMAIN-KEYWORD,ta.bigolive.tv,REJECT
+  - DOMAIN-KEYWORD,static-act.bigolive.tv,REJECT
+  - DOMAIN-KEYWORD,support-json.like.video,REJECT
+  - DOMAIN-KEYWORD,newlbs.live.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - DOMAIN,analytics.google.com,REJECT
+  - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
+  - DOMAIN,analyticsreporting.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,REJECT
+  - DOMAIN-SUFFIX,googleadsserving.cn,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,googletagmanager.com,REJECT
+  - DOMAIN-SUFFIX,googletagservices.com,REJECT
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,analytics,REJECT
+  - DOMAIN-KEYWORD,analysis,REJECT
+  - DOMAIN-KEYWORD,ads,REJECT
+  - DOMAIN-KEYWORD,teamviewer,DIRECT
+  - SRC-PORT,5938,DIRECT
+  - DST-PORT,5938,DIRECT
+  - IP-CIDR,178.77.120.0/24,DIRECT
+  - IP-CIDR,127.0.0.1/32,DIRECT
+  - IP-CIDR,192.168.43.1/32,DIRECT
+  - GEOIP,MY,available
+  - SRC-PORT,9090,DIRECT
+  - DST-PORT,2222,DIRECT
+  - SRC-PORT,2222,DIRECT
+  - MATCH,available
