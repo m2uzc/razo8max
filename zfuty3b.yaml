@@ -44,6 +44,57 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "SgMel1"
+  server: sg1-mlb.v2rayserv.com
+  port: 443
+  type: vmess
+  uuid: 487577d3-035e-4769-b180-8314dbf9cb75
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "SgMel2"
+  server: sg2-mlb.v2rayserv.com
+  port: 443
+  type: vmess
+  uuid: 9bcf4594-66b9-4d1c-bd80-f7d10160e1a8
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "SgMel3"
+  server: sg3-mlb.v2rayserv.com
+  port: 443
+  type: vmess
+  uuid: 92580fc1-f8a7-4e57-9625-446d4fb870c8
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "CHPwhySG"
   server: sg1.kitu.xyz
   port: 443

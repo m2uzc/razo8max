@@ -44,6 +44,57 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "SgMel1"
+  server: mm.net.my.mel1.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 487577d3-035e-4769-b180-8314dbf9cb75
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "SgMel2"
+  server: mm.net.my.mel2.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 9bcf4594-66b9-4d1c-bd80-f7d10160e1a8
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
+- name: "SgMel3"
+  server: mm.net.my.mel3.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: 92580fc1-f8a7-4e57-9625-446d4fb870c8
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mm.net.my
+
 - name: "CHPwhySG"
   server: mm.net.my.sg1.kitu.xyz
   port: 443
