@@ -351,35 +351,6 @@ proxies:
    headers:
     Host: mm.net.my
 
-- name: "HowdyVr3sep"
-  server: mm.net.my.vr1hw.madihadi.eu.org
-  port: 443
-  type: vmess
-  uuid: f544822e-f454-4a3c-934d-488cd4e090ff
-  sni: mm.net.my
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: mm.net.my
-
-- name: "Howdytro3sep"
-  type: trojan
-  server: mm.net.my.tr1hw.madihadi.eu.org
-  port: 443
-  password: f1cf9a80-34e2-11ee-b1ed-1239d0255272
-  udp: true
-  sni: mm.net.my
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
 - name: "SgIndo"
   server: mm.net.my.asia1.oceis.net
   port: 443
@@ -709,7 +680,7 @@ proxies:
   server: mm.net.my.us1.oceis.net
   port: 443
   type: vless
-  uuid: b4e3aa80-3f1c-11ee-b536-205c6d5f5d78
+  uuid: bbf99d90-40b0-11ee-b934-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true

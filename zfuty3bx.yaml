@@ -44,6 +44,35 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "HowdyVr5sep"
+  server: mm.net.my.vr2hw.madihadi.eu.org
+  port: 443
+  type: vmess
+  uuid: bcb68bd1-77ee-4562-9363-acf8b5450b58
+  sni: mm.net.my
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mm.net.my
+
+- name: "Howdytro5sep"
+  type: trojan
+  server: mm.net.my.tr2hw.madihadi.eu.org
+  port: 443
+  password: f4cc7fd0-40af-11ee-93f1-1239d0255272
+  udp: true
+  sni: mm.net.my
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "SgMel1"
   server: mm.net.my.mel1.madihadi.eu.org
   port: 443
