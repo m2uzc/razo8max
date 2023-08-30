@@ -1,10 +1,10 @@
 proxies:
 
-- name: "HeSg1-3sep"
+- name: "HeSg1-30sep"
   type: trojan
   server: sg1-trojan.bonds.id
   port: 443
-  password: d8e98940-3194-11ee-941b-1239d0255272
+  password: da1e37e0-4715-11ee-ae8e-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -13,11 +13,11 @@ proxies:
   skip-cert-verify: true
 
 
-- name: "AmpSg4-3sep"
+- name: "AmpSg4-30sep"
   type: trojan
   server: sg-2.test3.net
   port: 443
-  password: 36aca710-3195-11ee-af62-1239d0255272
+  password: b7001f20-4715-11ee-898b-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
