@@ -24,7 +24,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   domain:
-    - ####'+.*'
+    - '+.*'
     - '+.google.com' 
     - '+.facebook.com' 
     - '+.youtube.com'
@@ -104,7 +104,7 @@ proxy-groups:
 - name: All 
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   proxies:
   - RobinZ
   - RobinNovaUnstable
@@ -125,7 +125,7 @@ proxy-groups:
 - name: Manual1
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   use:
   - sall
   - sall2
@@ -133,7 +133,7 @@ proxy-groups:
 - name: Manual2
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   use:
   - sall
   - sall2
@@ -141,7 +141,7 @@ proxy-groups:
 - name: Manual1x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   use:
   - sall
   - sall2
@@ -149,7 +149,7 @@ proxy-groups:
 - name: Manual2x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   use:
   - sall
   - sall2
@@ -157,7 +157,7 @@ proxy-groups:
 - name: Manual1y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   use:
   - sall
   - sall2
@@ -165,7 +165,7 @@ proxy-groups:
 - name: Manual2y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   use:
   - sall
   - sall2
@@ -173,7 +173,7 @@ proxy-groups:
 - name: Youtube
   type: select
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 30
   use:
   - sall
   - sall2
@@ -181,10 +181,10 @@ proxy-groups:
 - name: RobinZ
   type: load-balance
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 15
   strategy: round-robin
   disable-udp: false
-  tolerance: 5000
+  tolerance: 6000
   lazy: false
   proxies:
   - FallbackX
@@ -192,10 +192,10 @@ proxy-groups:
 - name: RobinNovaUnstable
   type: load-balance
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 15
   strategy: round-robin
   disable-udp: false
-  tolerance: 5000
+  tolerance: 6000
   lazy: false
   use:
   - sall
@@ -204,8 +204,8 @@ proxy-groups:
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 10
+  tolerance: 6000
+  interval: 15
   lazy: false
   proxies:
   - Manual1
@@ -216,8 +216,8 @@ proxy-groups:
 - name: FallbackY
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 10
+  tolerance: 6000
+  interval: 45
   lazy: false
   proxies:
   - Manual2
@@ -228,10 +228,10 @@ proxy-groups:
 - name: superfastlane
   type: load-balance
   url: 'https://duckduckgo.com'
-  interval: 10
+  interval: 15
   strategy: round-robin
   disable-udp: false
-  tolerance: 1000
+  tolerance: 2000
   lazy: false
   proxies:
   - fastlane
@@ -239,8 +239,8 @@ proxy-groups:
 - name: fastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 500
-  interval: 10
+  tolerance: 600
+  interval: 15
   lazy: false
   proxies:
   - Fallbackb
@@ -248,8 +248,8 @@ proxy-groups:
 - name: fastlaneb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 500
-  interval: 10
+  tolerance: 1000
+  interval: 45
   lazy: false
   proxies:
   - Fallbackb
@@ -257,8 +257,8 @@ proxy-groups:
 - name: multimedia
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 1000
-  interval: 10
+  tolerance: 2000
+  interval: 15
   lazy: false
   proxies:
   - Youtube
@@ -267,8 +267,8 @@ proxy-groups:
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 10
-  tolerance: 500
+  interval: 15
+  tolerance: 600
   lazy: false
   use:
   - sall
@@ -277,8 +277,8 @@ proxy-groups:
 - name: PingMedia
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 10
-  tolerance: 500
+  interval: 15
+  tolerance: 600
   lazy: false
   use:
   - sall
@@ -286,8 +286,8 @@ proxy-groups:
 - name: Fallback
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 10
+  tolerance: 6000
+  interval: 15
   lazy: false
   use:
   - sall
@@ -295,8 +295,8 @@ proxy-groups:
 - name: Fallbackb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 5000
-  interval: 10
+  tolerance: 6000
+  interval: 15
   lazy: false
   use:
   - sall2
@@ -304,16 +304,16 @@ proxy-groups:
 - name: Fallbackc
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 1000
-  interval: 10
+  tolerance: 6000
+  interval: 15
   lazy: false
   use:
   - sall3
 - name: special
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 1000
-  interval: 10
+  tolerance: 6000
+  interval: 30
   lazy: false
   use:
   - sall4
