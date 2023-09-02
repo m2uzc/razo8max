@@ -185,7 +185,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   tolerance: 6000
-  lazy: false
+  lazy: true
   proxies:
   - FallbackX
   - FallbackY
@@ -196,7 +196,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   tolerance: 6000
-  lazy: false
+  lazy: true
   use:
   - sall
   - sall2
@@ -232,7 +232,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   tolerance: 2000
-  lazy: false
+  lazy: true
   proxies:
   - fastlane
   - fastlaneb
