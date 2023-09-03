@@ -680,7 +680,7 @@ proxies:
   server: mm.net.my.us1.oceis.net
   port: 443
   type: vless
-  uuid: 7e49f940-43ef-11ee-b930-205c6d5f5d78
+  uuid: 954b19a0-49fd-11ee-b735-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -695,7 +695,7 @@ proxies:
   server: mm.net.my.us2.oceis.net
   port: 443
   type: vless
-  uuid: cdcb27e0-4717-11ee-b231-205c6d5f5d78
+  uuid: c93fd8c0-49fd-11ee-b130-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -710,7 +710,7 @@ proxies:
   server: mm.net.my.us4.socifiles.com
   port: 443
   type: vless
-  uuid: f13fe280-4992-11ee-9eae-1239d0255272
+  uuid: 3b6284d0-49fd-11ee-9638-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -725,7 +725,7 @@ proxies:
   server: mm.net.my.us5.socifiles.com
   port: 443
   type: vless
-  uuid: 286737c0-4993-11ee-90c3-1239d0255272
+  uuid: 639a6780-49fd-11ee-a15b-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
