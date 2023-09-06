@@ -154,11 +154,11 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
-- name: "Howdytro31july"
+- name: "Howdytro3"
   type: trojan
   server: trojan3.udpgw.com
   port: 443
-  password: 0b5c2550-26d9-11ee-bdf8-1239d0255272
+  password: a23843e0-4c55-11ee-8050-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -170,7 +170,7 @@ proxies:
   server: v2ray3.udpgw.com
   port: 443
   type: vmess
-  uuid: f1ed8c16-cf98-41b5-b6ca-a91ef88130b6
+  uuid: 8f6c70a9-8011-4c31-bb4a-503b0f7aa311
   sni: mobilelegends.com
   alterId: 0
   cipher: auto

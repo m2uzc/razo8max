@@ -15,10 +15,10 @@ proxies:
   udp: true
 
 - name: "backserverjantit"
-  server: my1.vpnjantit.com
+  server: my3.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: 318f3ab8-49fe-11ee-81f4-00163e007324
+  uuid: c2b42b24-4c57-11ee-9c61-00163e004ee0
   sni: fast.com
   alterId: 0
   cipher: auto
