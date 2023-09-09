@@ -26,8 +26,6 @@ dns:
     - 8.8.8.8
   nameserver:
     - 8.8.8.8
-    - https://dns.google/dns-query
-    - tls://8.8.8.8:853
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
     - tcp://8.8.8.8
