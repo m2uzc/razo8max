@@ -17,39 +17,25 @@ dns:
   enable: true
   ipv6: false
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:53
+  listen: 0.0.0.0:7895
   fallback-filter:
-    geoip: true
-    geoip-code: MY
+    geoip: false
     ipcidr:
     - 240.0.0.0/4
-  domain:
-    - '+.*'
-    - '+.google.com' 
-    - '+.facebook.com' 
-    - '+.youtube.com'
-    - '+.bigolive.tv' 
-    - '+.tiktok.com'
-    - '+.tiktokv.com' 
-    - '+.tiktocdn.com' 
-    - '+.instagram.com'
-    - '+.github.com' 
-    - '+.telegram.com'
-    - '+.duckduckgo.com'
-    - '+.teamviewer.com'
   default-nameserver:
-    - 1.1.1.1
+    - 8.8.8.8
   nameserver:
-    - https://cloudflare-dns.com/dns-query
-    - tls://1dot1dot1dot1.cloudflare-dns.com:853
+    - 8.8.8.8
+    - https://dns.google/dns-query
+    - tls://8.8.8.8:853
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - https://cloudflare-dns.com/dns-query
-    - tls://1dot1dot1dot1.cloudflare-dns.com:853
+    - tcp://8.8.8.8
+    - 8.8.8.8
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
   fake-ip-filter:
-  - #### "+.*"
+  - "+.*"
   - ntp7.*.com
   - ntp6.*.com
   - ntp5.*.com
@@ -80,8 +66,8 @@ dns:
 tun:
   enable: true
   dns-hijack:
-  - 1.1.1.1:53
-  - tcp://1.1.1.1:53
+  - 8.8.8.8:53
+  - tcp://8.8.8.8:53
   stack: system
   auto-redir: true
   auto-route: true
