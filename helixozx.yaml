@@ -94,7 +94,7 @@ proxies:
   port: 443
   password: 5243b290-4715-11ee-bde0-1239d0255272
   udp: true
-  sni: mm.net.my
+  sni: opensignal.com
   alpn:
      - h2
      - http/1.1

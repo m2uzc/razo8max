@@ -19,7 +19,7 @@ proxies:
   port: 443
   type: vmess
   uuid: 7c3410c0-25de-11ee-b033-205c6d5f5d78
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -29,14 +29,14 @@ proxies:
   ws-opts:
    path: /i5cfyx90
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "feu"
   server: mm.net.my.feu.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 78f443a0-256d-11ee-b433-205c6d5f5d78
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -46,14 +46,14 @@ proxies:
   ws-opts:
    path: /v8rmqj4n
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "fus"
   server: mm.net.my.fus.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 0b15bfe0-2388-11ee-b039-205c6d5f5d78
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -63,7 +63,7 @@ proxies:
   ws-opts:
    path: /obmp6li7
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "Aurc1"
   server: mm.net.my.au-full.privateip.net
@@ -73,7 +73,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -88,7 +88,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -103,7 +103,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -118,7 +118,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -133,7 +133,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -148,7 +148,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -163,7 +163,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -178,7 +178,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -193,7 +193,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -208,7 +208,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -220,7 +220,7 @@ proxies:
   port: 443
   type: vmess
   uuid: 37930e2d-ec23-4fee-9d5d-9c578b1acd7d
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -230,14 +230,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "chau"
   server: mm.net.my.chau.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 525213d4-4fd9-4b21-8598-d44da156fa6f
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -247,14 +247,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "chnl"
   server: mm.net.my.chnl.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 6cd7e9fd-11c7-4ec0-9504-0b10def2212d
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -264,14 +264,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "chindo"
   server: mm.net.my.chindo.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 9d02d9bb-f0fe-487a-a448-73429d20b48f
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -281,14 +281,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "chindo2"
   server: mm.net.my.chindo2.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 2db114b8-8e38-4c0a-a651-3c7fdf5a3750
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -298,14 +298,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "chind"
   server: mm.net.my.chind.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 5c5e8e61-446c-44bf-a4cf-6845001c2928
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -315,14 +315,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "chus"
   server: mm.net.my.chus.madihadi.eu.org
   port: 443
   type: vmess
   uuid: b5ba2196-9fdc-4a46-940b-e26da4dffc87
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -332,14 +332,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "chca"
   server: mm.net.my.chca.madihadi.eu.org
   port: 443
   type: vmess
   uuid: e6d62c65-66fa-4676-9608-464c495c2340
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -349,14 +349,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "SgIndo"
   server: mm.net.my.asia1.oceis.net
   port: 443
   type: vmess
   uuid: 44697c90-0f99-11ee-b937-205c6d5f5d78
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -366,14 +366,14 @@ proxies:
   ws-opts:
    path: /vmws
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "SgAu1"
   server: mm.net.my.au1.madihadi.eu.org
   port: 443
   type: vmess
   uuid: de8cb5bf-8902-40e5-8f67-939562e40798
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -383,14 +383,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "SgAu2"
   server: mm.net.my.au2.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 070bb94a-f238-4c16-802f-96c85ab5911a
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -400,14 +400,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "SgAu3"
   server: mm.net.my.au3.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 44619a65-92f8-4b65-ba47-4e7e67576f0e
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -417,14 +417,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "In1"
   server: mm.net.my.in1.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 3d9bb9a3-fdb7-4751-b9e0-ecd891d8bc11
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -434,14 +434,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "In2"
   server: mm.net.my.in2.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 5c1eda59-7277-4136-8e97-44ff2e03c111
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -451,14 +451,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "In3"
   server: mm.net.my.in3.madihadi.eu.org
   port: 443
   type: vmess
   uuid: f9979fb5-80e1-44fd-8ebf-f1a49ca788c8
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -468,14 +468,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "SgCHP1"
   server: mm.net.my.chp1.madihadi.eu.org
   port: 443
   type: vmess
   uuid: c4d65b50-4f26-4af0-8f0e-be9d8bc84883
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -485,14 +485,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "SgCHP2"
   server: mm.net.my.chp2.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 0a9b3be0-57f2-4c82-afaf-1c94b1adf895
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -502,14 +502,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "SgCHP3"
   server: mm.net.my.chp3.madihadi.eu.org
   port: 443
   type: vmess
   uuid: e7d1fbd5-7b28-40a0-9d0a-6b14520909fc
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -519,14 +519,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "MGE"
   server: mm.net.my.mge.madihadi.eu.org
   port: 443
   type: vmess
   uuid: c6e10eea-c67f-48d0-9378-1a6632dc436e
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -536,14 +536,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "MCA"
   server: mm.net.my.mca.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 36628a44-a6d7-4721-a046-153e08979e93
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -553,14 +553,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "MUS"
   server: mm.net.my.mus.madihadi.eu.org
   port: 443
   type: vmess
   uuid: 7e976285-7512-4c6c-bc87-a4114f67e3c3
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -570,14 +570,14 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "MFR"
   server: mm.net.my.mfr.madihadi.eu.org
   port: 443
   type: vmess
   uuid: f9f78b95-ccda-4116-bcdc-93df50df7db5
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -587,7 +587,7 @@ proxies:
   ws-opts:
    path: /vmess
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "RaceA"
   type: trojan
@@ -595,7 +595,7 @@ proxies:
   port: 443
   password: f7f573de-150b-445e-b61a-d5c2d8887ec5
   udp: true
-  sni: mm.net.my
+  sni: opensignal.com
   alpn:
      - h2
      - http/1.1
@@ -607,7 +607,7 @@ proxies:
   port: 443
   password: 9824e438-7120-4ec3-b72e-aa8274836b05
   udp: true
-  sni: mm.net.my
+  sni: opensignal.com
   alpn:
      - h2
      - http/1.1
@@ -619,7 +619,7 @@ proxies:
   port: 443
   password: whyvpn-megaserver
   udp: true
-  sni: mm.net.my
+  sni: opensignal.com
   alpn:
      - h2
      - http/1.1
@@ -630,7 +630,7 @@ proxies:
   port: 443
   type: vmess
   uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -640,14 +640,14 @@ proxies:
   ws-opts:
    path: /u/opentunnel.net-gamdisy
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "OpenSg2"
   server: mm.net.my.sgv-6.openv2ray.com
   port: 443
   type: vmess
   uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -657,14 +657,14 @@ proxies:
   ws-opts:
    path: /u/opentunnel.net-stallop
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "OpenAu"
   server: mm.net.my.auv-1.openv2ray.com
   port: 443
   type: vmess
   uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -674,7 +674,7 @@ proxies:
   ws-opts:
    path: /u/opentunnel.net-bobpou32
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "Usa1"
   server: mm.net.my.us1.oceis.net
@@ -684,7 +684,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -699,7 +699,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -714,7 +714,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -729,7 +729,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -748,7 +748,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -763,7 +763,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mm.net.my
+  servername: opensignal.com
   network: grpc
   grpc-opts:
     grpc-mode: gun

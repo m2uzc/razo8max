@@ -7,7 +7,7 @@ proxies:
   port: 443
   type: vmess
   uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -17,14 +17,14 @@ proxies:
   ws-opts:
    path: /sshkit/1074999023/64fc2ef1c791d/
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 - name: "backserversk4-9oct"
   server: mm.net.my.shkit4.madihadi.eu.org
   port: 443
   type: vmess
   uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-  sni: mm.net.my
+  sni: opensignal.com
   alterId: 0
   cipher: auto
   tls: true
@@ -34,7 +34,7 @@ proxies:
   ws-opts:
    path: /sshkit/1074999023/64fc2ea0aa509/
    headers:
-    Host: mm.net.my
+    Host: opensignal.com
 
 
 

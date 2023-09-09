@@ -6,7 +6,7 @@ proxies:
   port: 443
   password: da1e37e0-4715-11ee-ae8e-1239d0255272
   udp: true
-  sni: mm.net.my
+  sni: opensignal.com
   alpn:
      - h2
      - http/1.1
@@ -19,7 +19,7 @@ proxies:
   port: 443
   password: b7001f20-4715-11ee-898b-1239d0255272
   udp: true
-  sni: mm.net.my
+  sni: opensignal.com
   alpn:
      - h2
      - http/1.1
