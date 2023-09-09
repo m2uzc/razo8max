@@ -1,0 +1,444 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7893
+mixed-port: 7894
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+##external-controller: 0.0.0.0:9090
+bind-address: "*"
+unified-delay: true
+external-ui: folder
+interface-name: en0
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7895
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  default-nameserver:
+    - 8.8.8.8
+  nameserver:
+    - 8.8.8.8
+   #need dns encrypt to bypass bigo & tiktok proxy detection
+  fallback:
+    - tcp://8.8.8.8
+    - 8.8.8.8
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: false
+  fake-ip-filter:
+  - "+.*"
+  - ntp7.*.com
+  - ntp6.*.com
+  - ntp5.*.com
+  - ntp4.*.com
+  - ntp3.*.com
+  - ntp2.*.com
+  - ntp1.*.com
+  - ntp.*.com
+  - time7.*.com
+  - time6.*.com
+  - time5.*.com
+  - time4.*.com
+  - time3.*.com
+  - time2.*.com
+  - time1.*.com
+  - time.*.apple.com
+  - time.*.edu.cn
+  - time.*.gov
+  - time.*.com
+  - "*.home.arpa"
+  - "*.local"
+  - "*.test"
+  - "*.localhost"
+  - "*.invalid"
+  - "*.example"
+  - "*.localdomain"
+  - "*.lan"
+tun:
+  enable: true
+  dns-hijack:
+  - 8.8.8.8:53
+  - tcp://8.8.8.8:53
+  stack: system
+  auto-redir: true
+  auto-route: true
+  auto-detect-interface: true
+
+proxies:
+- name: "HowdyTrojan30day_15-20gb"
+  type: trojan
+  server: mm.net.my.ca-trojan.bonds.id
+  port: 443
+  password: 5243b290-4715-11ee-bde0-1239d0255272
+  udp: true
+  sni: opensignal.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+proxy-groups: 
+- name: All 
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  proxies:
+  - RobinZ
+  - RobinNovaUnstable
+  - Fallback
+  - FallbackX
+  - Manual1
+  - Manual2
+  - Manual1x
+  - Manual2x
+  - Manual1y
+  - Manual2y
+  - Youtube
+  - superfastlane
+  - multimedia
+  - special
+  - Ping++
+  - HowdyTrojan30day_15-20gb
+- name: Manual1
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Manual2
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Manual1x
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Manual2x
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Manual1y
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Manual2y
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: Youtube
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 30
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: RobinZ
+  type: load-balance
+  url: 'https://duckduckgo.com'
+  interval: 32
+  strategy: round-robin
+  disable-udp: false
+  tolerance: 6000
+  lazy: true
+  proxies:
+  - FallbackX
+  - FallbackY
+- name: RobinNovaUnstable
+  type: load-balance
+  url: 'https://duckduckgo.com'
+  interval: 32
+  strategy: round-robin
+  disable-udp: false
+  tolerance: 6000
+  lazy: true
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: FallbackX
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 30
+  lazy: false
+  proxies:
+  - Manual1
+  - Manual1x
+  - Manual1y
+  - Fallback
+  - Fallbackc
+- name: FallbackY
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 30
+  lazy: false
+  proxies:
+  - Manual2
+  - Manual2x
+  - Manual2y
+  - Fallback
+  - Fallbackc
+- name: superfastlane
+  type: load-balance
+  url: 'https://duckduckgo.com'
+  interval: 32
+  strategy: round-robin
+  disable-udp: false
+  tolerance: 6000
+  lazy: true
+  proxies:
+  - fastlane
+  - fastlaneb
+- name: fastlane
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 600
+  interval: 30
+  lazy: false
+  proxies:
+  - Fallbackb
+  - Fallbackc
+- name: fastlaneb
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 600
+  interval: 30
+  lazy: false
+  proxies:
+  - Fallbackb
+  - Fallbackc
+- name: multimedia
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 32
+  lazy: false
+  proxies:
+  - Youtube
+  - PingMedia
+  - Fallbackb
+- name: Ping++
+  type: url-test
+  url: 'https://duckduckgo.com'
+  interval: 30
+  tolerance: 600
+  lazy: false
+  use:
+  - sall
+  - sall2
+  - sall3
+- name: PingMedia
+  type: url-test
+  url: 'https://duckduckgo.com'
+  interval: 30
+  tolerance: 600
+  lazy: false
+  use:
+  - sall
+  - sall3
+- name: Fallback
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 30
+  lazy: false
+  use:
+  - sall
+  - sall2
+- name: Fallbackb
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 30
+  lazy: false
+  use:
+  - sall2
+  - sall
+- name: Fallbackc
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 30
+  lazy: false
+  use:
+  - sall3
+- name: special
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 30
+  lazy: false
+  use:
+  - sall4
+
+proxy-providers:
+  sall:
+    type: http
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3ax.yaml"
+    interval: 120
+    path: ./sall.yaml
+    health-check:
+      enable: true
+      interval: 120
+      lazy: false
+      url: https://duckduckgo.com
+  sall2:
+    type: http
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3bx.yaml"
+    interval: 120
+    path: ./sall2.yaml
+    health-check:
+      enable: true
+      interval: 120
+      lazy: false
+      url: https://duckduckgo.com
+  sall3:
+    type: http
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3cx.yaml"
+    interval: 120
+    path: ./sall3.yaml
+    health-check:
+      enable: true
+      interval: 120
+      lazy: false
+      url: https://duckduckgo.com
+  sall4:
+    type: http
+    url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty4cx.yaml"
+    interval: 120
+    path: ./sall4.yaml
+    health-check:
+      enable: true
+      interval: 120
+      lazy: false
+      url: https://duckduckgo.com
+
+rules:
+  - IP-CIDR,38.60.193.95/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.192.14/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.250.25/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.230.116/32,HowdyTrojan30day_15-20gb
+  - IP-CIDR,47.254.192.234/32,HowdyTrojan30day_15-20gb
+  - DOMAIN-SUFFIX,support1.like.video,superfastlane
+  - DOMAIN-SUFFIX,gdl.bigo.sg,superfastlane
+  - DOMAIN-SUFFIX,activity.bigo.tv,superfastlane
+  - DOMAIN-SUFFIX,graph.facebook.com,superfastlane
+  - DOMAIN-SUFFIX,launches.appsflyersdk.com,superfastlane
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,api.likee.video,superfastlane
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,exp.bigo.sg,superfastlane
+  - DOMAIN-SUFFIX,inapps.appsflyersdk.com,superfastlane
+  - DOMAIN-SUFFIX,hotroom.live.bigo.sg,superfastlane
+  - DOMAIN-SUFFIX,flag.bigo.sg,superfastlane
+  - DOMAIN-SUFFIX,static.f2ecdn.com,superfastlane
+  - DOMAIN-SUFFIX,support1.like.video,superfastlane
+  - DOMAIN-SUFFIX,esx.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,esx.bigo.sg,superfastlane
+  - DOMAIN-SUFFIX,static-fed.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,static-web.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,ta.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,ta.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,static-act.bigolive.tv,superfastlane
+  - DOMAIN-SUFFIX,support-json.like.video,superfastlane
+  - DOMAIN-SUFFIX,newlbs.live.bigo.sg,superfastlane
+  - DOMAIN-SUFFIX,bstream.sgmbocast.com,superfastlane
+  - DOMAIN-SUFFIX,v-sg.likee.video,superfastlane
+  - DOMAIN-SUFFIX,socks.live.bigo.sg,superfastlane
+  - DOMAIN-SUFFIX,asiabigosocks.like.bigo.sg,superfastlane
+  - DOMAIN-KEYWORD,tiktokcdn.com,superfastlane
+  - DOMAIN-KEYWORD,tiktokv.com,superfastlane
+  - DOMAIN-KEYWORD,tiktok.com,superfastlane
+  - DOMAIN-KEYWORD,tiktok,superfastlane
+  - DOMAIN-KEYWORD,akamai.net,superfastlane
+  - DOMAIN-KEYWORD,akamaiedge.net,superfastlane
+  - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
+  - DOMAIN-KEYWORD,returnyoutubedislikeapi,superfastlane
+  - DOMAIN-KEYWORD,bigo,superfastlane
+  - DOMAIN,mtalk.google.com,special
+  - DOMAIN,mobile-gtalk.l.google.com,special
+  - DOMAIN-KEYWORD,clients,special
+  - DOMAIN,android.apis.google.com,special
+  - DOMAIN-KEYWORD,googleapis.com,special
+  - DOMAIN-KEYWORD,googlevideo.com,multimedia
+  - DOMAIN-KEYWORD,googleapis,special
+  - DOMAIN-KEYWORD,googlevideo,multimedia
+  - DOMAIN-KEYWORD,googleusercontent,multimedia
+  - DOMAIN-KEYWORD,youtubei,multimedia
+  - DOMAIN-KEYWORD,ytimg,multimedia
+  - DOMAIN-KEYWORD,ggpht,multimedia
+  - DOMAIN-KEYWORD,youtube,multimedia
+  - DOMAIN-KEYWORD,ytimg.com,multimedia
+  - DOMAIN-KEYWORD,youtube.com,multimedia
+  - DOMAIN-KEYWORD,gvt,multimedia
+  - DOMAIN-KEYWORD,shazam,multimedia
+  - DOMAIN-KEYWORD,scdnco,multimedia
+  - DOMAIN-KEYWORD,scdn,multimedia
+  - DOMAIN-KEYWORD,Spotify,multimedia
+  - DOMAIN-KEYWORD,spotifycdn,multimedia
+  - DOMAIN-KEYWORD,gstatic,multimedia
+  - DOMAIN-KEYWORD,bing,superfastlane
+  - DOMAIN-KEYWORD,yahoo,superfastlane
+  - DOMAIN-KEYWORD,instagram,superfastlane
+  - DOMAIN-KEYWORD,image,superfastlane
+  - DOMAIN-SUFFIX,duckduckgo.com,HowdyTrojan30day_15-20gb
+  - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,raw.githubusercontent.com,HowdyTrojan30day_15-20gb
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - DOMAIN,analytics.google.com,REJECT
+  - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
+  - DOMAIN,analyticsreporting.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,REJECT
+  - DOMAIN-SUFFIX,googleadsserving.cn,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,googletagmanager.com,REJECT
+  - DOMAIN-SUFFIX,googletagservices.com,REJECT
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,analytics,REJECT
+  - DOMAIN-KEYWORD,analysis,REJECT
+  - DOMAIN-KEYWORD,ads,REJECT
+  - ###DOMAIN-KEYWORD,teamviewer,DIRECT
+  - ###SRC-PORT,5938,DIRECT
+  - ###DST-PORT,5938,DIRECT
+  - ###IP-CIDR,178.77.120.0/24,DIRECT
+  - ###IP-CIDR,127.0.0.1/32,DIRECT
+  - IP-CIDR,192.168.43.1/32,DIRECT
+  - GEOIP,MY,superfastlane
+  - ###SRC-PORT,9090,DIRECT
+  - DST-PORT,2222,DIRECT
+  - SRC-PORT,2222,DIRECT
+  - MATCH,All
