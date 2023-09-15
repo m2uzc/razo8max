@@ -168,7 +168,7 @@ proxies:
   server: us1.oceis.net
   port: 443
   type: vless
-  uuid: 5fd43730-4f9c-11ee-b531-205c6d5f5d78
+  uuid: 05fff5b0-538b-11ee-b036-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -214,6 +214,21 @@ proxies:
   port: 443
   type: vless
   uuid: 633c2340-51f2-11ee-a395-1239d0255272
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+- name: "Usa1"
+  server: us1.socifiles.com
+  port: 443
+  type: vless
+  uuid: aa3e8c80-538b-11ee-a452-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
