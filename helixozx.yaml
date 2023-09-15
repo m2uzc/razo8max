@@ -23,13 +23,13 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
-    - 9.9.9.9
+    - 9.9.9.11
   nameserver:
-    - https://secure.avastdns.com/dns-query
+    - https://dns11.quad9.net/dns-query
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://9.9.9.9
-    - 9.9.9.9
+    - tcp://9.9.9.11
+    - 9.9.9.11
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
   fake-ip-filter:
@@ -64,8 +64,8 @@ dns:
 tun:
   enable: true
   dns-hijack:
-  - 9.9.9.9:53
-  - tcp://9.9.9.9:53
+  - 9.9.9.11:53
+  - tcp://9.9.9.11:53
   stack: system
   auto-redir: true
   auto-route: true
