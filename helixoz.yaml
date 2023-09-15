@@ -23,13 +23,13 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
-    - 8.8.8.8
+    - 9.9.9.9
   nameserver:
-    - 8.8.8.8
+    - https://secure.avastdns.com/dns-query
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://8.8.8.8
-    - 8.8.8.8
+    - tcp://9.9.9.9
+    - 9.9.9.9
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
   fake-ip-filter:
