@@ -47,11 +47,11 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
-- name: "HowdyVr5sep"
-  server: mm.net.my.vr2hw.madihadi.eu.org
+- name: "HowdyVr29sept"
+  server: v2ray1.udpgw.com
   port: 443
   type: vmess
-  uuid: bcb68bd1-77ee-4562-9363-acf8b5450b58
+  uuid: 9ff6121d-5eb2-4f09-9059-f3c551a1a36a
   sni: opensignal.com
   alterId: 0
   cipher: auto
@@ -64,11 +64,11 @@ proxies:
    headers:
     Host: opensignal.com
 
-- name: "Howdytro5sep"
+- name: "Howdytro29sep"
   type: trojan
-  server: mm.net.my.tr2hw.madihadi.eu.org
+  server: trojan1.udpgw.com
   port: 443
-  password: f4cc7fd0-40af-11ee-93f1-1239d0255272
+  password: d63ec210-5462-11ee-9ac4-1239d0255272
   udp: true
   sni: opensignal.com
   alpn:
