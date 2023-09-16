@@ -11,10 +11,10 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: opensignal.com
-  network: vlgrpc
+  network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: grpc
+    grpc-service-name: vlgrpc
   udp: true
 
 - name: "sg1"
