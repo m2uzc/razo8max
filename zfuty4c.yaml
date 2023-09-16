@@ -25,6 +25,30 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "he1-16oct"
+  type: trojan
+  server: sg1-trojan.bonds.id
+  port: 443
+  password: da725a70-5477-11ee-b7ca-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "melbid-16oct"
+  type: trojan
+  server: sg-4.test3.net
+  port: 443
+  password: 403e6680-5477-11ee-a2c6-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "NL-16oct"
   type: trojan
   server: nl.test3.net
