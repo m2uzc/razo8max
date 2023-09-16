@@ -3,7 +3,6 @@ proxies:
 ##### fastest server unstable#####
 
 - name: "howdyaxgn"
-  type: trojan
   server: mm.net.my.sg3.socifiles.com
   port: 443
   type: vless

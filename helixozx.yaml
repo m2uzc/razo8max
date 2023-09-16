@@ -25,6 +25,7 @@ dns:
   default-nameserver:
     - 9.9.9.11
   nameserver:
+    - 9.9.9.11
     - https://dns11.quad9.net/dns-query
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
