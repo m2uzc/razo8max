@@ -25,5 +25,17 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "NL-16oct"
+  type: trojan
+  server: nl.test3.net
+  port: 443
+  password: 6c95cca0-543c-11ee-9855-1239d0255272
+  udp: true
+  sni: opensignal.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 
 

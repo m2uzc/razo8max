@@ -6,13 +6,17 @@ proxies:
   type: trojan
   server: mm.net.my.sg3.socifiles.com
   port: 443
-  password: 85af3030-0b09-11ee-b52f-1239d0255272
-  udp: true
-  sni: opensignal.com
-  alpn:
-     - h2
-     - http/1.1
+  type: vless
+  uuid: e857f2c0-543c-11ee-a8ac-1239d0255272
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  servername: opensignal.com
+  network: vlgrpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
 
 - name: "sg1"
   server: mm.net.my.sg-full.privateip.net
