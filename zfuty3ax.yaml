@@ -138,7 +138,7 @@ proxies:
   server: mm.net.my.nl2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 45e5062b-b030-43b9-893a-126a31af8401
+  uuid: 2dd95075-e6ba-49e8-92b9-f42ef9b9c2c2
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -168,7 +168,7 @@ proxies:
   server: mm.net.my.us1.oceis.net
   port: 443
   type: vless
-  uuid: 05fff5b0-538b-11ee-b036-205c6d5f5d78
+  uuid: 39e12830-5528-11ee-b733-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -183,7 +183,7 @@ proxies:
   server: mm.net.my.us2.oceis.net
   port: 443
   type: vless
-  uuid: 2ebfc3e0-4f9c-11ee-b935-205c6d5f5d78
+  uuid: 08bf1510-5528-11ee-b335-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true

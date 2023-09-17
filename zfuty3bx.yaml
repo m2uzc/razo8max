@@ -36,7 +36,7 @@ proxies:
   server: mm.net.my.sg2-full.privateip.net
   port: 2003
   type: vless
-  uuid: c887d4e7-0985-4ac3-8943-d86bc662a9e6
+  uuid: 1cb99138-c875-499f-8bcd-b99bc3e2ad24
   cipher: auto
   tls: true
   skip-cert-verify: true
