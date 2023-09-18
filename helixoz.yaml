@@ -23,14 +23,13 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
-    - 9.9.9.11
+    - 76.76.2.2
   nameserver:
-    - 9.9.9.11
-    - https://dns11.quad9.net/dns-query
+    - tls://no-ads-porn-dating-drugs-gambling-malware-typo.freedns.controld.com:853
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://9.9.9.11
-    - 9.9.9.11
+    - tcp://76.76.2.2
+    - 76.76.2.2
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
   fake-ip-filter:
@@ -65,8 +64,8 @@ dns:
 tun:
   enable: true
   dns-hijack:
-  - 9.9.9.11:53
-  - tcp://9.9.9.11:53
+  - 76.76.2.2:53
+  - tcp://76.76.2.2:53
   stack: system
   auto-redir: true
   auto-route: true
@@ -107,6 +106,7 @@ proxy-groups:
   - special
   - Ping++
   - HowdyTrojan30day_15-20gb
+  - DIRECT
 - name: Manual1
   type: select
   url: 'https://duckduckgo.com'
@@ -198,6 +198,7 @@ proxy-groups:
   - Manual1y
   - Fallback
   - Fallbackc
+  - DIRECT
 - name: FallbackY
   type: fallback
   url: 'https://duckduckgo.com'
@@ -210,6 +211,7 @@ proxy-groups:
   - Manual2y
   - Fallback
   - Fallbackc
+  - DIRECT
 - name: superfastlane
   type: load-balance
   url: 'https://duckduckgo.com'
@@ -230,6 +232,7 @@ proxy-groups:
   proxies:
   - Fallbackb
   - Fallbackc
+  - DIRECT
 - name: fastlaneb
   type: fallback
   url: 'https://duckduckgo.com'
@@ -239,6 +242,7 @@ proxy-groups:
   proxies:
   - Fallbackb
   - Fallbackc
+  - DIRECT
 - name: multimedia
   type: fallback
   url: 'https://duckduckgo.com'
@@ -249,6 +253,7 @@ proxy-groups:
   - Youtube
   - PingMedia
   - Fallbackb
+  - DIRECT
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
@@ -300,8 +305,18 @@ proxy-groups:
   tolerance: 6000
   interval: 32
   lazy: false
+  proxies:
+  - specialx
+  - DIRECT
+- name: specialx
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 32
+  lazy: false
   use:
   - sall4
+
 
 proxy-providers:
   sall:
