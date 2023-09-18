@@ -25,7 +25,7 @@ dns:
   default-nameserver:
     - 76.76.2.2
   nameserver:
-    - tls://no-ads-porn-dating-drugs-gambling-malware-typo.freedns.controld.com:853
+    - tls://no-ads-dating-drugs-gambling-malware-typo.freedns.controld.com:853
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
     - tcp://76.76.2.2
@@ -228,22 +228,22 @@ proxy-groups:
 - name: fastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 600
+  tolerance: 3200
   interval: 16
   lazy: false
   proxies:
-  - Fallbackb
-  - Fallbackc
+  - Fastb
+  - Fastc
   - DIRECT
 - name: fastlaneb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 600
+  tolerance: 3200
   interval: 16
   lazy: false
   proxies:
-  - Fallbackb
-  - Fallbackc
+  - Fastb
+  - Fastc
   - DIRECT
 - name: multimedia
   type: fallback
@@ -254,7 +254,8 @@ proxy-groups:
   proxies:
   - Youtube
   - PingMedia
-  - Fallbackb
+  - Fastb
+  - Fastc
   - DIRECT
 - name: Ping++
   type: url-test
@@ -301,29 +302,46 @@ proxy-groups:
   lazy: false
   use:
   - sall3
-- name: special
+- name: Fastb
   type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 300
+  interval: 32
+  lazy: false
+  use:
+  - sall2
+  - sall
+- name: Fastc
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 900
+  interval: 32
+  lazy: false
+  use:
+  - sall3
+- name: special
+  type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 32
-  lazy: false
+  lazy: true
   proxies:
   - specialx
   - DIRECT
 - name: specialx
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 6000
+  tolerance: 3200
   interval: 32
   lazy: false
   use:
   - sall4
 - name: HowdyTrojan30day_15-20gb
-  type: url-test
+  type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 32
-  lazy: false
+  lazy: true
   proxies:
   - HowdyTrojan30day_15-20gbx
   - DIRECT
