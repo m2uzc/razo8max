@@ -72,7 +72,7 @@ tun:
   auto-detect-interface: true
 
 proxies:
-- name: "HowdyTrojan30day_15-20gb"
+- name: "HowdyTrojan30day_15-20gbx"
   type: trojan
   server: mm.net.my.ca-trojan.bonds.id
   port: 443
@@ -198,6 +198,7 @@ proxy-groups:
   - Manual1y
   - Fallback
   - Fallbackc
+  - Fallbackb
   - DIRECT
 - name: FallbackY
   type: fallback
@@ -211,6 +212,7 @@ proxy-groups:
   - Manual2y
   - Fallback
   - Fallbackc
+  - Fallbackb
   - DIRECT
 - name: superfastlane
   type: load-balance
@@ -316,6 +318,15 @@ proxy-groups:
   lazy: false
   use:
   - sall4
+- name: HowdyTrojan30day_15-20gb
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 32
+  lazy: false
+  proxies:
+  - HowdyTrojan30day_15-20gbx
+  - DIRECT
 
 proxy-providers:
   sall:
