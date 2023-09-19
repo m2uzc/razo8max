@@ -228,7 +228,7 @@ proxy-groups:
 - name: fastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3200
+  tolerance: 1600
   interval: 16
   lazy: false
   proxies:
@@ -238,7 +238,7 @@ proxy-groups:
 - name: fastlaneb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3200
+  tolerance: 1600
   interval: 16
   lazy: false
   proxies:
@@ -303,9 +303,9 @@ proxy-groups:
   use:
   - sall3
 - name: Fastb
-  type: url-test
+  type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 300
+  tolerance: 600
   interval: 32
   lazy: false
   use:
