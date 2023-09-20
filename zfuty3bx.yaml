@@ -2,6 +2,53 @@ proxies:
 
 ##### fastest server unstable#####
 
+- name: "my.mfzf.link20oct-MyVless"
+  server: mm.net.my.my.mfzf.link
+  port: 443
+  type: vless
+  uuid: 1ad16ceb-7fb5-4539-af99-ab4c8af77f0b
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: opensignal.com
+  network: ws
+  ws-opts:
+    path: /vless-tls
+    headers:
+      Host: opensignal.com
+  udp: true
+
+- name: "rejoisst20oct-SgGprc"
+  server: mm.net.my.rejoisst.tech
+  port: 443
+  type: vless
+  uuid: 2115d433-536d-49d7-958a-c8ff53eeed05
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: opensignal.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  udp: true
+
+- name: "rejoisst20oct-SgVless"
+  server: mm.net.my.rejoisst.tech
+  port: 443
+  type: vless
+  uuid: 2115d433-536d-49d7-958a-c8ff53eeed05
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: opensignal.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: opensignal.com
+  udp: true
+
 - name: "howdyaxgn"
   server: mm.net.my.sg3.socifiles.com
   port: 443
