@@ -215,31 +215,10 @@ proxy-groups:
   - Fallbackb
   - DIRECT
 - name: superfastlane
-  type: load-balance
+  type: fallback
   url: 'https://duckduckgo.com'
+  tolerance: 1600
   interval: 32
-  strategy: round-robin
-  disable-udp: false
-  tolerance: 6000
-  lazy: true
-  proxies:
-  - fastlane
-  - fastlaneb
-- name: fastlane
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 1600
-  interval: 16
-  lazy: false
-  proxies:
-  - Fastb
-  - Fastc
-  - DIRECT
-- name: fastlaneb
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 1600
-  interval: 16
   lazy: false
   proxies:
   - Fastb
@@ -306,7 +285,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 600
-  interval: 32
+  interval: 16
   lazy: false
   use:
   - sall2
@@ -315,7 +294,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 900
-  interval: 32
+  interval: 16
   lazy: false
   use:
   - sall3
