@@ -6,7 +6,7 @@ proxies:
   server: mm.net.my.sg3.socifiles.com
   port: 443
   type: vless
-  uuid: e857f2c0-543c-11ee-a8ac-1239d0255272
+  uuid: d1b57db0-579f-11ee-b4a7-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -47,6 +47,18 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "Howdytro29sep"
+  type: trojan
+  server: trojan1.udpgw.com
+  port: 443
+  password: d63ec210-5462-11ee-9ac4-1239d0255272
+  udp: true
+  sni: opensignal.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
 - name: "HowdyVr29sept"
   server: v2ray1.udpgw.com
   port: 443
@@ -63,18 +75,6 @@ proxies:
    path: /worryfree
    headers:
     Host: opensignal.com
-
-- name: "Howdytro29sep"
-  type: trojan
-  server: trojan1.udpgw.com
-  port: 443
-  password: d63ec210-5462-11ee-9ac4-1239d0255272
-  udp: true
-  sni: opensignal.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
 
 - name: "SgMel1"
   server: mm.net.my.mel1.madihadi.eu.org
