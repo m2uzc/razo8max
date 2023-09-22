@@ -168,7 +168,7 @@ proxies:
   server: us1.oceis.net
   port: 443
   type: vless
-  uuid: d0bba840-5600-11ee-b439-205c6d5f5d78
+  uuid: 70f29300-5920-11ee-b237-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true

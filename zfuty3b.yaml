@@ -2,27 +2,11 @@ proxies:
 
 ##### fastest server #####
 
-- name: "my.mfzf.link20oct-MyVless"
-  server: my.mfzf.link
+- name: "howdyaxgn"
+  server: sg3.socifiles.com
   port: 443
   type: vless
-  uuid: 1ad16ceb-7fb5-4539-af99-ab4c8af77f0b
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: ws
-  ws-opts:
-    path: /vless-tls
-    headers:
-      Host: mobilelegends.com
-  udp: true
-
-- name: "rejoisst20oct-SgGprc"
-  server: rejoisst.tech
-  port: 443
-  type: vless
-  uuid: 2115d433-536d-49d7-958a-c8ff53eeed05
+  uuid: d1b57db0-579f-11ee-b4a7-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -30,30 +14,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vless-grpc
+    grpc-service-name: vlgrpc
   udp: true
 
-- name: "rejoisst20oct-SgVless"
-  server: rejoisst.tech
+- name: "howdyaxgnSg1"
+  server: asia.oceis.net
   port: 443
   type: vless
-  uuid: 2115d433-536d-49d7-958a-c8ff53eeed05
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: mobilelegends.com
-  udp: true
-
-- name: "howdyaxgn"
-  server: sg3.socifiles.com
-  port: 443
-  type: vless
-  uuid: d1b57db0-579f-11ee-b4a7-1239d0255272
+  uuid: 2cbb3bf0-5921-11ee-b733-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
