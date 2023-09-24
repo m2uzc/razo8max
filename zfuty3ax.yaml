@@ -18,7 +18,7 @@ proxies:
   server: mm.net.my.au-full.privateip.net
   port: 2003
   type: vless
-  uuid: 77ee871e-9331-4cec-8dea-be80461f8c4a
+  uuid: 27e6a8a1-69fb-42a2-a212-2e1e419a303c
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -138,7 +138,7 @@ proxies:
   server: mm.net.my.nl2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 2dd95075-e6ba-49e8-92b9-f42ef9b9c2c2
+  uuid: 975600d3-7e7f-4f57-94e3-79c7142ada3f
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -168,7 +168,7 @@ proxies:
   server: mm.net.my.us1.oceis.net
   port: 443
   type: vless
-  uuid: 70f29300-5920-11ee-b237-205c6d5f5d78
+  uuid: 09611fd0-5ab3-11ee-b035-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -224,11 +224,11 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "Usa1"
+- name: "Usa1x"
   server: mm.net.my.us1.socifiles.com
   port: 443
   type: vless
-  uuid: aa3e8c80-538b-11ee-a452-1239d0255272
+  uuid: 5bbc5150-5ab1-11ee-8993-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
