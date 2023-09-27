@@ -23,13 +23,17 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
-    - 76.76.2.2
+    - 94.140.14.14
+    - 94.140.14.15
   nameserver:
-    - tls://no-ads-dating-drugs-gambling-malware-typo.freedns.controld.com:853
+    - tls://dns.adguard.com:853
+    - https://dns.adguard.com/dns-query
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://76.76.2.2
-    - 76.76.2.2
+    - tcp://94.140.14.14
+    - tcp://94.140.14.15
+    - 94.140.14.14
+    - 94.140.14.15
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
   fake-ip-filter:
@@ -64,8 +68,10 @@ dns:
 tun:
   enable: true
   dns-hijack:
-  - 76.76.2.2:53
-  - tcp://76.76.2.2:53
+  - 94.140.14.14:53
+  - tcp://94.140.14.14:53
+  - 94.140.14.15:53
+  - tcp://94.140.14.15:53
   stack: system
   auto-redir: true
   auto-route: true
