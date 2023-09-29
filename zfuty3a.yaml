@@ -18,7 +18,7 @@ proxies:
   server: au-full.privateip.net
   port: 2003
   type: vless
-  uuid: 27e6a8a1-69fb-42a2-a212-2e1e419a303c
+  uuid: d81b3dfd-f8b4-483d-ab4c-bcaec2c584a3
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -138,7 +138,7 @@ proxies:
   server: nl2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 975600d3-7e7f-4f57-94e3-79c7142ada3f
+  uuid: 02ed87cd-9653-4017-bac0-6a80636e5610
   cipher: auto
   tls: true
   skip-cert-verify: true
