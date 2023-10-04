@@ -32,6 +32,23 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
+- name: "Dyna17oct"
+  server: dynamic-sg1b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: 23f0ff39-3e2e-4c6d-b1f4-6c3431069b14
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mobilelegends.com
+
 - name: "sg1"
   server: sg1-full.privateip.net
   port: 2003
@@ -139,23 +156,6 @@ proxies:
   network: ws
   ws-opts:
    path: /vmess
-   headers:
-    Host: mobilelegends.com
-
-- name: "Dyna15sept"
-  server: dynamic-sg1b.obfs.xyz
-  port: 443
-  type: vmess
-  uuid: 1b27e1c9-0acb-4a20-8b73-a5daa02f0da2
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
    headers:
     Host: mobilelegends.com
 

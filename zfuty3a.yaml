@@ -239,6 +239,22 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
+- name: "DynaUS17oct"
+  server: dynamic-us1b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: ad397600-d59b-4cfd-953d-49466999f320
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mobilelegends.com
 
 
 
