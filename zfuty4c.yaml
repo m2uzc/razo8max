@@ -13,11 +13,11 @@ proxies:
   skip-cert-verify: true
 
 
-- name: "AmpSg4-30sep"
+- name: "AmpSg4-11nov"
   type: trojan
   server: sg-2.test3.net
   port: 443
-  password: b7001f20-4715-11ee-898b-1239d0255272
+  password: 2d205060-687d-11ee-a83b-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -37,11 +37,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "melbid-16oct"
+- name: "melbid-11nov"
   type: trojan
   server: sg-4.test3.net
   port: 443
-  password: 403e6680-5477-11ee-a2c6-1239d0255272
+  password: d51c3980-687e-11ee-aa57-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
