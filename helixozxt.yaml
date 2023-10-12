@@ -80,9 +80,9 @@ tun:
 proxies:
 - name: "HowdyTrojan30day_15-20gbx"
   type: trojan
-  server: mm.net.my.ro1.test3.net
+  server: mm.net.my.fr1.test3.net
   port: 443
-  password: 49015460-687e-11ee-a573-1239d0255272
+  password: 3da97d60-6922-11ee-9bb1-1239d0255272
   udp: true
   sni: opensignal.com
   alpn:
