@@ -78,7 +78,7 @@ proxies:
   server: ca-full.privateip.net
   port: 2003
   type: vless
-  uuid: 31181bbf-a355-4d40-87a2-4e3baf907c18
+  uuid: 38a8a1d7-afec-4d07-93d4-3b99f7c3b1fb
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -183,7 +183,7 @@ proxies:
   server: us2.oceis.net
   port: 443
   type: vless
-  uuid: 4eaa7f50-6496-11ee-b836-205c6d5f5d78
+  uuid: 559cdc80-6a0d-11ee-b636-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -213,7 +213,7 @@ proxies:
   server: us5.socifiles.com
   port: 443
   type: vless
-  uuid: 633c2340-51f2-11ee-a395-1239d0255272
+  uuid: b65cee20-6a0d-11ee-b76c-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
