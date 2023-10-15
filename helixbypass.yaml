@@ -1,0 +1,128 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7893
+mixed-port: 7894
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+##external-controller: 0.0.0.0:9090
+bind-address: "*"
+unified-delay: true
+external-ui: folder
+interface-name: en0
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7895
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  default-nameserver:
+    - 94.140.14.14
+    - 94.140.14.15
+  nameserver:
+    - tls://dns.adguard.com:853
+    - https://dns.adguard.com/dns-query
+   #need dns encrypt to bypass bigo & tiktok proxy detection
+  fallback:
+    - tcp://94.140.14.14
+    - tcp://94.140.14.15
+    - 94.140.14.14
+    - 94.140.14.15
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: false
+  fake-ip-filter:
+  - "+.*"
+  - ntp7.*.com
+  - ntp6.*.com
+  - ntp5.*.com
+  - ntp4.*.com
+  - ntp3.*.com
+  - ntp2.*.com
+  - ntp1.*.com
+  - ntp.*.com
+  - time7.*.com
+  - time6.*.com
+  - time5.*.com
+  - time4.*.com
+  - time3.*.com
+  - time2.*.com
+  - time1.*.com
+  - time.*.apple.com
+  - time.*.edu.cn
+  - time.*.gov
+  - time.*.com
+  - "*.home.arpa"
+  - "*.local"
+  - "*.test"
+  - "*.localhost"
+  - "*.invalid"
+  - "*.example"
+  - "*.localdomain"
+  - "*.lan"
+tun:
+  enable: true
+  dns-hijack:
+  - 94.140.14.14:53
+  - tcp://94.140.14.14:53
+  - 94.140.14.15:53
+  - tcp://94.140.14.15:53
+  stack: system
+  auto-redir: true
+  auto-route: true
+  auto-detect-interface: true
+
+proxy-groups: 
+- name: All 
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 500
+  proxies:
+  - DIRECT
+  - http
+
+proxies:
+- name: "http"
+  type: http
+  server: 192.168.49.1
+  port: 8282
+    # username: username
+    # password: password
+    # tls: true
+    # skip-cert-verify: true
+    # udp: true
+  skip-cert-verify: true
+
+rules:
+  - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - DOMAIN,analytics.google.com,REJECT
+  - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
+  - DOMAIN,analyticsreporting.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,REJECT
+  - DOMAIN-SUFFIX,googleadsserving.cn,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,googletagmanager.com,REJECT
+  - DOMAIN-SUFFIX,googletagservices.com,REJECT
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,analytics,REJECT
+  - DOMAIN-KEYWORD,analysis,REJECT
+  - DOMAIN-KEYWORD,ads,REJECT
+  - ###DOMAIN-KEYWORD,teamviewer,DIRECT
+  - ###SRC-PORT,5938,DIRECT
+  - ###DST-PORT,5938,DIRECT
+  - ###IP-CIDR,178.77.120.0/24,DIRECT
+  - ###IP-CIDR,127.0.0.1/32,DIRECT
+  - IP-CIDR,192.168.43.1/32,DIRECT
+  - GEOIP,MY,DIRECT
+  - ###SRC-PORT,9090,DIRECT
+  - DST-PORT,2222,DIRECT
+  - SRC-PORT,2222,DIRECT
+  - MATCH,All
