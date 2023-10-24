@@ -18,7 +18,7 @@ proxies:
   server: au-full.privateip.net
   port: 2003
   type: vless
-  uuid: b881885a-15f0-4183-8111-191ff64a5397
+  uuid: 87cc9473-d196-4cd2-b772-6039d87625e9
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -78,7 +78,7 @@ proxies:
   server: ca-full.privateip.net
   port: 2003
   type: vless
-  uuid: 38a8a1d7-afec-4d07-93d4-3b99f7c3b1fb
+  uuid: 154cd875-95d5-44bb-8d85-9f643556a927
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -138,7 +138,7 @@ proxies:
   server: nl2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 02ed87cd-9653-4017-bac0-6a80636e5610
+  uuid: f3affb69-9dc6-45ba-b843-91542f83c89e
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -168,7 +168,7 @@ proxies:
   server: us1.oceis.net
   port: 443
   type: vless
-  uuid: 1b8ede90-6496-11ee-b139-205c6d5f5d78
+  uuid: 0e7f2b70-7234-11ee-b8ec-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -183,7 +183,7 @@ proxies:
   server: us2.oceis.net
   port: 443
   type: vless
-  uuid: 559cdc80-6a0d-11ee-b636-205c6d5f5d78
+  uuid: 81119620-7233-11ee-b339-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -213,7 +213,7 @@ proxies:
   server: us5.socifiles.com
   port: 443
   type: vless
-  uuid: b65cee20-6a0d-11ee-b76c-1239d0255272
+  uuid: df65bfc0-7233-11ee-8cb0-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
