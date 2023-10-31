@@ -420,6 +420,7 @@ rules:
   - DOMAIN,mobile-gtalk.l.google.com,special
   - DOMAIN-KEYWORD,clients,special
   - DOMAIN,android.apis.google.com,special
+  - DOMAIN,engage.cloudflareclient.com,DIRECT
   - DOMAIN-KEYWORD,googleapis.com,special
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
   - DOMAIN-KEYWORD,googleapis,special

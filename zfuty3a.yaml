@@ -18,7 +18,7 @@ proxies:
   server: au-full.privateip.net
   port: 2003
   type: vless
-  uuid: 87cc9473-d196-4cd2-b772-6039d87625e9
+  uuid: adc01954-1578-4ae4-a09f-f6b3983210f2
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -168,7 +168,7 @@ proxies:
   server: us1.oceis.net
   port: 443
   type: vless
-  uuid: 0e7f2b70-7234-11ee-b8ec-1239d0255272
+  uuid: 0117ec80-77b9-11ee-b850-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -213,7 +213,7 @@ proxies:
   server: us5.socifiles.com
   port: 443
   type: vless
-  uuid: ebd714a0-7528-11ee-9c5a-1239d0255272
+  uuid: 316cf710-77b9-11ee-9b0d-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
