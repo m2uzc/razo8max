@@ -78,17 +78,18 @@ tun:
   auto-detect-interface: true
 
 proxies:
-- name: "HowdyTrojan30day_15-20gbx"
+- name: "HowdyTrojan30day_15-20gbxyyy"
   type: trojan
-  server: fr1.test3.net
+  server: fr1.test3.netyy
   port: 443
-  password: 3da97d60-6922-11ee-9bb1-1239d0255272
+  password: 2e5eba00-79d8-11ee-8974-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
      - h2
      - http/1.1
   skip-cert-verify: true
+
 
 proxy-groups: 
 - name: All 
@@ -109,9 +110,8 @@ proxy-groups:
   - Youtube
   - superfastlane
   - multimedia
-  - special
+  - specialcore
   - Ping++
-  - HowdyTrojan30day_15-20gb
   - DIRECT
 - name: Manual1
   type: select
@@ -304,6 +304,14 @@ proxy-groups:
   lazy: false
   use:
   - sall3
+- name: specialcore
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 32
+  lazy: false
+  use:
+  - sall4
 - name: special
   type: fallback
   url: 'https://duckduckgo.com'
@@ -311,25 +319,18 @@ proxy-groups:
   interval: 32
   lazy: true
   proxies:
-  - specialx
+  - specialcore
   - DIRECT
-- name: specialx
-  type: url-test
-  url: 'https://duckduckgo.com'
-  tolerance: 3200
-  interval: 32
-  lazy: false
-  use:
-  - sall4
 - name: HowdyTrojan30day_15-20gb
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 32
-  lazy: true
+  lazy: false
   proxies:
-  - HowdyTrojan30day_15-20gbx
+  - specialcore
   - DIRECT
+
 
 proxy-providers:
   sall:
@@ -461,6 +462,7 @@ rules:
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
   - DOMAIN-KEYWORD,ads,REJECT
+  - DOMAIN-KEYWORD,cloudflare,DIRECT
   - DOMAIN-KEYWORD,teamviewer,DIRECT
   - SRC-PORT,5938,DIRECT
   - DST-PORT,5938,DIRECT

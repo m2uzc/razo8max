@@ -1,10 +1,10 @@
 proxies:
 
-- name: "Ge-28nov" 
+- name: "HowdyTrojan30day_15-20gbx"
   type: trojan
-  server: de1.test3.net
+  server: fr1.test3.net
   port: 443
-  password: da58c3b0-7527-11ee-acd5-1239d0255272
+  password: 2e5eba00-79d8-11ee-8974-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -12,66 +12,21 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "HeSg1-30sep" 
-  type: trojan
-  server: sg1-trojan.bonds.id
+- name: "backserverSSHkit-30day"
+  server: vmess-sg1.sshkit.org
   port: 443
-  password: da1e37e0-4715-11ee-ae8e-1239d0255272
-  udp: true
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
   sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
-
-
-- name: "AmpSg4-11nov" unstable
-  type: trojan
-  server: sg-2.test3.net
-  port: 443
-  password: 2d205060-687d-11ee-a83b-1239d0255272
   udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "he1-16oct"
-  type: trojan
-  server: sg1-trojan.bonds.id
-  port: 443
-  password: da725a70-5477-11ee-b7ca-1239d0255272
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "melbid-11nov" unstable
-  type: trojan
-  server: sg-4.test3.net
-  port: 443
-  password: d51c3980-687e-11ee-aa57-1239d0255272
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-- name: "NL-16oct"
-  type: trojan
-  server: nl.test3.net
-  port: 443
-  password: 6c95cca0-543c-11ee-9855-1239d0255272
-  udp: true
-  sni: mobilelegends.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/654438640be89/
+   headers:
+    Host: mobilelegends.com
 
 
