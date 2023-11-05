@@ -78,9 +78,9 @@ tun:
   auto-detect-interface: true
 
 proxies:
-- name: "HowdyTrojan30day_15-20gbxyyy"
+- name: "HowdyTrojan30day_15-20gbx"
   type: trojan
-  server: fr1.test3.netyy
+  server: fr1.test3.net
   port: 443
   password: 2e5eba00-79d8-11ee-8974-1239d0255272
   udp: true
@@ -95,10 +95,9 @@ proxy-groups:
 - name: All 
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   proxies:
   - RobinZ
-  - RobinNovaUnstable
   - Fallback
   - FallbackX
   - Manual1
@@ -116,7 +115,7 @@ proxy-groups:
 - name: Manual1
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   use:
   - sall
   - sall2
@@ -124,7 +123,7 @@ proxy-groups:
 - name: Manual2
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   use:
   - sall
   - sall2
@@ -132,7 +131,7 @@ proxy-groups:
 - name: Manual1x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   use:
   - sall
   - sall2
@@ -140,7 +139,7 @@ proxy-groups:
 - name: Manual2x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   use:
   - sall
   - sall2
@@ -148,7 +147,7 @@ proxy-groups:
 - name: Manual1y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   use:
   - sall
   - sall2
@@ -156,7 +155,7 @@ proxy-groups:
 - name: Manual2y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   use:
   - sall
   - sall2
@@ -164,7 +163,7 @@ proxy-groups:
 - name: Youtube
   type: select
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 30
   use:
   - sall
   - sall2
@@ -172,7 +171,7 @@ proxy-groups:
 - name: RobinZ
   type: load-balance
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 24
   strategy: round-robin
   disable-udp: false
   tolerance: 6000
@@ -180,23 +179,11 @@ proxy-groups:
   proxies:
   - FallbackX
   - FallbackY
-- name: RobinNovaUnstable
-  type: load-balance
-  url: 'https://duckduckgo.com'
-  interval: 32
-  strategy: round-robin
-  disable-udp: false
-  tolerance: 6000
-  lazy: true
-  use:
-  - sall
-  - sall2
-  - sall3
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 16
+  interval: 12
   lazy: false
   proxies:
   - Manual1
@@ -210,7 +197,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 16
+  interval: 12
   lazy: false
   proxies:
   - Manual2
@@ -224,7 +211,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 1600
-  interval: 32
+  interval: 24
   lazy: false
   proxies:
   - Fastb
@@ -234,8 +221,8 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 32
-  lazy: true
+  interval: 24
+  lazy: false
   proxies:
   - Youtube
   - PingMedia
@@ -245,7 +232,7 @@ proxy-groups:
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 32
+  interval: 12
   tolerance: 600
   lazy: true
   use:
@@ -255,7 +242,7 @@ proxy-groups:
 - name: PingMedia
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 16
+  interval: 12
   tolerance: 600
   lazy: false
   use:
@@ -265,7 +252,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 16
+  interval: 12
   lazy: false
   use:
   - sall
@@ -274,7 +261,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 32
+  interval: 12
   lazy: false
   use:
   - sall2
@@ -283,7 +270,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 32
+  interval: 12
   lazy: false
   use:
   - sall3
@@ -291,7 +278,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 600
-  interval: 16
+  interval: 12
   lazy: false
   use:
   - sall2
@@ -300,7 +287,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 900
-  interval: 16
+  interval: 12
   lazy: false
   use:
   - sall3
@@ -308,7 +295,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 32
+  interval: 30
   lazy: false
   use:
   - sall4
@@ -316,8 +303,8 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 32
-  lazy: true
+  interval: 60
+  lazy: false
   proxies:
   - specialcore
   - DIRECT
@@ -325,52 +312,52 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 32
+  interval: 24
   lazy: false
   proxies:
-  - specialcore
   - DIRECT
-
+  - HowdyTrojan30day_15-20gbx
+  - specialcore
 
 proxy-providers:
   sall:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3a.yaml"
-    interval: 64
+    interval: 60
     path: ./sall.yaml
     health-check:
       enable: true
-      interval: 64
+      interval: 60
       lazy: false
       url: https://duckduckgo.com
   sall2:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3b.yaml"
-    interval: 64
+    interval: 60
     path: ./sall2.yaml
     health-check:
       enable: true
-      interval: 64
+      interval: 60
       lazy: false
       url: https://duckduckgo.com
   sall3:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3c.yaml"
-    interval: 64
+    interval: 60
     path: ./sall3.yaml
     health-check:
       enable: true
-      interval: 64
+      interval: 60
       lazy: false
       url: https://duckduckgo.com
   sall4:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty4c.yaml"
-    interval: 64
+    interval: 60
     path: ./sall4.yaml
     health-check:
       enable: true
-      interval: 64
+      interval: 60
       lazy: false
       url: https://duckduckgo.com
 
@@ -445,6 +432,8 @@ rules:
   - DOMAIN-KEYWORD,instagram,superfastlane
   - DOMAIN-KEYWORD,image,superfastlane
   - DOMAIN-SUFFIX,duckduckgo.com,HowdyTrojan30day_15-20gb
+  - DOMAIN,duckduckgo.com,HowdyTrojan30day_15-20gb
+  - DOMAIN-KEYWORD,duckduckgo.com,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,giftesx.bigo.sg,REJECT
   - DOMAIN-SUFFIX,raw.githubusercontent.com,HowdyTrojan30day_15-20gb
   - DOMAIN-SUFFIX,ad.com,REJECT

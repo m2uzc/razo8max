@@ -29,51 +29,6 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
-- name: "Aurc2"
-  server: au2-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: baa2e327-297c-4f13-9dc2-b7a1798c6927
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Usrc1"
-  server: us-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 1ebbd129-2a0f-48ef-9083-3cf4e0d9e3f3
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Usrc2"
-  server: us2-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: a9f7a563-fd3d-4d06-9def-03cae65c4562
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
 - name: "ca"
   server: ca-full.privateip.net
   port: 2003
@@ -83,51 +38,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Nlrc1"
-  server: nl-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: b57bf738-e5e8-4ff2-9fcb-03664badb19b
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "de2"
-  server: de2-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 17ef5d47-b584-4771-8e7d-5788d4ba61cf
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "de3"
-  server: mm.net.my.de3-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 5d3a5a59-b24c-42a6-8704-f03e722a113f
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mm.net.my
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -149,56 +59,11 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
-- name: "Nlrc3"
-  server: nl3-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 1fc9be67-8891-4246-9898-e9e1de0f7106
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Usa1"
-  server: us1.oceis.net
-  port: 443
-  type: vless
-  uuid: 0117ec80-77b9-11ee-b850-1239d0255272
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
-
 - name: "Usa2"
   server: us2.oceis.net
   port: 443
   type: vless
-  uuid: 4da5dbb0-7b00-11ee-b730-205c6d5f5d78
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
-
-- name: "Usa4"
-  server: us4.socifiles.com
-  port: 443
-  type: vless
-  uuid: 39fd9e90-5ce2-11ee-95d0-1239d0255272
+  uuid: efefc880-7ba1-11ee-b832-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -225,7 +90,7 @@ proxies:
   udp: true
 
 - name: "Usa1x"
-  server: us1.socifiles.com
+  server: us1.socifiles.comy
   port: 443
   type: vless
   uuid: 06727030-79db-11ee-9f61-1239d0255272
@@ -239,22 +104,6 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "DynaUS17oct"
-  server: dynamic-us1b.obfs.xyz
-  port: 443
-  type: vmess
-  uuid: ad397600-d59b-4cfd-953d-49466999f320
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: mobilelegends.com
 
 
 

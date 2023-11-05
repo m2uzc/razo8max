@@ -17,21 +17,6 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "howdyaxgnSg1"
-  server: asia.oceis.net
-  port: 443
-  type: vless
-  uuid: 509f57e0-5ab3-11ee-b334-205c6d5f5d78
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
-
 - name: "Dyna7nov"
   server: dynamic-sg2b.obfs.xyz
   port: 443
@@ -107,91 +92,6 @@ proxies:
    path: /worryfree
    headers:
     Host: opensignal.com
-
-- name: "SgMel1"
-  server: sg1-mlb.v2rayserv.com
-  port: 443
-  type: vmess
-  uuid: 487577d3-035e-4769-b180-8314dbf9cb75
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
-
-- name: "SgMel2"
-  server: sg2-mlb.v2rayserv.com
-  port: 443
-  type: vmess
-  uuid: 9bcf4594-66b9-4d1c-bd80-f7d10160e1a8
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
-
-- name: "SgMel3"
-  server: sg3-mlb.v2rayserv.com
-  port: 443
-  type: vmess
-  uuid: 92580fc1-f8a7-4e57-9625-446d4fb870c8
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /vmess
-   headers:
-    Host: mobilelegends.com
-
-- name: "OpenSg1x"
-  server: sgv-5.openv2ray.com
-  port: 443
-  type: vmess
-  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /u/opentunnel.net-reegina
-   headers:
-    Host: mobilelegends.com
-
-- name: "OpenSg2x"
-  server: sgv-6.openv2ray.com
-  port: 443
-  type: vmess
-  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-  sni: mobilelegends.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /u/opentunnel.net-sunytiea
-   headers:
-    Host: mobilelegends.com
 
 - name: "Dummy"
   type: trojan
