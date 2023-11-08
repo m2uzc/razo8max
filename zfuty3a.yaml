@@ -18,7 +18,7 @@ proxies:
   server: au-full.privateip.net
   port: 2003
   type: vless
-  uuid: adc01954-1578-4ae4-a09f-f6b3983210f2
+  uuid: 5a22f6df-ec27-4dbf-880c-4e06ffd2befd
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -33,7 +33,7 @@ proxies:
   server: ca-full.privateip.net
   port: 2003
   type: vless
-  uuid: 080c6ff9-31c4-4400-95fe-ad6be6bfd46d
+  uuid: e00605bf-8afa-4418-ab1a-a179075e6c6a
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -82,7 +82,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: mobilelegends.com
+  servername: mobilelegends.comx
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -90,10 +90,10 @@ proxies:
   udp: true
 
 - name: "Usa1x"
-  server: us1.socifiles.comy
+  server: us1.socifiles.com
   port: 443
   type: vless
-  uuid: 06727030-79db-11ee-9f61-1239d0255272
+  uuid: da0032c0-7dea-11ee-9a60-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true

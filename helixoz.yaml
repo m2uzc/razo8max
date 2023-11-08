@@ -95,7 +95,7 @@ proxy-groups:
 - name: All 
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   proxies:
   - RobinZ
   - Fallback
@@ -115,7 +115,7 @@ proxy-groups:
 - name: Manual1
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   use:
   - sall
   - sall2
@@ -123,7 +123,7 @@ proxy-groups:
 - name: Manual2
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   use:
   - sall
   - sall2
@@ -131,7 +131,7 @@ proxy-groups:
 - name: Manual1x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   use:
   - sall
   - sall2
@@ -139,7 +139,7 @@ proxy-groups:
 - name: Manual2x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   use:
   - sall
   - sall2
@@ -147,7 +147,7 @@ proxy-groups:
 - name: Manual1y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   use:
   - sall
   - sall2
@@ -155,7 +155,7 @@ proxy-groups:
 - name: Manual2y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   use:
   - sall
   - sall2
@@ -163,7 +163,7 @@ proxy-groups:
 - name: Youtube
   type: select
   url: 'https://duckduckgo.com'
-  interval: 30
+  interval: 12
   use:
   - sall
   - sall2
@@ -171,7 +171,7 @@ proxy-groups:
 - name: RobinZ
   type: load-balance
   url: 'https://duckduckgo.com'
-  interval: 24
+  interval: 300
   strategy: round-robin
   disable-udp: false
   tolerance: 6000
@@ -183,7 +183,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 26
   lazy: false
   proxies:
   - Manual1
@@ -197,7 +197,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 26
   lazy: false
   proxies:
   - Manual2
@@ -211,8 +211,8 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 1600
-  interval: 24
-  lazy: false
+  interval: 26
+  lazy: true
   proxies:
   - Fastb
   - Fastc
@@ -221,8 +221,8 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 24
-  lazy: false
+  interval: 26
+  lazy: true
   proxies:
   - Youtube
   - PingMedia
@@ -232,7 +232,7 @@ proxy-groups:
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 26
   tolerance: 600
   lazy: true
   use:
@@ -303,7 +303,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 60
+  interval: 62
   lazy: false
   proxies:
   - specialcore
@@ -312,7 +312,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 24
+  interval: 62
   lazy: false
   proxies:
   - DIRECT
@@ -323,7 +323,7 @@ proxy-providers:
   sall:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3a.yaml"
-    interval: 60
+    interval: 122
     path: ./sall.yaml
     health-check:
       enable: true
@@ -333,7 +333,7 @@ proxy-providers:
   sall2:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3b.yaml"
-    interval: 60
+    interval: 122
     path: ./sall2.yaml
     health-check:
       enable: true
@@ -343,7 +343,7 @@ proxy-providers:
   sall3:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3c.yaml"
-    interval: 60
+    interval: 122
     path: ./sall3.yaml
     health-check:
       enable: true
@@ -353,7 +353,7 @@ proxy-providers:
   sall4:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty4c.yaml"
-    interval: 60
+    interval: 122
     path: ./sall4.yaml
     health-check:
       enable: true

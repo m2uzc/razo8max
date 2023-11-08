@@ -38,7 +38,7 @@ proxies:
   server: sg1-full.privateip.net
   port: 2003
   type: vless
-  uuid: 5e5e1502-ed22-4e2f-aa5a-ab6b56015d97
+  uuid: ebf5a2bd-fe1f-481e-bcd4-2abdfd94cf45
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -50,7 +50,7 @@ proxies:
   udp: true
 
 - name: "sg2"
-  server: sg2-full.privateip.net
+  server: sg2-full.privateip.nety
   port: 2003
   type: vless
   uuid: 1dadb8bf-b0ab-4dc5-9b7b-410f83b3d513
@@ -66,7 +66,7 @@ proxies:
 
 - name: "Howdytro29sep"
   type: trojan
-  server: trojan1.udpgw.com
+  server: trojan1.udpgw.comy
   port: 443
   password: d63ec210-5462-11ee-9ac4-1239d0255272
   udp: true
@@ -77,7 +77,7 @@ proxies:
   skip-cert-verify: true
 
 - name: "HowdyVr29sept"
-  server: v2ray1.udpgw.com
+  server: v2ray1.udpgw.comy
   port: 443
   type: vmess
   uuid: 9ff6121d-5eb2-4f09-9059-f3c551a1a36a
