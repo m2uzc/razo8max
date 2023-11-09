@@ -63,7 +63,7 @@ proxies:
   server: us2.oceis.net
   port: 443
   type: vless
-  uuid: efefc880-7ba1-11ee-b832-205c6d5f5d78
+  uuid: 00225c40-7e9c-11ee-b038-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -93,7 +93,7 @@ proxies:
   server: us1.socifiles.com
   port: 443
   type: vless
-  uuid: da0032c0-7dea-11ee-9a60-1239d0255272
+  uuid: 8d0a5b30-7e9c-11ee-bbd4-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
