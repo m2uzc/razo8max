@@ -120,6 +120,7 @@ proxy-groups:
   - sall
   - sall2
   - sall3
+  - sall4
 - name: Manual2
   type: select
   url: 'https://duckduckgo.com'
@@ -128,6 +129,7 @@ proxy-groups:
   - sall
   - sall2
   - sall3
+  - sall4
 - name: Manual1x
   type: select
   url: 'https://duckduckgo.com'
@@ -136,6 +138,7 @@ proxy-groups:
   - sall
   - sall2
   - sall3
+  - sall4
 - name: Manual2x
   type: select
   url: 'https://duckduckgo.com'
@@ -144,6 +147,7 @@ proxy-groups:
   - sall
   - sall2
   - sall3
+  - sall4
 - name: Manual1y
   type: select
   url: 'https://duckduckgo.com'
@@ -152,6 +156,7 @@ proxy-groups:
   - sall
   - sall2
   - sall3
+  - sall4
 - name: Manual2y
   type: select
   url: 'https://duckduckgo.com'
@@ -160,6 +165,7 @@ proxy-groups:
   - sall
   - sall2
   - sall3
+  - sall4
 - name: Youtube
   type: select
   url: 'https://duckduckgo.com'
@@ -168,6 +174,7 @@ proxy-groups:
   - sall
   - sall2
   - sall3
+  - sall4
 - name: RobinZ
   type: load-balance
   url: 'https://duckduckgo.com'
@@ -189,10 +196,10 @@ proxy-groups:
   - Manual1
   - Manual1x
   - Manual1y
+  - DIRECT
   - Fallback
   - Fallbackc
   - Fallbackb
-  - DIRECT
 - name: FallbackY
   type: fallback
   url: 'https://duckduckgo.com'
@@ -203,10 +210,10 @@ proxy-groups:
   - Manual2
   - Manual2x
   - Manual2y
+  - DIRECT
   - Fallback
   - Fallbackc
   - Fallbackb
-  - DIRECT
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
