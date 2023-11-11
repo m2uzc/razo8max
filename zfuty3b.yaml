@@ -18,10 +18,10 @@ proxies:
   udp: true
 
 - name: "Dyna7nov"
-  server: dynamic-sg2b.obfs.xyz
+  server: dynamic-sg1b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 6c0332a0-d7e3-4cbc-a229-9c90691b8a94
+  uuid: 23e6d3cd-2a21-4289-b314-942641e00858
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
