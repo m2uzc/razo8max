@@ -6,7 +6,7 @@ proxies:
   server: sg3.socifiles.com
   port: 443
   type: vless
-  uuid: 311d5770-87a5-11ee-97be-1239d0255272
+  uuid: 1eaf3b60-8bea-11ee-a916-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true

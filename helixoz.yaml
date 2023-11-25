@@ -411,6 +411,9 @@ rules:
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
   - DOMAIN-KEYWORD,returnyoutubedislikeapi,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
+  - DOMAIN,bing.com,superfastlane
+  - DOMAIN-SUFFIX,bing.com,superfastlane
+  - DOMAIN-KEYWORD,bing,superfastlane
   - DOMAIN,mtalk.google.com,special
   - DOMAIN,mobile-gtalk.l.google.com,special
   - DOMAIN-KEYWORD,clients,special
