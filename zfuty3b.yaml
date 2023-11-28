@@ -17,11 +17,11 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "Dyna7nov"
-  server: dynamic-sg1b.obfs.xyz
+- name: "Dyna11dec"
+  server: dynamic-sg2b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 23e6d3cd-2a21-4289-b314-942641e00858
+  uuid: 4c286c7f-8a77-4291-b752-def274fa78c4
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
