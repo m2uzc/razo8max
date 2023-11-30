@@ -6,7 +6,7 @@ proxies:
   server: sg3.socifiles.com
   port: 443
   type: vless
-  uuid: 1eaf3b60-8bea-11ee-a916-1239d0255272
+  uuid: 81887f80-8fc3-11ee-ab32-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -18,10 +18,10 @@ proxies:
   udp: true
 
 - name: "Dyna11dec"
-  server: dynamic-sg2b.obfs.xyz
+  server: dynamic-sg1b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 4c286c7f-8a77-4291-b752-def274fa78c4
+  uuid: 99286c5c-86ba-472b-89ce-d5b505fed769
   sni: mobilelegends.com
   alterId: 0
   cipher: auto

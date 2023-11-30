@@ -82,7 +82,7 @@ proxies:
   type: trojan
   server: fr1.test3.net
   port: 443
-  password: 2e5eba00-79d8-11ee-8974-1239d0255272
+  password: b1f16a20-8fc3-11ee-91af-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -112,6 +112,7 @@ proxy-groups:
   - specialcore
   - Ping++
   - DIRECT
+  - HowdyTrojan30day_15-20gbx
 - name: Manual1
   type: select
   url: 'https://duckduckgo.com'
