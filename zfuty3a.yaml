@@ -59,11 +59,26 @@ proxies:
     grpc-service-name: grpc
   udp: true
 
+- name: "Indo"
+  server: asia2.oceis.net
+  port: 443
+  type: vless
+  uuid: e6471460-910a-11ee-b534-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
 - name: "Usa2"
   server: us2.oceis.net
   port: 443
   type: vless
-  uuid: ecaf0af0-8fc2-11ee-b237-205c6d5f5d78
+  uuid: 2ff28200-910b-11ee-b633-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true

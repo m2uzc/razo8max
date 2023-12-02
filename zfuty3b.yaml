@@ -76,11 +76,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "HowdyVr29sept"
-  server: v2ray1.udpgw.comy
+- name: "HowdyVr15dec"
+  server: v2ray2.udpgw.com
   port: 443
   type: vmess
-  uuid: 9ff6121d-5eb2-4f09-9059-f3c551a1a36a
+  uuid: 99286c5c-86ba-472b-89ce-d5b505fed769
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
