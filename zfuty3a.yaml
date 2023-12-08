@@ -63,7 +63,7 @@ proxies:
   server: asia2.oceis.net
   port: 443
   type: vless
-  uuid: e6471460-910a-11ee-b534-205c6d5f5d78
+  uuid: 07b044e0-9566-11ee-b533-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -78,7 +78,7 @@ proxies:
   server: us2.oceis.net
   port: 443
   type: vless
-  uuid: 2ff28200-910b-11ee-b633-205c6d5f5d78
+  uuid: a602f970-9565-11ee-b336-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
