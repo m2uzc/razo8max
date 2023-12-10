@@ -106,7 +106,41 @@ proxies:
   ws-opts:
    path: /worryfree
    headers:
-    Host: opensignal.com
+    Host: mobilelegends.com
+
+- name: "ssocvmes5"
+  server: sg5.xv2ray.net
+  port: 443
+  type: vmess
+  uuid: a68f542e-3196-4dc7-bc4c-bf1ed5396f85
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "ssocvmes6"
+  server: sg6.xv2ray.net
+  port: 443
+  type: vmess
+  uuid: 7d0d487b-a0b2-484a-8d42-4783b83b62b0
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
 
 - name: "Dummy"
   type: trojan
