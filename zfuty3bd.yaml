@@ -112,7 +112,7 @@ proxies:
   server: sg5.xv2ray.net
   port: 443
   type: vmess
-  uuid: a68f542e-3196-4dc7-bc4c-bf1ed5396f85
+  uuid: 08ee19d0-f755-4447-8bc9-8b2d6182a1d9
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
@@ -129,7 +129,7 @@ proxies:
   server: sg6.xv2ray.net
   port: 443
   type: vmess
-  uuid: 7d0d487b-a0b2-484a-8d42-4783b83b62b0
+  uuid: efd044c1-4af9-4b75-9586-c2608f2a3dc0
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
