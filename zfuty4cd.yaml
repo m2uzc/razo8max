@@ -1,0 +1,32 @@
+proxies:
+
+- name: "HowdyTrojan30day_15-20gbx"
+  type: trojan
+  server: fr1.test3.net
+  port: 443
+  password: 2e5eba00-79d8-11ee-8974-1239d0255272
+  udp: true
+  sni: m.pokemon.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "backserverSSHkit-30day"
+  server: vmess-sg1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/654438640be89/
+   headers:
+    Host: m.pokemon.com
+
+

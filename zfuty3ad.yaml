@@ -1,0 +1,124 @@
+proxies:
+
+##### Optional server
+
+- name: "Dummy"
+  type: trojan
+  server: m.m
+  port: 443
+  password: 345d36c0-f569-11ed-8b63-1239d0255272
+  udp: true
+  sni: m.m
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "Aurc1"
+  server: au-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 5a22f6df-ec27-4dbf-880c-4e06ffd2befd
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "ca"
+  server: ca-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: e00605bf-8afa-4418-ab1a-a179075e6c6a
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "Nlrc2"
+  server: nl2-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 821d5778-b732-4bea-8217-879ef9e30538
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "Indo"
+  server: asia2.oceis.net
+  port: 443
+  type: vless
+  uuid: b66f44a0-96a1-11ee-b732-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+- name: "Usa2"
+  server: us2.oceis.net
+  port: 443
+  type: vless
+  uuid: 3fbf3030-9acb-11ee-b432-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+- name: "Usa5"
+  server: us5.socifiles.com
+  port: 443
+  type: vless
+  uuid: 330c3060-79db-11ee-a1bd-1239d0255272
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+- name: "Usa1x"
+  server: us1.socifiles.com
+  port: 443
+  type: vless
+  uuid: 79d4d380-7f63-11ee-a863-1239d0255272
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+
+
+
