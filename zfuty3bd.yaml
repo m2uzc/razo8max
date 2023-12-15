@@ -6,7 +6,7 @@ proxies:
   server: asia.oceis.net
   port: 443
   type: vless
-  uuid: 47eaf8e0-9566-11ee-b230-205c6d5f5d78
+  uuid: d4698e80-9b1f-11ee-b537-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -21,7 +21,7 @@ proxies:
   server: sg3.socifiles.com
   port: 443
   type: vless
-  uuid: 66fdcfd0-9565-11ee-adfe-1239d0255272
+  uuid: 59197a40-9b20-11ee-9a83-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
