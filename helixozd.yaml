@@ -82,7 +82,7 @@ proxies:
   type: trojan
   server: fr1.test3.net
   port: 443
-  password: b1f16a20-8fc3-11ee-91af-1239d0255272
+  password: 5fd1c1f0-9c07-11ee-be38-1239d0255272
   udp: true
   sni: m.pokemon.com
   alpn:
