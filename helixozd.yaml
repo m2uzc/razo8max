@@ -110,7 +110,7 @@ proxy-groups:
   - superfastlane
   - Fastb
   - multimedia
-  - specialcore
+  - special
   - Ping++
   - DIRECT
   - HowdyTrojan30day_15-20gbx
@@ -304,6 +304,14 @@ proxy-groups:
   lazy: false
   use:
   - sall4
+- name: specialcoreb
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 620
+  interval: 30
+  lazy: false
+  use:
+  - sall3
 - name: special
   type: fallback
   url: 'https://duckduckgo.com'
@@ -312,17 +320,16 @@ proxy-groups:
   lazy: false
   proxies:
   - specialcore
-  - DIRECT
+  - specialcoreb
 - name: HowdyTrojan30day_15-20gb
-  type: fallback
+  type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 6000
+  tolerance: 620
   interval: 62
   lazy: false
   proxies:
   - HowdyTrojan30day_15-20gbx
-  - specialcore
-  - DIRECT
+  - special
 
 proxy-providers:
   sall:

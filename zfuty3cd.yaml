@@ -1,0 +1,74 @@
+proxies:
+
+##### Backup Server ######
+
+- name: "backserverSG-dec"
+  server: vmess-sg1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/65726d17d4eb4/
+   headers:
+    Host: m.pokemon.com
+
+- name: "backserverUS-dec"
+  server: vmess-us1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/657d90ef01bd1/
+   headers:
+    Host: m.pokemon.com
+
+- name: "backserverFR-dec"
+  server: vmess-fr1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/657d91924bc89/
+   headers:
+    Host: m.pokemon.com
+
+- name: "backserverNL-dec"
+  server: vmess-nl1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/657d91bf8088b/
+   headers:
+    Host: m.pokemon.com
+
+
+
