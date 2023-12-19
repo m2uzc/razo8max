@@ -6,7 +6,7 @@ proxies:
   server: asia.oceis.net
   port: 443
   type: vless
-  uuid: 9668ca50-9cf8-11ee-b033-205c6d5f5d78
+  uuid: 6a5b16e0-9e6d-11ee-b331-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -49,11 +49,26 @@ proxies:
    headers:
     Host: m.pokemon.com
 
-- name: "sg1"
-  server: sg1-full.privateip.net
+- name: "sg3"
+  server: sg3-full.privateip.net
   port: 2003
   type: vless
-  uuid: ebf5a2bd-fe1f-481e-bcd4-2abdfd94cf45
+  uuid: c2766686-20d4-41a3-a87b-fd78c2002137
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
+
+- name: "sg1"
+  server: sg-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: b5bd7d25-cd74-4ad4-8ef2-544aa12943c9
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -65,10 +80,10 @@ proxies:
   udp: true
 
 - name: "sg2"
-  server: sg2-full.privateip.nety
+  server: sg2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 1dadb8bf-b0ab-4dc5-9b7b-410f83b3d513
+  uuid: b4400363-ecd9-42e5-84cc-19a1be76b3c6
   cipher: auto
   tls: true
   skip-cert-verify: true
