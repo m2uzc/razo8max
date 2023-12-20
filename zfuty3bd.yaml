@@ -64,48 +64,6 @@ proxies:
     grpc-service-name: GRPC
   udp: true
 
-- name: "sg1"
-  server: sg-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 9192787f-b70c-4c3a-b61e-e4800cfd8d9d
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GRPC
-  udp: true
-
-- name: "sg2"
-  server: sg2-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: b4400363-ecd9-42e5-84cc-19a1be76b3c6
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GRPC
-  udp: true
-
-- name: "Howdytro29sep"
-  type: trojan
-  server: trojan1.udpgw.comy
-  port: 443
-  password: d63ec210-5462-11ee-9ac4-1239d0255272
-  udp: true
-  sni: m.pokemon.com
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
 - name: "HowdyVr15dec"
   server: v2ray2.udpgw.com
   port: 443
@@ -122,6 +80,38 @@ proxies:
    path: /worryfree
    headers:
     Host: m.pokemon.com
+
+- name: "ssocvles9svl"
+  server: sg9.servervless.de
+  port: 443
+  type: vless
+  uuid: a80345fd-935f-4bb5-9c7e-ddba991d74d3
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: m.pokemon.com
+  udp: true
+
+- name: "ssocvles10svl"
+  server: sg10.servervless.de
+  port: 443
+  type: vless
+  uuid: ea6bbd38-3ec4-42d8-a29b-89f7fe34e478
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: m.pokemon.com
+  udp: true
 
 - name: "ssocvmes5"
   server: sg5.xv2ray.net
@@ -156,6 +146,51 @@ proxies:
    path: /vmess
    headers:
     Host: m.pokemon.com
+
+- name: "sg3"
+  server: sg3-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: c363eba3-5c64-4843-b71c-3a0bd227944b
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GRPC
+  udp: true
+
+- name: "sg1"
+  server: sg-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 9192787f-b70c-4c3a-b61e-e4800cfd8d9d
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GRPC
+  udp: true
+
+- name: "sg2"
+  server: sg2-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: b4400363-ecd9-42e5-84cc-19a1be76b3c6
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GRPC
+  udp: true
 
 - name: "Dummy"
   type: trojan
