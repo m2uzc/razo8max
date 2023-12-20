@@ -48,7 +48,7 @@ proxies:
   server: nl2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 821d5778-b732-4bea-8217-879ef9e30538
+  uuid: bc70a307-fffc-4e1e-9139-d1c47edf06c2
   cipher: auto
   tls: true
   skip-cert-verify: true
