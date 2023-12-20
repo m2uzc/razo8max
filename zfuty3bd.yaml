@@ -61,7 +61,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: grpc
+    grpc-service-name: GRPC
   udp: true
 
 - name: "sg1"
@@ -76,7 +76,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: grpc
+    grpc-service-name: GRPC
   udp: true
 
 - name: "sg2"
@@ -91,7 +91,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: grpc
+    grpc-service-name: GRPC
   udp: true
 
 - name: "Howdytro29sep"
