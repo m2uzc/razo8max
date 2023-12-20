@@ -3,10 +3,10 @@ proxies:
 ##### fastest server #####
 
 - name: "fastaxgn"
-  server: asia.oceis.net
+  server: asia1.fufo.org
   port: 443
   type: vless
-  uuid: 6a5b16e0-9e6d-11ee-b331-205c6d5f5d78
+  uuid: 3964b8f0-9f88-11ee-b637-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -81,43 +81,11 @@ proxies:
    headers:
     Host: m.pokemon.com
 
-- name: "ssocvles9svl"
-  server: sg9.servervless.de
-  port: 443
-  type: vless
-  uuid: a80345fd-935f-4bb5-9c7e-ddba991d74d3
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: m.pokemon.com
-  udp: true
-
-- name: "ssocvles10svl"
-  server: sg10.servervless.de
-  port: 443
-  type: vless
-  uuid: ea6bbd38-3ec4-42d8-a29b-89f7fe34e478
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: m.pokemon.com
-  udp: true
-
 - name: "ssocvmes5"
   server: sg5.xv2ray.net
   port: 443
   type: vmess
-  uuid: 08ee19d0-f755-4447-8bc9-8b2d6182a1d9
+  uuid: 1e9f6748-cc4f-44a6-841b-570415ce4726
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
@@ -134,7 +102,7 @@ proxies:
   server: sg6.xv2ray.net
   port: 443
   type: vmess
-  uuid: efd044c1-4af9-4b75-9586-c2608f2a3dc0
+  uuid: 5c7baa58-e079-4bd3-90f8-71c471699bd1
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
