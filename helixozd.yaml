@@ -23,17 +23,16 @@ dns:
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
-    - 94.140.14.14
-    - 94.140.14.15
+    - 1.1.1.1
+    - 1.0.0.1
   nameserver:
-    - tls://dns.adguard.com:853
-    - https://dns.adguard.com/dns-query
-   #need dns encrypt to bypass bigo & tiktok proxy detection
+    - 1.1.1.1
+    - 1.0.0.1
   fallback:
-    - tcp://94.140.14.14
-    - tcp://94.140.14.15
-    - 94.140.14.14
-    - 94.140.14.15
+    - tcp://1.1.1.1
+    - tcp://1.0.0.1
+    - 1.1.1.1
+    - 1.0.0.1
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
   fake-ip-filter:
@@ -68,10 +67,10 @@ dns:
 tun:
   enable: true
   dns-hijack:
-  - 94.140.14.14:53
-  - tcp://94.140.14.14:53
-  - 94.140.14.15:53
-  - tcp://94.140.14.15:53
+  - 1.1.1.1:53
+  - tcp://1.1.1.1:53
+  - 1.0.0.1:53
+  - tcp://1.0.0.1:53
   stack: system
   auto-redir: true
   auto-route: true
