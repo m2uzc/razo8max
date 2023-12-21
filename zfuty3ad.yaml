@@ -74,11 +74,11 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "Usa2"
-  server: us2.oceis.net
+- name: "Usa1"
+  server: america1.fufo.org
   port: 443
   type: vless
-  uuid: 8629cfc0-9f88-11ee-b639-205c6d5f5d78
+  uuid: 35574e40-a04d-11ee-b037-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
