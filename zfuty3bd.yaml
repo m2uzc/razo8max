@@ -17,6 +17,21 @@ proxies:
     grpc-service-name: vless-grpc
   udp: true
 
+- name: "CreasshSG2Vgprc1"
+  server: sg2vless-grpc.createv2ray.com
+  port: 443
+  type: vless
+  uuid: a599d54b-a4f3-45ed-b9a7-694a44ca7aeb
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  udp: true
+
 - name: "CreasshSG4Vgprc1"
   server: sg4vless-grpc.createv2ray.com
   port: 443
