@@ -131,7 +131,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vlgrpc
+    grpc-service-name: vless-grpc
   udp: true
 
 
