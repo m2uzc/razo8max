@@ -2,6 +2,36 @@ proxies:
 
 ##### fastest server #####
 
+- name: "CreasshSG1Vgprc1"
+  server: sg1vless-grpc.createv2ray.com
+  port: 443
+  type: vless
+  uuid: 66e6c48e-140b-47e7-b40b-973e7e209bc3
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  udp: true
+
+- name: "CreasshSG4Vgprc1"
+  server: sg4vless-grpc.createv2ray.com
+  port: 443
+  type: vless
+  uuid: 404bb991-ea86-471a-ac5e-71da312c9588
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  udp: true
+
 - name: "fastaxgn"
   server: asia1.fufo.org
   port: 443
