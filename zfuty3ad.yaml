@@ -30,7 +30,7 @@ proxies:
     grpc-service-name: vmess-grpc
   udp: true
 
-- name: "CreasshNl1Vgprc1"
+- name: "Creasshca1Vgprc1"
   server: ca1-grpc.createv2ray.com
   port: 443
   type: vmess
@@ -46,7 +46,7 @@ proxies:
     grpc-service-name: vmess-grpc
   udp: true
 
-- name: "CreasshAu1Vgprc1"
+- name: "Creasshge1Vgprc1"
   server: ge1-grpc.createv2ray.com
   port: 443
   type: vmess
