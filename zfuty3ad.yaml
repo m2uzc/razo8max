@@ -30,6 +30,38 @@ proxies:
     grpc-service-name: vmess-grpc
   udp: true
 
+- name: "CreasshNl1Vgprc1"
+  server: ca1-grpc.createv2ray.com
+  port: 443
+  type: vmess
+  uuid: a30b77ba-28a6-4469-a504-892cc89739f7
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: m.pokemon.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: "CreasshAu1Vgprc1"
+  server: ge1-grpc.createv2ray.com
+  port: 443
+  type: vmess
+  uuid: 9679b4a9-ec94-46f6-a2c9-7f118d7e8091
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: m.pokemon.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
 - name: "CreasshJP1Vgprc1"
   server: jp1-grpc.createv2ray.com
   port: 443
