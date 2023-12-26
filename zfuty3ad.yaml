@@ -14,6 +14,22 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "CreasshAu1Vgprc1"
+  server: au1-grpc.createv2ray.com
+  port: 443
+  type: vmess
+  uuid: cca69347-89ad-4873-8b9f-0130eebc8343
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: m.pokemon.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
 - name: "CreasshJP1Vgprc1"
   server: jp1-grpc.createv2ray.com
   port: 443
@@ -124,7 +140,7 @@ proxies:
   server: america1.fufo.org
   port: 443
   type: vless
-  uuid: a0f0cef0-a174-11ee-b633-205c6d5f5d78
+  uuid: 207849e0-a402-11ee-b837-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
