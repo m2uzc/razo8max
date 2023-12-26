@@ -2,11 +2,11 @@ proxies:
 
 ##### fastest server #####
 
-- name: "CreasshSG1Vgprc1"
+- name: "CshSG1Vgprc"
   server: sg1vless-grpc.createv2ray.com
   port: 443
   type: vless
-  uuid: 66e6c48e-140b-47e7-b40b-973e7e209bc3
+  uuid: 237bacf3-1504-4996-bfd2-6b25080f9f97
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -17,11 +17,11 @@ proxies:
     grpc-service-name: vless-grpc
   udp: true
 
-- name: "CreasshSG2Vgprc1"
+- name: "CshSG2Vgprc"
   server: sg2vless-grpc.createv2ray.com
   port: 443
   type: vless
-  uuid: a599d54b-a4f3-45ed-b9a7-694a44ca7aeb
+  uuid: 11cdfc87-eb75-479d-bceb-ab3a52598a56
   cipher: auto
   tls: true
   skip-cert-verify: true

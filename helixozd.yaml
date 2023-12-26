@@ -416,14 +416,20 @@ rules:
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
   - DOMAIN-KEYWORD,returnyoutubedislikeapi,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
-  - DOMAIN,bing.com,superfastlane
-  - DOMAIN-SUFFIX,bing.com,superfastlane
-  - DOMAIN-KEYWORD,bing,superfastlane
+  - DOMAIN-KEYWORD,bing.com,multimedia
+  - DOMAIN-KEYWORD,designerapp,multimedia
+  - DOMAIN-KEYWORD,live.com,multimedia
+  - DOMAIN-KEYWORD,microsoft.com,multimedia
+  - DOMAIN-KEYWORD,azure.com,multimedia
+  - DOMAIN-KEYWORD,office.net,multimedia
+  - DOMAIN-KEYWORD,microsoftonline.com,multimedia
+  - DOMAIN-KEYWORD,a-msedge.net,multimedia
+  - DOMAIN-KEYWORD,akadns.net,multimedia
   - DOMAIN,mtalk.google.com,special
   - DOMAIN,mobile-gtalk.l.google.com,special
   - DOMAIN-KEYWORD,clients,special
   - DOMAIN,android.apis.google.com,special
-  - DOMAIN,engage.cloudflareclient.com,superfastlane
+  - DOMAIN,engage.cloudflareclient.com,multimedia
   - DOMAIN-KEYWORD,googleapis.com,special
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
   - DOMAIN-KEYWORD,googleapis,special
@@ -466,7 +472,7 @@ rules:
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
   - DOMAIN-KEYWORD,ads,REJECT
-  - DOMAIN-KEYWORD,cloudflare,superfastlane
+  - DOMAIN-KEYWORD,cloudflare,multimedia
   - DOMAIN-KEYWORD,teamviewer,superfastlane
   - SRC-PORT,5938,superfastlane
   - DST-PORT,5938,superfastlane
