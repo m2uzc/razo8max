@@ -14,6 +14,34 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
+- name: "CshUs1Vgprc"
+  server: us1trws.createv2ray.com
+  port: 443
+  type: trojan
+  password: 27c716ce-6ebd-4a18-8f16-2456bc22a6d0
+  network: ws
+  sni: m.pokemon.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+   headers:
+    Host: m.pokemon.com
+
+- name: "CshUs2Vgprc"
+  server: us2trws.createv2ray.com
+  port: 443
+  type: trojan
+  password: 672902c0-e834-4b42-9e7b-b59c9619e47d
+  network: ws
+  sni: m.pokemon.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+   headers:
+    Host: m.pokemon.com
+
 - name: "CreasshAu1Vgprc1"
   server: au1-grpc.createv2ray.com
   port: 443

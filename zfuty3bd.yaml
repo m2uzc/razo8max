@@ -2,6 +2,20 @@ proxies:
 
 ##### fastest server #####
 
+- name: "CshSG4Vgprc"
+  server: sg4trws.createv2ray.com
+  port: 443
+  type: trojan
+  password: 18b62ece-690e-4129-a3fa-9e428dde4e95
+  network: ws
+  sni: m.pokemon.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+   headers:
+    Host: m.pokemon.com
+
 - name: "CshSG1Vgprc"
   server: sg1vless-grpc.createv2ray.com
   port: 443
