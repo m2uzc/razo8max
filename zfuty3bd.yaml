@@ -2,7 +2,7 @@ proxies:
 
 ##### fastest server #####
 
-- name: "CshSG4Vgprc"
+- name: "CshSG4TrWs"
   server: sg4trws.createv2ray.com
   port: 443
   type: trojan

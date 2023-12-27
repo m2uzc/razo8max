@@ -14,7 +14,7 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "CshUs1Vgprc"
+- name: "CshUs1TrWs"
   server: us1trws.createv2ray.com
   port: 443
   type: trojan
@@ -28,7 +28,7 @@ proxies:
    headers:
     Host: m.pokemon.com
 
-- name: "CshUs2Vgprc"
+- name: "CshUs2TrWs"
   server: us2trws.createv2ray.com
   port: 443
   type: trojan
