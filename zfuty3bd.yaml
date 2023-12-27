@@ -51,7 +51,7 @@ proxies:
   server: asia1.fufo.org
   port: 443
   type: vless
-  uuid: 3964b8f0-9f88-11ee-b637-205c6d5f5d78
+  uuid: 7b4ce200-a4c9-11ee-b838-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -66,7 +66,7 @@ proxies:
   server: sg3.socifiles.com
   port: 443
   type: vless
-  uuid: 59197a40-9b20-11ee-9a83-1239d0255272
+  uuid: f9dc1e60-a4c8-11ee-8b8b-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -93,21 +93,6 @@ proxies:
    path: /worryfree
    headers:
     Host: m.pokemon.com
-
-- name: "sg3"
-  server: sg3-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: c363eba3-5c64-4843-b71c-3a0bd227944b
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: GRPC
-  udp: true
 
 - name: "HowdyVr15dec"
   server: v2ray2.udpgw.com
