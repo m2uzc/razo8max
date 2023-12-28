@@ -2,25 +2,11 @@ proxies:
 
 ##### fastest server #####
 
-- name: "CshSG4TrWs"
-  server: sg4trws.createv2ray.com
-  port: 443
-  type: trojan
-  password: 18b62ece-690e-4129-a3fa-9e428dde4e95
-  network: ws
-  sni: m.pokemon.com
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-   path: /trojan
-   headers:
-    Host: m.pokemon.com
-
 - name: "CshSG1Vgprc"
   server: sg1vless-grpc.createv2ray.com
-  port: 443
+  port: 2096
   type: vless
-  uuid: 237bacf3-1504-4996-bfd2-6b25080f9f97
+  uuid: 1741654f-55b4-4659-95e7-868d3f8ca40a
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -33,9 +19,24 @@ proxies:
 
 - name: "CshSG2Vgprc"
   server: sg2vless-grpc.createv2ray.com
-  port: 443
+  port: 2096
   type: vless
-  uuid: 11cdfc87-eb75-479d-bceb-ab3a52598a56
+  uuid: 0a3f395e-7ed2-4b3c-958b-1ca35194e391
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  udp: true
+
+- name: "CshSG3Vgprc"
+  server: sg3vless-grpc.createv2ray.com
+  port: 2096
+  type: vless
+  uuid: 58b2091d-e66c-4598-92e7-855cc016c152
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -48,9 +49,9 @@ proxies:
 
 - name: "CreasshSG4Vgprc1"
   server: sg4vless-grpc.createv2ray.com
-  port: 443
+  port: 2096
   type: vless
-  uuid: 404bb991-ea86-471a-ac5e-71da312c9588
+  uuid: 326604a0-12a0-4d98-af32-e4c23707f193
   cipher: auto
   tls: true
   skip-cert-verify: true
