@@ -242,4 +242,22 @@ proxies:
   udp: true
 
 
+- name: "Dyna18janUS"
+  server: dynamic-us1b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: 8ed017c7-b4b2-4419-9403-422179e6c6b0
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: m.pokemon.com
+
+
 

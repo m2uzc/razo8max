@@ -92,40 +92,6 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "Dyna11dec"
-  server: dynamic-sg1b.obfs.xyz
-  port: 443
-  type: vmess
-  uuid: 99286c5c-86ba-472b-89ce-d5b505fed769
-  sni: m.pokemon.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: m.pokemon.com
-
-- name: "HowdyVr15dec"
-  server: v2ray2.udpgw.com
-  port: 443
-  type: vmess
-  uuid: 99286c5c-86ba-472b-89ce-d5b505fed769
-  sni: m.pokemon.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: m.pokemon.com
-
 - name: "ssocvmes5"
   server: sg5.xv2ray.net
   port: 443
@@ -204,6 +170,40 @@ proxies:
     grpc-mode: gun
     grpc-service-name: GRPC
   udp: true
+
+- name: "DynaSG18Jan"
+  server: dynamic-sg1b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: 9732527f-b57b-4db7-9ee4-7fa9c436452e
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: m.pokemon.com
+
+- name: "HowdyVr15dec"
+  server: v2ray2.udpgw.com
+  port: 443
+  type: vmess
+  uuid: 99286c5c-86ba-472b-89ce-d5b505fed769
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: m.pokemon.com
 
 - name: "Dummy"
   type: trojan
