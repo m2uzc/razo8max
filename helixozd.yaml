@@ -19,7 +19,7 @@ dns:
   enhanced-mode: fake-ip
   listen: 0.0.0.0:7895
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
     - 240.0.0.0/4
   default-nameserver:
@@ -35,7 +35,7 @@ dns:
     - 94.140.14.14
     - 94.140.14.15
   fake-ip-range: 198.18.0.1/16
-  use-hosts: false
+  use-hosts: true
   fake-ip-filter:
   - "+.*"
   - ntp7.*.com
@@ -95,7 +95,7 @@ proxy-groups:
 - name: All 
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   proxies:
   - RobinZ
   - Fallback
@@ -117,7 +117,7 @@ proxy-groups:
 - name: Manual1
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -126,7 +126,7 @@ proxy-groups:
 - name: Manual2
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -135,7 +135,7 @@ proxy-groups:
 - name: Manual1x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -144,7 +144,7 @@ proxy-groups:
 - name: Manual2x
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -153,7 +153,7 @@ proxy-groups:
 - name: Manual1y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -162,7 +162,7 @@ proxy-groups:
 - name: Manual2y
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -171,7 +171,7 @@ proxy-groups:
 - name: Youtube
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -192,7 +192,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 26
+  interval: 62
   lazy: false
   proxies:
   - Manual1
@@ -205,7 +205,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 26
+  interval: 62
   lazy: false
   proxies:
   - Manual2
@@ -218,7 +218,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 1600
-  interval: 26
+  interval: 62
   lazy: true
   proxies:
   - Fastb
@@ -227,7 +227,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 26
+  interval: 62
   lazy: true
   proxies:
   - Youtube
@@ -237,8 +237,8 @@ proxy-groups:
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 26
-  tolerance: 600
+  interval: 30
+  tolerance: 900
   lazy: true
   use:
   - sall
@@ -247,17 +247,18 @@ proxy-groups:
 - name: PingMedia
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 12
-  tolerance: 600
+  interval: 30
+  tolerance: 300
   lazy: false
   use:
   - sall
+  - sall2
   - sall3
 - name: Fallback
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 30
   lazy: false
   use:
   - sall
@@ -266,7 +267,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 30
   lazy: false
   use:
   - sall2
@@ -275,7 +276,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 30
   lazy: false
   use:
   - sall3
@@ -283,7 +284,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 600
-  interval: 12
+  interval: 30
   lazy: false
   use:
   - sall2
@@ -292,7 +293,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 900
-  interval: 12
+  interval: 30
   lazy: false
   use:
   - sall3
@@ -301,15 +302,15 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 30
-  lazy: false
+  lazy: true
   use:
   - sall4
 - name: specialcoreb
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 620
+  tolerance: 6000
   interval: 30
-  lazy: false
+  lazy: true
   use:
   - sall3
 - name: special
@@ -317,16 +318,17 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 62
-  lazy: false
+  lazy: true
   proxies:
   - specialcore
   - specialcoreb
+  - Fallbackb
 - name: HowdyTrojan30day_15-20gb
   type: url-test
   url: 'https://duckduckgo.com'
-  tolerance: 620
+  tolerance: 6000
   interval: 62
-  lazy: false
+  lazy: true
   proxies:
   - HowdyTrojan30day_15-20gbx
   - special
@@ -335,41 +337,41 @@ proxy-providers:
   sall:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3ad.yaml"
-    interval: 122
+    interval: 62
     path: ./sall.yaml
     health-check:
       enable: true
-      interval: 60
+      interval: 30
       lazy: false
       url: https://duckduckgo.com
   sall2:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3bd.yaml"
-    interval: 122
+    interval: 62
     path: ./sall2.yaml
     health-check:
       enable: true
-      interval: 60
+      interval: 30
       lazy: false
       url: https://duckduckgo.com
   sall3:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty3cd.yaml"
-    interval: 122
+    interval: 62
     path: ./sall3.yaml
     health-check:
       enable: true
-      interval: 60
+      interval: 30
       lazy: false
       url: https://duckduckgo.com
   sall4:
     type: http
     url: "https://raw.githubusercontent.com/m2uzc/razo8max/main/zfuty4cd.yaml"
-    interval: 122
+    interval: 62
     path: ./sall4.yaml
     health-check:
       enable: true
-      interval: 60
+      interval: 30
       lazy: false
       url: https://duckduckgo.com
 
@@ -411,20 +413,21 @@ rules:
   - DOMAIN-KEYWORD,tiktokv.com,superfastlane
   - DOMAIN-KEYWORD,tiktok.com,superfastlane
   - DOMAIN-KEYWORD,tiktok,superfastlane
-  - DOMAIN-KEYWORD,akamai.net,superfastlane
-  - DOMAIN-KEYWORD,akamaiedge.net,superfastlane
+  - DOMAIN-KEYWORD,akamai,superfastlane
+  - DOMAIN-KEYWORD,akamaiedge,superfastlane
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
   - DOMAIN-KEYWORD,returnyoutubedislikeapi,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
-  - DOMAIN-KEYWORD,bing.com,multimedia
+  - DOMAIN-KEYWORD,bing,multimedia
   - DOMAIN-KEYWORD,designerapp,multimedia
   - DOMAIN-KEYWORD,live.com,multimedia
-  - DOMAIN-KEYWORD,microsoft.com,multimedia
-  - DOMAIN-KEYWORD,azure.com,multimedia
-  - DOMAIN-KEYWORD,office.net,multimedia
-  - DOMAIN-KEYWORD,microsoftonline.com,multimedia
-  - DOMAIN-KEYWORD,a-msedge.net,multimedia
-  - DOMAIN-KEYWORD,akadns.net,multimedia
+  - DOMAIN-KEYWORD,microsoft,multimedia
+  - DOMAIN-KEYWORD,creator,multimedia
+  - DOMAIN-KEYWORD,azure,multimedia
+  - DOMAIN-KEYWORD,office,multimedia
+  - DOMAIN-KEYWORD,edge,multimedia
+  - DOMAIN-KEYWORD,a-msedge,multimedia
+  - DOMAIN-KEYWORD,akadns,multimedia
   - DOMAIN,mtalk.google.com,special
   - DOMAIN,mobile-gtalk.l.google.com,special
   - DOMAIN-KEYWORD,clients,special
