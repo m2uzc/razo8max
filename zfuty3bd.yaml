@@ -6,7 +6,7 @@ proxies:
   server: sg1vless-grpc.createv2ray.com
   port: 2096
   type: vless
-  uuid: d18fe062-b0cb-4b28-b556-07783aa07bfe
+  uuid: f3850f75-4194-49e2-9414-8cf02b011069
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -21,7 +21,7 @@ proxies:
   server: sg2vless-grpc.createv2ray.com
   port: 2096
   type: vless
-  uuid: 44c6e578-60f4-412e-945a-901879ec46a9
+  uuid: bd005b33-13dc-414b-af84-a1c846968df0
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -36,7 +36,7 @@ proxies:
   server: sg3vless-grpc.createv2ray.com
   port: 2096
   type: vless
-  uuid: cde56e9f-d898-4c7f-a1ee-b3aca65011dd
+  uuid: 60808319-5f2f-4bf4-9fad-aae6fee459a5
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -51,7 +51,7 @@ proxies:
   server: sg4vless-grpc.createv2ray.com
   port: 2096
   type: vless
-  uuid: c4924b3a-86e1-4797-bd3b-2a651f2abf5c
+  uuid: c9f2cf53-65fa-4f80-8684-5e72c6edab78
   cipher: auto
   tls: true
   skip-cert-verify: true
