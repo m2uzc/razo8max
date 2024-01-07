@@ -217,9 +217,9 @@ proxy-groups:
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 1600
-  interval: 62
-  lazy: true
+  tolerance: 320
+  interval: 32
+  lazy: false
   proxies:
   - Fastb
   - Fastc
@@ -227,8 +227,8 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 62
-  lazy: true
+  interval: 32
+  lazy: false
   proxies:
   - Youtube
   - PingMedia
@@ -248,7 +248,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   interval: 30
-  tolerance: 300
+  tolerance: 100
   lazy: false
   use:
   - sall
@@ -283,7 +283,7 @@ proxy-groups:
 - name: Fastb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 600
+  tolerance: 100
   interval: 30
   lazy: false
   use:
