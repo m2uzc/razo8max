@@ -66,7 +66,7 @@ proxies:
   server: asia1.fufo.org
   port: 443
   type: vless
-  uuid: 263e6060-a8b2-11ee-b133-205c6d5f5d78
+  uuid: da883570-af15-11ee-b932-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
