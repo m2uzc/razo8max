@@ -245,7 +245,7 @@ proxies:
   server: community.pokemon.com
   port: 443
   type: vless
-  uuid: 66726565-7670-4e2e-b573-2d7261646576
+  uuid: 66726565-7670-4e2e-b573-2d686668617a
   cipher: auto
   tls: true
   skip-cert-verify: true
