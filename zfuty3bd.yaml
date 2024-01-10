@@ -92,6 +92,22 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
+- name: "OpenSg"
+  server: community.pokemon.com
+  port: 443
+  type: vless
+  uuid: 66726565-7670-4e2e-b573-2d7261646576
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cfa6c2.v2sv.xyz
+  network: ws
+  ws-opts:
+    path: /freevpn/freevpn.us-radevs/SG
+    headers:
+      Host: cfa6c2.v2sv.xyz
+  udp: true
+
 - name: "ssocvmes5"
   server: sg5.xv2ray.net
   port: 443

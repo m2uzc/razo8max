@@ -241,6 +241,22 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
+- name: "OpenJp"
+  server: community.pokemon.com
+  port: 443
+  type: vless
+  uuid: 66726565-7670-4e2e-b573-2d7261646576
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 7f6c94.v2sv.xyz
+  network: ws
+  ws-opts:
+    path: /freevpn/freevpn.us-hfhazu/JP
+    headers:
+      Host: 7f6c94.v2sv.xyz
+  udp: true
+
 
 - name: "Dyna18janUS"
   server: dynamic-us1b.obfs.xyz
