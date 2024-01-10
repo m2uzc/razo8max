@@ -94,18 +94,18 @@ proxies:
 
 - name: "OpenSg"
   server: community.pokemon.com
-  port: 443
+  port: 80
   type: vless
-  uuid: 66726565-7670-4e2e-b573-2d7261646576
+  uuid: 66726565-7670-4e2e-b573-2d7461647566
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cfa6c2.v2sv.xyz
+  servername: 579ed2.v2sv.xyz
   network: ws
   ws-opts:
-    path: /freevpn/freevpn.us-radevs/SG
+    path: /freevpn/freevpn.us-tadufa/SG
     headers:
-      Host: cfa6c2.v2sv.xyz
+      Host: 579ed2.v2sv.xyz
   udp: true
 
 - name: "ssocvmes5"
