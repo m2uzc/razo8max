@@ -51,7 +51,7 @@ proxies:
   server: sg4vless-grpc.createv2ray.com
   port: 2096
   type: vless
-  uuid: 9b04f56a-fd68-4e56-94c6-5e9569e664d9
+  uuid: 53c23568-50ec-4b12-b068-7299de2872b7
   cipher: auto
   tls: true
   skip-cert-verify: true

@@ -14,39 +14,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "CshUs1TrWs"
-  server: us1trws.createv2ray.com
-  port: 443
-  type: trojan
-  password: 27c716ce-6ebd-4a18-8f16-2456bc22a6d0
-  network: ws
-  sni: m.pokemon.com
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-   path: /trojan
-   headers:
-    Host: m.pokemon.com
-
-- name: "CshUs2TrWs"
-  server: us2trws.createv2ray.com
-  port: 443
-  type: trojan
-  password: 672902c0-e834-4b42-9e7b-b59c9619e47d
-  network: ws
-  sni: m.pokemon.com
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-   path: /trojan
-   headers:
-    Host: m.pokemon.com
-
 - name: "CreasshAu1Vgprc1"
   server: au1-grpc.createv2ray.com
   port: 443
   type: vmess
-  uuid: cca69347-89ad-4873-8b9f-0130eebc8343
+  uuid: c820b81e-9f08-46ec-b0a1-20a05e7ee529
   alterId: 0
   cipher: auto
   network: grpc
@@ -110,22 +82,7 @@ proxies:
   server: us1vless-grpc.createv2ray.com
   port: 443
   type: vless
-  uuid: 404bb991-ea86-471a-ac5e-71da312c9588
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless-grpc
-  udp: true
-
-- name: "CreasshUsaVgprc2"
-  server: us2vless-grpc.createv2ray.com
-  port: 443
-  type: vless
-  uuid: 90ffaa26-774c-414f-95b9-53c2b8b62699
+  uuid: f7278ad1-a67c-47dc-85c3-120cbcd0d240
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -200,7 +157,7 @@ proxies:
   server: america1.fufo.org
   port: 443
   type: vless
-  uuid: c53f9fe0-ad5e-11ee-b333-205c6d5f5d78
+  uuid: 5c0d39c0-b134-11ee-b436-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -215,7 +172,7 @@ proxies:
   server: us5.socifiles.com
   port: 443
   type: vless
-  uuid: 330c3060-79db-11ee-a1bd-1239d0255272
+  uuid: 98c3ed60-b134-11ee-bc04-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
