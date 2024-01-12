@@ -227,9 +227,9 @@ proxy-groups:
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 3000
+  tolerance: 6000
   interval: 32
-  lazy: false
+  lazy: true
   proxies:
   - Fastx
   - Fastb
@@ -294,7 +294,7 @@ proxy-groups:
 - name: Fastb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 100
+  tolerance: 300
   interval: 30
   lazy: false
   use:
@@ -420,10 +420,12 @@ rules:
   - DOMAIN-SUFFIX,v-sg.likee.video,superfastlane
   - DOMAIN-SUFFIX,socks.live.bigo.sg,superfastlane
   - DOMAIN-SUFFIX,asiabigosocks.like.bigo.sg,superfastlane
+  - DOMAIN-KEYWORD,like,superfastlane
   - DOMAIN-KEYWORD,tiktokcdn.com,superfastlane
   - DOMAIN-KEYWORD,tiktokv.com,superfastlane
   - DOMAIN-KEYWORD,tiktok.com,superfastlane
   - DOMAIN-KEYWORD,tiktok,superfastlane
+  - DOMAIN-KEYWORD,bytedance,superfastlane
   - DOMAIN-KEYWORD,akamai,superfastlane
   - DOMAIN-KEYWORD,akamaiedge,superfastlane
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
