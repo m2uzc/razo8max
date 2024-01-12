@@ -107,6 +107,7 @@ proxy-groups:
   - Manual1y
   - Manual2y
   - Youtube
+  - Fastx
   - superfastlane
   - Fastb
   - multimedia
@@ -168,6 +169,15 @@ proxy-groups:
   - sall2
   - sall3
   - sall4
+- name: Fastx
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 300
+  use:
+  - sall
+  - sall2
+  - sall3
+  - sall4
 - name: Youtube
   type: select
   url: 'https://duckduckgo.com'
@@ -217,10 +227,11 @@ proxy-groups:
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 320
+  tolerance: 3000
   interval: 32
   lazy: false
   proxies:
+  - Fastx
   - Fastb
   - Fastc
 - name: multimedia
