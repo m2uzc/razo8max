@@ -62,6 +62,22 @@ proxies:
     grpc-service-name: vless-grpc
   udp: true
 
+- name: "CSshSg2Vmgprc1"
+  server: sg2-grpc.createv2ray.com
+  port: 443
+  type: vmess
+  uuid: 17c72a33-1a16-43d2-b561-9275d6ff2238
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: m.pokemon.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
 - name: "fastaxgn"
   server: asia1.fufo.org
   port: 443
