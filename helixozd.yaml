@@ -431,10 +431,12 @@ rules:
   - DOMAIN-KEYWORD,cdn,superfastlane
   - DOMAIN-KEYWORD,bytetcdn,superfastlane
   - DOMAIN-KEYWORD,bytefcdn-oversea,superfastlane
+  - DOMAIN-KEYWORD,bytedapm,superfastlane
   - DOMAIN-KEYWORD,wsdvs,superfastlane
   - DOMAIN-KEYWORD,spbycdn,superfastlane
   - DOMAIN-KEYWORD,atomile,superfastlane
   - DOMAIN-KEYWORD,gvt,superfastlane
+  - DOMAIN-KEYWORD,apple.com,superfastlane
   - DOMAIN-KEYWORD,akamai,superfastlane
   - DOMAIN-KEYWORD,akamaiedge,superfastlane
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
