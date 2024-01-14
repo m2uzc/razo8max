@@ -24,15 +24,11 @@ dns:
     - 240.0.0.0/4
   default-nameserver:
     - 94.140.14.14
-    - 94.140.14.15
   nameserver:
     - 94.140.14.14
-    - 94.140.14.15
    #need dns encrypt to bypass bigo & tiktok proxy detection
   fallback:
-    - tcp://94.140.14.14
     - tcp://94.140.14.15
-    - 94.140.14.14
     - 94.140.14.15
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
@@ -70,8 +66,6 @@ tun:
   dns-hijack:
   - 94.140.14.14:53
   - tcp://94.140.14.14:53
-  - 94.140.14.15:53
-  - tcp://94.140.14.15:53
   stack: system
   auto-redir: true
   auto-route: true
@@ -421,11 +415,26 @@ rules:
   - DOMAIN-SUFFIX,socks.live.bigo.sg,superfastlane
   - DOMAIN-SUFFIX,asiabigosocks.like.bigo.sg,superfastlane
   - DOMAIN-KEYWORD,like,superfastlane
-  - DOMAIN-KEYWORD,tiktokcdn.com,superfastlane
-  - DOMAIN-KEYWORD,tiktokv.com,superfastlane
-  - DOMAIN-KEYWORD,tiktok.com,superfastlane
+  - DOMAIN-KEYWORD,tiktokcdn,superfastlane
+  - DOMAIN-KEYWORD,tiktokv,superfastlane
   - DOMAIN-KEYWORD,tiktok,superfastlane
+  - DOMAIN-KEYWORD,tiktok,superfastlane
+  - DOMAIN-KEYWORD,ibytedtos,superfastlane
+  - DOMAIN-KEYWORD,ttlivecdn,superfastlane
+  - DOMAIN-KEYWORD,tiktokcdn-us,superfastlane
   - DOMAIN-KEYWORD,bytedance,superfastlane
+  - DOMAIN-KEYWORD,rocket-cdn,superfastlane
+  - DOMAIN-KEYWORD,worldfcdn,superfastlane
+  - DOMAIN-KEYWORD,worldfcdn2,superfastlane
+  - DOMAIN-KEYWORD,ovscdns,superfastlane
+  - DOMAIN-KEYWORD,cdn77,superfastlane
+  - DOMAIN-KEYWORD,cdn,superfastlane
+  - DOMAIN-KEYWORD,bytetcdn,superfastlane
+  - DOMAIN-KEYWORD,bytefcdn-oversea,superfastlane
+  - DOMAIN-KEYWORD,wsdvs,superfastlane
+  - DOMAIN-KEYWORD,spbycdn,superfastlane
+  - DOMAIN-KEYWORD,atomile,superfastlane
+  - DOMAIN-KEYWORD,gvt,superfastlane
   - DOMAIN-KEYWORD,akamai,superfastlane
   - DOMAIN-KEYWORD,akamaiedge,superfastlane
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
@@ -446,18 +455,17 @@ rules:
   - DOMAIN-KEYWORD,clients,special
   - DOMAIN,android.apis.google.com,special
   - DOMAIN,engage.cloudflareclient.com,multimedia
-  - DOMAIN-KEYWORD,googleapis.com,special
+  - DOMAIN-KEYWORD,googleapis.com,multimedia
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
   - DOMAIN-KEYWORD,googleapis,special
   - DOMAIN-KEYWORD,googlevideo,multimedia
   - DOMAIN-KEYWORD,googleusercontent,multimedia
-  - DOMAIN-KEYWORD,youtubei,multimedia
   - DOMAIN-KEYWORD,ytimg,multimedia
   - DOMAIN-KEYWORD,ggpht,multimedia
   - DOMAIN-KEYWORD,youtube,multimedia
+  - DOMAIN-KEYWORD,youtubei,multimedia
   - DOMAIN-KEYWORD,ytimg.com,multimedia
   - DOMAIN-KEYWORD,youtube.com,multimedia
-  - DOMAIN-KEYWORD,gvt,multimedia
   - DOMAIN-KEYWORD,shazam,multimedia
   - DOMAIN-KEYWORD,scdnco,multimedia
   - DOMAIN-KEYWORD,scdn,multimedia
