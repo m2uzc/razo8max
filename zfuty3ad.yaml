@@ -93,51 +93,6 @@ proxies:
     grpc-service-name: vless-grpc
   udp: true
 
-- name: "Aurc1"
-  server: au-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 5a22f6df-ec27-4dbf-880c-4e06ffd2befd
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "ca"
-  server: ca-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: e00605bf-8afa-4418-ab1a-a179075e6c6a
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Nlrc2"
-  server: nl2-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: bc70a307-fffc-4e1e-9139-d1c47edf06c2
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
 - name: "Usa1"
   server: america1.fufo.org
   port: 443
