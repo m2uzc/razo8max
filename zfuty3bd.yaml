@@ -2,21 +2,6 @@ proxies:
 
 ##### fastest server #####
 
-- name: "CshSG1Vgprc"
-  server: sg1vless-grpc.createv2ray.com
-  port: 2096
-  type: vless
-  uuid: 28d6f136-9ba1-4f92-afe7-29402914d135
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless-grpc
-  udp: true
-
 - name: "CshSG2Vgprc"
   server: sg2vless-grpc.createv2ray.com
   port: 2096
@@ -32,11 +17,43 @@ proxies:
     grpc-service-name: vless-grpc
   udp: true
 
+- name: "CSshSg1Vmgprc1"
+  server: sg1-grpc.createv2ray.com
+  port: 2096
+  type: vmess
+  uuid: 9b1f0608-d838-4d92-a051-0590488c6040
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: m.pokemon.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
 - name: "CSshSg2Vmgprc1"
   server: sg2-grpc.createv2ray.com
   port: 2096
   type: vmess
   uuid: ec411f03-f13d-4e99-b14f-6730b083e798
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: m.pokemon.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: "CSshSg3Vmgprc1"
+  server: sg3-grpc.createv2ray.com
+  port: 2096
+  type: vmess
+  uuid: 47468f3c-f1af-4ec9-84b2-3566eeea1a2e
   alterId: 0
   cipher: auto
   network: grpc
