@@ -190,11 +190,11 @@ proxies:
     grpc-service-name: GRPC
   udp: true
 
-- name: "DynaSG18Jan"
-  server: dynamic-sg1b.obfs.xyz
+- name: "DynaSG31Jan"
+  server: dynamic-sg2b.obfs.xyz
   port: 443
   type: vmess
-  uuid: 9732527f-b57b-4db7-9ee4-7fa9c436452e
+  uuid: b1b62e70-2f8b-4740-9eff-823eca761c21
   sni: m.pokemon.com
   alterId: 0
   cipher: auto

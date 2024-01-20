@@ -123,3 +123,20 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
+- name: "DynaUSA31Jan"
+  server: dynamic-us2b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: df680512-3e0a-4fec-b3db-d04f8aa0a8fc
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: m.pokemon.com
+
