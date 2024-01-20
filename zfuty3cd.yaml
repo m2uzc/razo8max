@@ -2,6 +2,24 @@ proxies:
 
 ##### Backup Server ######
 
+
+- name: "lion30day"
+  server: vm.sg.servergo.pw
+  port: 443
+  type: vmess
+  uuid: dc9e1480-f180-42e7-abee-f58bac8bf12c
+  sni: vm.sg.servergo.pw
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /v2ray-vmess/tls
+   headers:
+    Host: m.pokemon.com
+
 - name: "backserverSG-dec"
   server: vmess-sg1.sshkit.org
   port: 443

@@ -2,6 +2,23 @@ proxies:
 
 ##### fastest server #####
 
+- name: "lion7day"
+  server: vm.sg.servergo.pw
+  port: 443
+  type: vmess
+  uuid: e7da70d4-4561-4f98-9c99-f44a4c242377
+  sni: vm.sg.servergo.pw
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /v2ray-vmess/tls
+   headers:
+    Host: m.pokemon.com
+
 - name: "CshSG2Vgprc"
   server: sg2vless-grpc.createv2ray.com
   port: 2096
