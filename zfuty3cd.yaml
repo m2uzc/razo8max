@@ -8,7 +8,7 @@ proxies:
   port: 443
   type: vmess
   uuid: dc9e1480-f180-42e7-abee-f58bac8bf12c
-  sni: vm.sg.servergo.pw
+  sni: m.pokemon.com
   alterId: 0
   cipher: auto
   tls: true
