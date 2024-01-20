@@ -293,7 +293,6 @@ proxy-groups:
   lazy: false
   use:
   - sall2
-  - sall
 - name: Fastc
   type: url-test
   url: 'https://duckduckgo.com'
