@@ -2,6 +2,20 @@ proxies:
 
 ##### fastest server #####
 
+- name: "vpnStunnelTr"
+  server: xray.josvpn.me
+  port: 443
+  type: trojan
+  password: c43d61b4-4eeb-4ebd-b73d-49c98de6222b
+  skip-cert-verify: true
+  sni: m.pokemon.com
+  network: ws
+  ws-opts:
+   path: /trojan
+   headers:
+    Host: m.pokemon.com
+  udp: true
+
 - name: "CshSG2Vgprc"
   server: sg2vless-grpc.createv2ray.com
   port: 2096

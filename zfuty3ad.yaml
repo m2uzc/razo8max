@@ -140,3 +140,19 @@ proxies:
    headers:
     Host: m.pokemon.com
 
+- name: "VpnStuMyherza"
+  server: hrz.josvpn.me
+  port: 443
+  type: vless
+  uuid: 1f7c42f8-e192-479d-b307-9650c648acf5
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: m.pokemon.com
+  udp: true
+
