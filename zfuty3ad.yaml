@@ -97,7 +97,7 @@ proxies:
   server: america1.fufo.org
   port: 443
   type: vless
-  uuid: a33cece0-b6e7-11ee-b432-205c6d5f5d78
+  uuid: 9696ab40-b984-11ee-b933-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true

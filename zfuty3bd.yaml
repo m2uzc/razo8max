@@ -2,6 +2,23 @@ proxies:
 
 ##### fastest server #####
 
+- name: "vpnStunnelVm"
+  server: xray.josvpn.me
+  port: 443
+  type: vmess
+  uuid: 5eb441f1-e18b-4b3b-887f-984f3355a472
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: vmess
+   headers:
+    Host: m.pokemon.com
+
 - name: "vpnStunnelTr"
   server: xray.josvpn.me
   port: 443
