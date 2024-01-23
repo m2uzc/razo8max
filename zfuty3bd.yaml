@@ -7,17 +7,16 @@ proxies:
   port: 443
   type: vmess
   uuid: 5eb441f1-e18b-4b3b-887f-984f3355a472
-  sni: m.pokemon.com
   alterId: 0
   cipher: auto
+  network: grpc
   tls: true
+  servername: m.pokemon.com
   skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess
   udp: true
-  network: ws
-  ws-opts:
-   path: vmess
-   headers:
-    Host: m.pokemon.com
 
 - name: "vpnStunnelTr"
   server: xray.josvpn.me
@@ -116,7 +115,7 @@ proxies:
   server: asia1.fufo.org
   port: 443
   type: vless
-  uuid: 1db34200-b5fe-11ee-b634-205c6d5f5d78
+  uuid: 7713efb0-b985-11ee-b332-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
