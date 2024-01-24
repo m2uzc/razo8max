@@ -22,7 +22,7 @@ proxies:
   server: xray.josvpn.me
   port: 443
   type: trojan
-  password: c43d61b4-4eeb-4ebd-b73d-49c98de6222b
+  password: 7654d037-a3cb-4fce-8738-8a29b4b3f31b
   skip-cert-verify: true
   sni: m.pokemon.com
   network: ws
@@ -51,7 +51,7 @@ proxies:
   server: sg1-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: b9bc39ee-f6b1-45dd-8839-03f2c586d6a9
+  uuid: 30c3b769-2dd0-4cf9-a452-2d292b9c15d4
   alterId: 0
   cipher: auto
   network: grpc
