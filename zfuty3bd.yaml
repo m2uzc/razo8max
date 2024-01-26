@@ -65,7 +65,7 @@ proxies:
   server: sg1-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 30c3b769-2dd0-4cf9-a452-2d292b9c15d4
+  uuid: 9ffc7d6a-e825-492d-a960-e867c2e0a1f7
   alterId: 0
   cipher: auto
   network: grpc
@@ -81,7 +81,7 @@ proxies:
   server: sg2-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 24b11412-cb10-406a-b6bc-7b4dbbad5783
+  uuid: fb561711-d970-4bcd-afd3-5277c3a58058
   alterId: 0
   cipher: auto
   network: grpc
@@ -97,7 +97,7 @@ proxies:
   server: sg3-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 349fcbef-218a-4617-80f8-db405e9bc255
+  uuid: 02832b64-c318-46f5-83a0-add8ee1c390b
   alterId: 0
   cipher: auto
   network: grpc
@@ -208,7 +208,7 @@ proxies:
   server: sg-full.privateip.net
   port: 2003
   type: vless
-  uuid: d6ee5050-d618-4b11-ba8c-fe180f50f3e0
+  uuid: 981036cb-c6d7-41d6-9f5c-06cdb45b48dc
   cipher: auto
   tls: true
   skip-cert-verify: true
