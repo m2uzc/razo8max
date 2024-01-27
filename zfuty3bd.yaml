@@ -251,11 +251,11 @@ proxies:
    headers:
     Host: m.pokemon.com
 
-- name: "HowdyTr19jan"
+- name: "HowdyTr12feb"
   type: trojan
-  server: trojan1.udpgw.com
+  server: trojan2.udpgw.com
   port: 443
-  password: 98143820-ac3f-11ee-8293-1239d0255272
+  password: 61a4f220-bd60-11ee-947b-1239d0255272
   udp: true
   sni: m.pokemon.com
   alpn:
@@ -263,11 +263,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "HowdyVr19jan"
-  server: v2ray1.udpgw.com
+- name: "HowdyVr12feb"
+  server: v2ray2.udpgw.com
   port: 443
   type: vmess
-  uuid: dce645b7-90ff-4fbc-a1fd-490fc0186eba
+  uuid: 86a10d96-0f2a-46eb-9405-ae3adfe7a5c3
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
