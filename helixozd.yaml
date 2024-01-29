@@ -74,9 +74,9 @@ tun:
 proxies:
 - name: "HowdyTrojan30day_15-20gbx"
   type: trojan
-  server: de2.test3.net
+  server: ca1.test3.net
   port: 443
-  password: ecee9300-b212-11ee-9fb9-1239d0255272
+  password: 3501b560-bf01-11ee-95e7-1239d0255272
   udp: true
   sni: m.pokemon.com
   alpn:
