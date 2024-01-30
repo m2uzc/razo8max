@@ -9,10 +9,10 @@ proxies:
   password: 05d9e756-2848-4f5b-b60f-4eabd0806be1
   network: grpc
   sni: m.pokemon.com
-    skip-cert-verify: true
-  udp: true
+  skip-cert-verify: true
   grpc-opts:
     grpc-service-name: trojan
+  udp: true
 
 - name: "vpnStunnelVm"
   server: v2ray.josvpn.me
