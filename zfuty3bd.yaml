@@ -58,26 +58,11 @@ proxies:
     Host: m.pokemon.com
   udp: true
 
-- name: "CshSG2Vgprc"
-  server: sg2vless-grpc.createv2ray.com
-  port: 2096
-  type: vless
-  uuid: 74764502-f813-4528-b8c0-690603a3cc54
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: m.pokemon.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless-grpc
-  udp: true
-
 - name: "CSshSg1Vmgprc1"
   server: sg1-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 5bb8d30d-0db8-4264-88c4-f9e6357b3ac3
+  uuid: 52107273-a609-44a2-8093-2b6b312d8190
   alterId: 0
   cipher: auto
   network: grpc
@@ -93,7 +78,7 @@ proxies:
   server: sg2-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 60f52a7f-2dad-48e4-94e2-4e1aad185204
+  uuid: 7fe5f1b1-fa11-4c4b-aac5-72fc86dcd4b0
   alterId: 0
   cipher: auto
   network: grpc
@@ -125,7 +110,7 @@ proxies:
   server: sg4-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 06ba7c8b-671a-4bc3-be58-a2d19beeab12
+  uuid: 60ab962d-7c76-4b32-b19d-8cb5cd37e67f
   alterId: 0
   cipher: auto
   network: grpc
@@ -285,6 +270,32 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: m.pokemon.com
+
+- name: "Dummy"
+  type: trojan
+  server: m.m
+  port: 443
+  password: 345d36c0-f569-11ed-8b63-1239d0255272
+  udp: true
+  sni: m.m
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+
+
+
+
+
+
+p-cert-verify: true
   udp: true
   network: ws
   ws-opts:
