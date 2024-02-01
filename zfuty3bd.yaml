@@ -205,7 +205,7 @@ proxies:
   server: sg-full.privateip.net
   port: 2003
   type: vless
-  uuid: 981036cb-c6d7-41d6-9f5c-06cdb45b48dc
+  uuid: 1a50b235-bba8-46b4-8c7a-e7f017c3880e
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -220,7 +220,7 @@ proxies:
   server: sg2-full.privateip.net
   port: 2003
   type: vless
-  uuid: bde7932e-8f52-4f7e-b92e-ad1cd0908784
+  uuid: 840777a6-5c57-4c95-b000-65cb83918043
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -293,21 +293,25 @@ proxies:
 
 
 
-
-
-p-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /worryfree
-   headers:
-    Host: m.pokemon.com
-
-- name: "Dummy"
+me: "Dummy"
   type: trojan
   server: m.m
   port: 443
   password: 345d36c0-f569-11ed-8b63-1239d0255272
+  udp: true
+  sni: m.m
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+
+
+
+
+
+
+c0-f569-11ed-8b63-1239d0255272
   udp: true
   sni: m.m
   alpn:
