@@ -91,20 +91,15 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   interval: 300
   proxies:
-  - RobinZ
-  - Fallback
   - FallbackX
   - Manual1
   - Manual2
-  - Manual1x
-  - Manual2x
-  - Manual1y
-  - Manual2y
+  - Manual3
+  - Manual4
+  - Manual5
+  - BingX
   - Youtube
   - Fastx
-  - superfastlane
-  - Fastb
-  - multimedia
   - special
   - Ping++
   - DIRECT
@@ -127,7 +122,7 @@ proxy-groups:
   - sall2
   - sall3
   - sall4
-- name: Manual1x
+- name: Manual3
   type: select
   url: 'https://duckduckgo.com'
   interval: 300
@@ -136,7 +131,7 @@ proxy-groups:
   - sall2
   - sall3
   - sall4
-- name: Manual2x
+- name: Manual4
   type: select
   url: 'https://duckduckgo.com'
   interval: 300
@@ -145,7 +140,7 @@ proxy-groups:
   - sall2
   - sall3
   - sall4
-- name: Manual1y
+- name: Manual5
   type: select
   url: 'https://duckduckgo.com'
   interval: 300
@@ -154,7 +149,7 @@ proxy-groups:
   - sall2
   - sall3
   - sall4
-- name: Manual2y
+- name: BingX
   type: select
   url: 'https://duckduckgo.com'
   interval: 300
@@ -181,40 +176,18 @@ proxy-groups:
   - sall2
   - sall3
   - sall4
-- name: RobinZ
-  type: load-balance
-  url: 'https://duckduckgo.com'
-  interval: 300
-  strategy: round-robin
-  disable-udp: false
-  tolerance: 6000
-  lazy: true
-  proxies:
-  - FallbackX
-  - FallbackY
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 32
-  lazy: false
+  interval: 34
+  lazy: true
   proxies:
   - Manual1
-  - Manual1x
-  - Manual1y
-  - Fallback
-  - Fallbackc
-  - Fallbackb
-- name: FallbackY
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 6000
-  interval: 32
-  lazy: false
-  proxies:
   - Manual2
-  - Manual2x
-  - Manual2y
+  - Manual3
+  - Manual4
+  - Manual5
   - Fallback
   - Fallbackc
   - Fallbackb
@@ -236,6 +209,17 @@ proxy-groups:
   lazy: false
   proxies:
   - Youtube
+  - PingMedia
+  - Fastb
+  - Fastc
+- name: bing
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 32
+  lazy: false
+  proxies:
+  - BingX
   - PingMedia
   - Fastb
   - Fastc
@@ -263,7 +247,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 30
+  interval: 16
   lazy: false
   use:
   - sall
@@ -272,7 +256,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 30
+  interval: 16
   lazy: false
   use:
   - sall2
@@ -281,7 +265,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 30
+  interval: 16
   lazy: false
   use:
   - sall3
@@ -435,28 +419,28 @@ rules:
   - DOMAIN-KEYWORD,wsdvs,superfastlane
   - DOMAIN-KEYWORD,spbycdn,superfastlane
   - DOMAIN-KEYWORD,atomile,superfastlane
-  - DOMAIN-KEYWORD,gvt,superfastlane
+  - DOMAIN-KEYWORD,gvt,multimedia
   - DOMAIN-KEYWORD,apple.com,superfastlane
   - DOMAIN-KEYWORD,akamai,superfastlane
   - DOMAIN-KEYWORD,akamaiedge,superfastlane
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
   - DOMAIN-KEYWORD,returnyoutubedislikeapi,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
-  - DOMAIN-KEYWORD,bing,multimedia
-  - DOMAIN-KEYWORD,designerapp,multimedia
-  - DOMAIN-KEYWORD,live.com,multimedia
-  - DOMAIN-KEYWORD,microsoft,multimedia
-  - DOMAIN-KEYWORD,creator,multimedia
-  - DOMAIN-KEYWORD,azure,multimedia
-  - DOMAIN-KEYWORD,office,multimedia
-  - DOMAIN-KEYWORD,edge,multimedia
-  - DOMAIN-KEYWORD,a-msedge,multimedia
-  - DOMAIN-KEYWORD,akadns,multimedia
+  - DOMAIN-KEYWORD,bing,bing
+  - DOMAIN-KEYWORD,designerapp,bing
+  - DOMAIN-KEYWORD,live.com,bing
+  - DOMAIN-KEYWORD,microsoft,bing
+  - DOMAIN-KEYWORD,creator,bing
+  - DOMAIN-KEYWORD,azure,bing
+  - DOMAIN-KEYWORD,office,bing
+  - DOMAIN-KEYWORD,edge,bing
+  - DOMAIN-KEYWORD,a-msedge,bing
+  - DOMAIN-KEYWORD,akadns,bing
   - DOMAIN,mtalk.google.com,special
   - DOMAIN,mobile-gtalk.l.google.com,special
   - DOMAIN-KEYWORD,clients,special
   - DOMAIN,android.apis.google.com,special
-  - DOMAIN,engage.cloudflareclient.com,multimedia
+  - DOMAIN,engage.cloudflareclient.com,bing
   - DOMAIN-KEYWORD,googleapis.com,multimedia
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
   - DOMAIN-KEYWORD,googleapis,special
@@ -474,7 +458,6 @@ rules:
   - DOMAIN-KEYWORD,Spotify,multimedia
   - DOMAIN-KEYWORD,spotifycdn,multimedia
   - DOMAIN-KEYWORD,gstatic,multimedia
-  - DOMAIN-KEYWORD,bing,superfastlane
   - DOMAIN-KEYWORD,yahoo,superfastlane
   - DOMAIN-KEYWORD,instagram,superfastlane
   - DOMAIN-KEYWORD,image,superfastlane
@@ -498,7 +481,7 @@ rules:
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
   - DOMAIN-KEYWORD,ads,REJECT
-  - DOMAIN-KEYWORD,cloudflare,multimedia
+  - DOMAIN-KEYWORD,cloudflare,bing
   - DOMAIN-KEYWORD,teamviewer,superfastlane
   - SRC-PORT,5938,superfastlane
   - DST-PORT,5938,superfastlane
