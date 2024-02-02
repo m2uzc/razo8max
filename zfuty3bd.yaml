@@ -289,10 +289,6 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-
-
-
-
 me: "Dummy"
   type: trojan
   server: m.m
@@ -304,24 +300,6 @@ me: "Dummy"
      - h2
      - http/1.1
   skip-cert-verify: true
-
-
-
-
-
-
-
-c0-f569-11ed-8b63-1239d0255272
-  udp: true
-  sni: m.m
-  alpn:
-     - h2
-     - http/1.1
-  skip-cert-verify: true
-
-
-
-
 
 
 
