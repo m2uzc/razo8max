@@ -17,7 +17,7 @@ proxies:
 - name: "vpnStunnelVm"
   server: v2ray.josvpn.me
   port: 443
-  type: vmess
+  type: vless
   uuid: cc6303ec-21b1-4273-90a0-ffcf9efd2fcd
   alterId: 0
   cipher: auto
