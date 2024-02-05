@@ -6,7 +6,7 @@ proxies:
   server: xray.josvpn.me
   port: 443
   type: trojan
-  password: 05d9e756-2848-4f5b-b60f-4eabd0806be1
+  password: 476e456f-69e7-4a81-982e-f9b207d5aa53
   network: grpc
   sni: m.pokemon.com
   skip-cert-verify: true
@@ -18,7 +18,7 @@ proxies:
   server: v2ray.josvpn.me
   port: 443
   type: vmess
-  uuid: e611c19b-7f14-4b26-9c73-283b49ead48a
+  uuid: cc6303ec-21b1-4273-90a0-ffcf9efd2fcd
   alterId: 0
   cipher: auto
   network: grpc
@@ -27,14 +27,14 @@ proxies:
   skip-cert-verify: true
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vmess
+    grpc-service-name: vless
   udp: true
 
 - name: "vpnStunnelTdr"
   server: dray.josvpn.me
   port: 443
   type: trojan
-  password: 61cb6d8e-fb97-4ef7-b81f-3a474a564dd3
+  password: be77a4ba-2311-4820-93e8-0603671d1407
   skip-cert-verify: true
   sni: m.pokemon.com
   network: ws
