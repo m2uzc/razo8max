@@ -2,11 +2,11 @@ proxies:
 
 ##### Backup Server ######
 
-- name: "lion7day"
-  server: vm.sg.servergo.pw
+- name: "akunsg"
+  server: sg1-vmess.tunnel.cx
   port: 443
   type: vmess
-  uuid: e7da70d4-4561-4f98-9c99-f44a4c242377
+  uuid: d4638874-c835-11ee-881d-4390c54e5394
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
@@ -15,24 +15,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /v2ray-vmess/tls
-   headers:
-    Host: m.pokemon.com
-
-- name: "lion30day"
-  server: vm.sg.servergo.pw
-  port: 443
-  type: vmess
-  uuid: dc9e1480-f180-42e7-abee-f58bac8bf12c
-  sni: m.pokemon.com
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  network: ws
-  ws-opts:
-   path: /v2ray-vmess/tls
+   path: /vmess
    headers:
     Host: m.pokemon.com
 
