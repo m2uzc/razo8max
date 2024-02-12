@@ -126,7 +126,7 @@ proxies:
   server: asia1.fufo.org
   port: 443
   type: vless
-  uuid: 7713efb0-b985-11ee-b332-205c6d5f5d78
+  uuid: 042408f0-c988-11ee-b334-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -190,7 +190,7 @@ proxies:
   server: sg3-full.privateip.net
   port: 2003
   type: vless
-  uuid: 3a717129-4203-48b7-aeda-3376dc8776fb
+  uuid: 1eb06d34-3c43-46b0-82d0-ae1fe772128f
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -205,7 +205,7 @@ proxies:
   server: sg-full.privateip.net
   port: 2003
   type: vless
-  uuid: 1a50b235-bba8-46b4-8c7a-e7f017c3880e
+  uuid: 83cca0d1-0cd6-4fa7-971f-b05c0ec7b6be
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -220,7 +220,7 @@ proxies:
   server: sg2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 840777a6-5c57-4c95-b000-65cb83918043
+  uuid: 7f0e6ad9-d7b4-43cd-9603-40dd2fd9cfe2
   cipher: auto
   tls: true
   skip-cert-verify: true
