@@ -78,7 +78,7 @@ proxies:
   server: sg2-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: d683cb79-2918-416e-a2f0-b1dc66103215
+  uuid: 947dbf0e-390d-4905-8511-a35787d1635f
   alterId: 0
   cipher: auto
   network: grpc
@@ -110,7 +110,7 @@ proxies:
   server: sg4-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: f0ed606a-f1f3-431c-9a9b-fd25b1217410
+  uuid: 03339c9f-66cc-4076-b2da-d65648574bde
   alterId: 0
   cipher: auto
   network: grpc
@@ -231,11 +231,11 @@ proxies:
     grpc-service-name: GRPC
   udp: true
 
-- name: "DynaSG31Jan"
-  server: dynamic-sg2b.obfs.xyz
+- name: "DynaSG29f"
+  server: dynamic-sg1b.obfs.xyz
   port: 443
   type: vmess
-  uuid: b1b62e70-2f8b-4740-9eff-823eca761c21
+  uuid: d5d9e8b3-ceaf-4a4c-81f3-f25ee3b161b4
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
