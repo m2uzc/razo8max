@@ -220,7 +220,7 @@ proxies:
   server: sg2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 7f0e6ad9-d7b4-43cd-9603-40dd2fd9cfe2
+  uuid: 83e6db42-a0a4-4281-bdc6-7a6e161d1380
   cipher: auto
   tls: true
   skip-cert-verify: true
