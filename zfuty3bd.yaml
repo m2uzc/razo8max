@@ -62,7 +62,7 @@ proxies:
   server: sg1-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: f3179cf1-70a3-4e75-a969-e7ed2c35a4a2
+  uuid: 99057559-7444-4c6f-b206-a4a93e5fc21f
   alterId: 0
   cipher: auto
   network: grpc
@@ -78,7 +78,7 @@ proxies:
   server: sg2-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 947dbf0e-390d-4905-8511-a35787d1635f
+  uuid: ad8eeb3c-b828-40d8-8800-03154a2be4cd
   alterId: 0
   cipher: auto
   network: grpc
@@ -94,7 +94,7 @@ proxies:
   server: sg3-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 54215d71-1a99-4c09-af5a-b840047556e8
+  uuid: 17cd191d-e20d-4196-985e-db2a67c5e2d1
   alterId: 0
   cipher: auto
   network: grpc
@@ -110,7 +110,7 @@ proxies:
   server: sg4-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 03339c9f-66cc-4076-b2da-d65648574bde
+  uuid: 5c861d4a-27af-44c5-b362-ff2fbb515af6
   alterId: 0
   cipher: auto
   network: grpc
@@ -126,7 +126,7 @@ proxies:
   server: asia1.fufo.org
   port: 443
   type: vless
-  uuid: 042408f0-c988-11ee-b334-205c6d5f5d78
+  uuid: e75b82d0-d1d8-11ee-b534-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true

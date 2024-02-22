@@ -87,6 +87,15 @@ proxies:
    headers:
     Host: m.pokemon.com
 
-
-
+- name: "howdy30dUsa-d"
+  type: trojan
+  server: us1.test3.net
+  port: 443
+  password: fb06bdc0-d1da-11ee-b14c-1239d0255272
+  udp: true
+  sni: m.pokemon.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
 
