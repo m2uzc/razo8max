@@ -14,75 +14,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "CreasshAu1Vgprc1"
-  server: au1-grpc.createv2ray.com
-  port: 443
-  type: vmess
-  uuid: c820b81e-9f08-46ec-b0a1-20a05e7ee529
-  alterId: 0
-  cipher: auto
-  network: grpc
-  tls: true
-  servername: m.pokemon.com
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vmess-grpc
-  udp: true
-
-- name: "Creasshca1Vgprc1"
-  server: ca1-grpc.createv2ray.com
-  port: 443
-  type: vmess
-  uuid: a30b77ba-28a6-4469-a504-892cc89739f7
-  alterId: 0
-  cipher: auto
-  network: grpc
-  tls: true
-  servername: m.pokemon.com
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vmess-grpc
-  udp: true
-
-- name: "Creasshge1Vgprc1"
-  server: ge1-grpc.createv2ray.com
-  port: 443
-  type: vmess
-  uuid: 9679b4a9-ec94-46f6-a2c9-7f118d7e8091
-  alterId: 0
-  cipher: auto
-  network: grpc
-  tls: true
-  servername: m.pokemon.com
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vmess-grpc
-  udp: true
-
-- name: "CreasshJP1Vgprc1"
-  server: jp1-grpc.createv2ray.com
-  port: 443
-  type: vmess
-  uuid: 681968c7-45e3-418f-97c6-684e58896ad2
-  alterId: 0
-  cipher: auto
-  network: grpc
-  tls: true
-  servername: m.pokemon.com
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vmess-grpc
-  udp: true
-
-- name: "CreasshUsaVgprc1"
-  server: us1vless-grpc.createv2ray.com
-  port: 443
+- name: "Au1"
+  server: au-full.privateip.net
+  port: 2003
   type: vless
-  uuid: f7278ad1-a67c-47dc-85c3-120cbcd0d240
+  uuid: 64a06552-bd24-4511-8f2a-bed6064d7383
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -90,7 +26,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vless-grpc
+    grpc-service-name: GRPC
   udp: true
 
 - name: "Usa1"
@@ -155,4 +91,3 @@ proxies:
     headers:
       Host: m.pokemon.com
   udp: true
-
