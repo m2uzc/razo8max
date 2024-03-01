@@ -29,11 +29,26 @@ proxies:
     grpc-service-name: GRPC
   udp: true
 
-- name: "Usa1"
+- name: "Usa1f"
   server: america1.fufo.org
   port: 443
   type: vless
-  uuid: 9696ab40-b984-11ee-b933-205c6d5f5d78
+  uuid: 5a646ad0-d7d0-11ee-b833-205c6d5f5d78
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: m.pokemon.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vlgrpc
+  udp: true
+
+- name: "Usa1"
+  server: us1.socifiles.com
+  port: 443
+  type: vless
+  uuid: fb3f67c0-d7d0-11ee-a94a-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -48,7 +63,7 @@ proxies:
   server: us5.socifiles.com
   port: 443
   type: vless
-  uuid: 98c3ed60-b134-11ee-bc04-1239d0255272
+  uuid: b8cd01c0-d7d0-11ee-823a-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
