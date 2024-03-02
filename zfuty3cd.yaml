@@ -6,7 +6,7 @@ proxies:
   server: sg1-vmess.tunnel.cx
   port: 443
   type: vmess
-  uuid: d4638874-c835-11ee-881d-4390c54e5394
+  uuid: 24d2b30e-d7ed-11ee-b576-335c85018b72
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
@@ -98,4 +98,21 @@ proxies:
      - h2
      - http/1.1
   skip-cert-verify: true
+
+- name: "akunUs"
+  server: us1-vmess.tunnel.cx
+  port: 443
+  type: vmess
+  uuid: 247b52bc-d7ed-11ee-9276-a7b0d57e388a
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: m.pokemon.com
 
