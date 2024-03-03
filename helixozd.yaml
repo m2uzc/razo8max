@@ -99,6 +99,7 @@ proxy-groups:
   - Manual5
   - BingX
   - Youtube
+  - YoutubeChat
   - Fastx
   - special
   - Ping++
@@ -168,6 +169,15 @@ proxy-groups:
   - sall3
   - sall4
 - name: Youtube
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 300
+  use:
+  - sall
+  - sall2
+  - sall3
+  - sall4
+- name: YoutubeChat
   type: select
   url: 'https://duckduckgo.com'
   interval: 300
@@ -441,15 +451,16 @@ rules:
   - DOMAIN-KEYWORD,clients,special
   - DOMAIN,android.apis.google.com,special
   - DOMAIN,engage.cloudflareclient.com,bing
-  - DOMAIN-KEYWORD,googleapis.com,multimedia
+  - DOMAIN-KEYWORD,googleapis.com,YoutubeChat
+  - DOMAIN-KEYWORD,googleapis,YoutubeChat
+  - DOMAIN-KEYWORD,youtubei,YoutubeChat
+  - DOMAIN-KEYWORD,youtube-ui,YoutubeChat
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
-  - DOMAIN-KEYWORD,googleapis,special
   - DOMAIN-KEYWORD,googlevideo,multimedia
   - DOMAIN-KEYWORD,googleusercontent,multimedia
   - DOMAIN-KEYWORD,ytimg,multimedia
   - DOMAIN-KEYWORD,ggpht,multimedia
   - DOMAIN-KEYWORD,youtube,multimedia
-  - DOMAIN-KEYWORD,youtubei,multimedia
   - DOMAIN-KEYWORD,ytimg.com,multimedia
   - DOMAIN-KEYWORD,youtube.com,multimedia
   - DOMAIN-KEYWORD,shazam,multimedia
