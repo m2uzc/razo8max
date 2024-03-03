@@ -458,11 +458,11 @@ rules:
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
   - DOMAIN-KEYWORD,googlevideo,multimedia
   - DOMAIN-KEYWORD,googleusercontent,multimedia
-  - DOMAIN-KEYWORD,ytimg,multimedia
-  - DOMAIN-KEYWORD,ggpht,multimedia
-  - DOMAIN-KEYWORD,youtube,multimedia
-  - DOMAIN-KEYWORD,ytimg.com,multimedia
-  - DOMAIN-KEYWORD,youtube.com,multimedia
+  - DOMAIN-KEYWORD,ytimg,YoutubeChat
+  - DOMAIN-KEYWORD,ggpht,YoutubeChat
+  - DOMAIN-KEYWORD,youtube,YoutubeChat
+  - DOMAIN-KEYWORD,ytimg.com,YoutubeChat
+  - DOMAIN-KEYWORD,youtube.com,YoutubeChat
   - DOMAIN-KEYWORD,shazam,multimedia
   - DOMAIN-KEYWORD,scdnco,multimedia
   - DOMAIN-KEYWORD,scdn,multimedia
