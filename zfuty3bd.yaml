@@ -205,7 +205,7 @@ proxies:
   server: sg-full.privateip.net
   port: 2003
   type: vless
-  uuid: cd862f83-d8c2-445f-97e7-4f8ecd5b7939
+  uuid: 93791f4a-66ac-40ee-9770-ff7d7f1e27c8
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -220,7 +220,7 @@ proxies:
   server: sg2-full.privateip.net
   port: 2003
   type: vless
-  uuid: 630bbce1-d462-4637-99ae-fa003c10ac8c
+  uuid: fb86311a-6ae7-4108-aa73-9eb33b4a0ffe
   cipher: auto
   tls: true
   skip-cert-verify: true
