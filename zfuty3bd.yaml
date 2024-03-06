@@ -295,7 +295,7 @@ proxies:
     Host: m.pokemon.com
 
 - name: "opensg4"
-  server: v2ray4.udpgw.com
+  server: sgv-4.openv2ray.com
   port: 443
   type: vmess
   uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
