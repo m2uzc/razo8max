@@ -152,11 +152,11 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "ssocvmes5"
-  server: sg5.xv2ray.net
+- name: "ssocvmes1"
+  server: sg1.xv2ray.net
   port: 443
   type: vmess
-  uuid: 97ec960f-a052-4d1c-89e7-67d5d4a64562
+  uuid: 34a87583-df31-4d33-bd61-bf4ee8eaa298
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
@@ -169,11 +169,11 @@ proxies:
    headers:
     Host: m.pokemon.com
 
-- name: "ssocvmes6"
-  server: sg6.xv2ray.net
+- name: "ssocvmes2"
+  server: sg2.xv2ray.net
   port: 443
   type: vmess
-  uuid: 5c92a701-2cfa-484b-9834-d6ff65027372
+  uuid: 84a778e3-87f3-44b4-a96b-2962ae940778
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
