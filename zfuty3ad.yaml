@@ -91,6 +91,33 @@ proxies:
    headers:
     Host: m.pokemon.com
 
+- name: "freevpnUs"
+  server: v2-us-1.v2ray.cc
+  port: 443
+  type: trojan
+  password: 7772bb24-976a-45ca-aa76-f4f1b7f50923
+  skip-cert-verify: true
+  sni: m.pokemon.com
+  network: ws
+  ws-opts:
+   path: /anything/freevpn.us-sdetta4/trojan
+   headers:
+    Host: m.pokemon.com
+  udp: true
+
+- name: "freevpnGe"
+  server: v2-ge-1.v2ray.cc
+  port: 443
+  type: trojan
+  password: 7772bb24-976a-45ca-aa76-f4f1b7f50923
+  skip-cert-verify: true
+  sni: m.pokemon.com
+  network: ws
+  ws-opts:
+   path: /anything/freevpn.us-aston97/trojan
+   headers:
+    Host: m.pokemon.com
+  udp: true
 
 - name: "JanInDocean1"
   server: in1.vpnjantit.com
