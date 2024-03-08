@@ -91,6 +91,43 @@ proxies:
    headers:
     Host: m.pokemon.com
 
+
+- name: "JanInDocean1"
+  server: in1.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: 984b21bc-dd3e-11ee-a511-3b4a580f2363
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: m.pokemon.com
+
+
+- name: "JanKoreaVultur"
+  server: kr1.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: a8b8af14-dd3f-11ee-8569-63519881c4ff
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: m.pokemon.com
+
+
 - name: "VpnStuMyherza"
   server: hrz.josvpn.me
   port: 443
