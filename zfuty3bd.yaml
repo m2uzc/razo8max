@@ -94,7 +94,7 @@ proxies:
   server: sg3-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: a9355edf-5f77-4e8a-b388-b2f035856155
+  uuid: cfddf924-f6b5-49c9-ba19-9fff3d18d64e
   alterId: 0
   cipher: auto
   network: grpc
@@ -110,7 +110,7 @@ proxies:
   server: sg4-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 5a120a90-10fe-4a26-8644-43e584050e9f
+  uuid: 7e6e032b-9a0f-4762-94dd-47afc03ba19c
   alterId: 0
   cipher: auto
   network: grpc
@@ -126,7 +126,7 @@ proxies:
   server: asia1.fufo.org
   port: 443
   type: vless
-  uuid: 9cfac170-dbc4-11ee-b338-205c6d5f5d78
+  uuid: 4e3a89f0-deed-11ee-b937-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -231,11 +231,11 @@ proxies:
     grpc-service-name: GRPC
   udp: true
 
-- name: "DynaSG29f"
-  server: dynamic-sg1b.obfs.xyz
+- name: "DynaSG25march"
+  server: dynamic-sg2b.obfs.xyz
   port: 443
   type: vmess
-  uuid: d5d9e8b3-ceaf-4a4c-81f3-f25ee3b161b4
+  uuid: 7e118270-d0b9-4cc5-a525-14d93b30a3dc
   sni: m.pokemon.com
   alterId: 0
   cipher: auto

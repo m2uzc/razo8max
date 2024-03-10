@@ -74,11 +74,11 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "DynaUSA28f"
-  server: dynamic-us1b.obfs.xyz
+- name: "DynaUSA25march"
+  server: dynamic-us2b.obfs.xyz
   port: 443
   type: vmess
-  uuid: dbbe0586-edee-4a46-bbba-80cb76b3c816
+  uuid: 4ed7663d-ffb2-4975-91c2-89107a70b675
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
