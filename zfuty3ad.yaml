@@ -100,13 +100,13 @@ proxies:
   sni: m.pokemon.com
   network: ws
   ws-opts:
-   path: /anything/freevpn.us-sdetta4/trojan
+   path: /anything/freevpn.us-sbwji34/trojan
    headers:
     Host: m.pokemon.com
   udp: true
 
-- name: "freevpnGe"
-  server: v2-ge-1.v2ray.cc
+- name: "freevpnUk"
+  server: v2-uk-1.v2ray.cc
   port: 443
   type: trojan
   password: 7772bb24-976a-45ca-aa76-f4f1b7f50923
@@ -114,16 +114,33 @@ proxies:
   sni: m.pokemon.com
   network: ws
   ws-opts:
-   path: /anything/freevpn.us-aston97/trojan
+   path: /anything/freevpn.us-struyt8/trojan
    headers:
     Host: m.pokemon.com
   udp: true
+
+- name: "JanSg3Docean"
+  server: sg3.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: 3af41380-e094-11ee-8fe1-8348ec85b7c2
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: m.pokemon.com
 
 - name: "JanInDocean1"
   server: in1.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: 984b21bc-dd3e-11ee-a511-3b4a580f2363
+  uuid: 6f6515c0-e093-11ee-af66-4fecf3eefc49
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
@@ -141,7 +158,7 @@ proxies:
   server: kr1.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: a8b8af14-dd3f-11ee-8569-63519881c4ff
+  uuid: 1e960ac6-e095-11ee-a073-83e7858fcd34
   sni: m.pokemon.com
   alterId: 0
   cipher: auto

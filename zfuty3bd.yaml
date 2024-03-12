@@ -94,7 +94,7 @@ proxies:
   server: sg3-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: cfddf924-f6b5-49c9-ba19-9fff3d18d64e
+  uuid: f8c1007d-1778-4055-8d25-0f2b88a03a16
   alterId: 0
   cipher: auto
   network: grpc
@@ -110,7 +110,7 @@ proxies:
   server: sg4-grpc.createv2ray.com
   port: 2096
   type: vmess
-  uuid: 7e6e032b-9a0f-4762-94dd-47afc03ba19c
+  uuid: f8652835-c76e-42b8-9654-8bd019a92f05
   alterId: 0
   cipher: auto
   network: grpc
