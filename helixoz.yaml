@@ -80,7 +80,7 @@ tun:
 proxies:
 - name: "HowdyTrojan30day_15-20gbx"
   type: trojan
-  server: fr1.test3.net
+  server: fr1.test3.netyy
   port: 443
   password: b1f16a20-8fc3-11ee-91af-1239d0255272
   udp: true
