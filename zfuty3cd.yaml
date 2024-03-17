@@ -49,7 +49,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/65cf5073936c0/
+   path: /sshkit/1074999023/65f77b6c588ee/
    headers:
     Host: m.pokemon.com
 
@@ -66,7 +66,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/65cf509cd3ec3/
+   path: /sshkit/1074999023/65f77bfea8650/
    headers:
     Host: m.pokemon.com
 
@@ -83,7 +83,7 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/65cf50bcc86b3/
+   path: /sshkit/1074999023/65f77c1f45156/
    headers:
     Host: m.pokemon.com
 
