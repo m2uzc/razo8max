@@ -119,6 +119,22 @@ proxies:
     Host: m.pokemon.com
   udp: true
 
+- name: "JanSg1Docean"
+  server: sg1.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: 6a3ce29e-e6ba-11ee-a2be-0401634a3101
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: m.pokemon.com
 
 
 - name: "JanSg3Docean"
@@ -142,7 +158,7 @@ proxies:
   server: in1.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: 6f6515c0-e093-11ee-af66-4fecf3eefc49
+  uuid: 3651b21c-e6b9-11ee-a591-1f86f15413be
   sni: m.pokemon.com
   alterId: 0
   cipher: auto
