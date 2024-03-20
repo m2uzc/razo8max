@@ -119,6 +119,8 @@ proxies:
     Host: m.pokemon.com
   udp: true
 
+
+
 - name: "JanSg3Docean"
   server: sg3.vpnjantit.com
   port: 10001
