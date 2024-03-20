@@ -100,7 +100,7 @@ proxies:
   sni: m.pokemon.com
   network: ws
   ws-opts:
-   path: /anything/freevpn.us-sbwji34/trojan
+   path: /anything/freevpn.us-ekga78/trojan
    headers:
     Host: m.pokemon.com
   udp: true
