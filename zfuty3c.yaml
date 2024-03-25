@@ -2,8 +2,42 @@ proxies:
 
 ##### Backup Server ######
 
+- name: "akunsg"
+  server: sg1-vmess.tunnel.cx
+  port: 443
+  type: vmess
+  uuid: 24d2b30e-d7ed-11ee-b576-335c85018b72
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
 - name: "backserverSG-dec"
   server: vmess-sg1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: m.pokemon.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/65f77b6c588ee/
+   headers:
+    Host: mobilelegends.com
+
+- name: "backserverUS-dec"
+  server: vmess-us1.sshkit.org
   port: 443
   type: vmess
   uuid: e620d600-ee19-4012-a96c-968e85a52de9
@@ -15,7 +49,70 @@ proxies:
   udp: true
   network: ws
   ws-opts:
-   path: /sshkit/1074999023/65726d17d4eb4/
+   path: /sshkit/1074999023/65f77bb382d40/
+   headers:
+    Host: mobilelegends.com
+
+- name: "backserverFR-dec"
+  server: vmess-fr1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/65f77bfea8650/
+   headers:
+    Host: mobilelegends.com
+
+- name: "backserverNL-dec"
+  server: vmess-nl1.sshkit.org
+  port: 443
+  type: vmess
+  uuid: e620d600-ee19-4012-a96c-968e85a52de9
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /sshkit/1074999023/65f77c1f45156/
+   headers:
+    Host: mobilelegends.com
+
+- name: "howdy30dUsa-d"
+  type: trojan
+  server: us1.test3.net
+  port: 443
+  password: fb06bdc0-d1da-11ee-b14c-1239d0255272
+  udp: true
+  sni: mobilelegends.com
+  alpn:
+     - h2
+     - http/1.1
+  skip-cert-verify: true
+
+- name: "akunUs"
+  server: us1-vmess.tunnel.cx
+  port: 443
+  type: vmess
+  uuid: 247b52bc-d7ed-11ee-9276-a7b0d57e388a
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
    headers:
     Host: mobilelegends.com
 
