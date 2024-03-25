@@ -14,11 +14,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "Aurc1"
+- name: "Au1"
   server: au-full.privateip.net
   port: 2003
   type: vless
-  uuid: 5a22f6df-ec27-4dbf-880c-4e06ffd2befd
+  uuid: baf69c71-e263-4678-bbf6-d0d1cd52cfd1
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -26,44 +26,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: grpc
+    grpc-service-name: GRPC
   udp: true
 
-- name: "ca"
-  server: ca-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: e00605bf-8afa-4418-ab1a-a179075e6c6a
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Nlrc2"
-  server: nl2-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: 821d5778-b732-4bea-8217-879ef9e30538
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Indo"
-  server: asia2.oceis.net
+- name: "Usa1f"
+  server: america1.fufo.org
   port: 443
   type: vless
-  uuid: b66f44a0-96a1-11ee-b732-205c6d5f5d78
+  uuid: 5a646ad0-d7d0-11ee-b833-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -74,11 +44,11 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "Usa2"
-  server: us2.oceis.net
+- name: "Usa1"
+  server: us1.socifiles.com
   port: 443
   type: vless
-  uuid: 7fef07b0-96a1-11ee-b337-205c6d5f5d78
+  uuid: 8a90e8e0-dd31-11ee-9465-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -93,22 +63,7 @@ proxies:
   server: us5.socifiles.com
   port: 443
   type: vless
-  uuid: 330c3060-79db-11ee-a1bd-1239d0255272
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.comx
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vlgrpc
-  udp: true
-
-- name: "Usa1x"
-  server: us1.socifiles.com
-  port: 443
-  type: vless
-  uuid: 79d4d380-7f63-11ee-a863-1239d0255272
+  uuid: 2692fe00-e38b-11ee-b46e-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -119,6 +74,134 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
+- name: "DynaUSA25march"
+  server: dynamic-us2b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: 4ed7663d-ffb2-4975-91c2-89107a70b675
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /worryfree
+   headers:
+    Host: mobilelegends.com
+
+- name: "freevpnUs"
+  server: v2-us-1.v2ray.cc
+  port: 443
+  type: trojan
+  password: 7772bb24-976a-45ca-aa76-f4f1b7f50923
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: ws
+  ws-opts:
+   path: /anything/freevpn.us-ekga78/trojan
+   headers:
+    Host: mobilelegends.com
+  udp: true
+
+- name: "freevpnUk"
+  server: v2-uk-1.v2ray.cc
+  port: 443
+  type: trojan
+  password: 7772bb24-976a-45ca-aa76-f4f1b7f50923
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: ws
+  ws-opts:
+   path: /anything/freevpn.us-struyt8/trojan
+   headers:
+    Host: mobilelegends.com
+  udp: true
+
+- name: "JanSg1Docean"
+  server: sg1.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: 6a3ce29e-e6ba-11ee-a2be-0401634a3101
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: mobilelegends.com
 
 
+- name: "JanSg3Docean"
+  server: sg3.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: 3af41380-e094-11ee-8fe1-8348ec85b7c2
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: mobilelegends.com
 
+- name: "JanInDocean1"
+  server: in1.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: 3651b21c-e6b9-11ee-a591-1f86f15413be
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: mobilelegends.com
+
+
+- name: "JanKoreaVultur"
+  server: kr1.vpnjantit.com
+  port: 10001
+  type: vmess
+  uuid: 1e960ac6-e095-11ee-a073-83e7858fcd34
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vpnjantit
+   headers:
+    Host: mobilelegends.com
+
+
+- name: "VpnStuMyherza"
+  server: hrz.josvpn.me
+  port: 443
+  type: vless
+  uuid: 1f7c42f8-e192-479d-b307-9650c648acf5
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: mobilelegends.com
+  udp: true
