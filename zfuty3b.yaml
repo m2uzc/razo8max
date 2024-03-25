@@ -2,11 +2,131 @@ proxies:
 
 ##### fastest server #####
 
-- name: "fastaxgn"
-  server: asia.oceis.net
+- name: "vpnStunnelTrGprc"
+  server: xray.josvpn.me
+  port: 443
+  type: trojan
+  password: eb98bb85-0caf-439e-8bd1-50b807dcd6e6
+  network: grpc
+  sni: mobilelegends.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: trojan
+  udp: true
+
+- name: "vpnStunnelVless"
+  server: v2ray.josvpn.me
   port: 443
   type: vless
-  uuid: 47eaf8e0-9566-11ee-b230-205c6d5f5d78
+  uuid: 33e58274-a9a5-4a35-8405-677e0c07197a
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: mobilelegends.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless
+  udp: true
+
+- name: "vpnStunnelTdr"
+  server: dray.josvpn.me
+  port: 443
+  type: trojan
+  password: f9fbecf0-d898-4572-817d-a2cc744bdc6a
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: ws
+  ws-opts:
+   path: /trojan
+   headers:
+    Host: mobilelegends.com
+  udp: true
+
+- name: "vpnStunnelTr"
+  server: xray.josvpn.me
+  port: 443
+  type: trojan
+  password: 7654d037-a3cb-4fce-8738-8a29b4b3f31b
+  skip-cert-verify: true
+  sni: mobilelegends.com
+  network: ws
+  ws-opts:
+   path: /trojan
+   headers:
+    Host: mobilelegends.com
+  udp: true
+
+- name: "CSshSg1Vmgprc1"
+  server: sg1-grpc.createv2ray.com
+  port: 2096
+  type: vmess
+  uuid: 99057559-7444-4c6f-b206-a4a93e5fc21f
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: mobilelegends.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: "CSshSg2Vmgprc1"
+  server: sg2-grpc.createv2ray.com
+  port: 2096
+  type: vmess
+  uuid: 396a5de1-eea3-496f-9ba0-4707b8d760ca
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: mobilelegends.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: "CSshSg3Vmgprc1"
+  server: sg3-grpc.createv2ray.com
+  port: 2096
+  type: vmess
+  uuid: f8c1007d-1778-4055-8d25-0f2b88a03a16
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: mobilelegends.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: "CSshSg4Vmgprc1"
+  server: sg4-grpc.createv2ray.com
+  port: 2096
+  type: vmess
+  uuid: f8652835-c76e-42b8-9654-8bd019a92f05
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: mobilelegends.com
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vmess-grpc
+  udp: true
+
+- name: "fastaxgn"
+  server: asia1.fufo.org
+  port: 443
+  type: vless
+  uuid: 4e3a89f0-deed-11ee-b937-205c6d5f5d78
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -21,7 +141,7 @@ proxies:
   server: sg3.socifiles.com
   port: 443
   type: vless
-  uuid: 66fdcfd0-9565-11ee-adfe-1239d0255272
+  uuid: e4f53680-dbc4-11ee-8310-1239d0255272
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -32,11 +152,90 @@ proxies:
     grpc-service-name: vlgrpc
   udp: true
 
-- name: "Dyna11dec"
-  server: dynamic-sg1b.obfs.xyz
+- name: "ssocvmes1"
+  server: sg1.xv2ray.net
   port: 443
   type: vmess
-  uuid: 99286c5c-86ba-472b-89ce-d5b505fed769
+  uuid: 34a87583-df31-4d33-bd61-bf4ee8eaa298
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "ssocvmes2"
+  server: sg2.xv2ray.net
+  port: 443
+  type: vmess
+  uuid: 84a778e3-87f3-44b4-a96b-2962ae940778
+  sni: mobilelegends.com
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  network: ws
+  ws-opts:
+   path: /vmess
+   headers:
+    Host: mobilelegends.com
+
+- name: "sg3"
+  server: sg3-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: cd37e48f-b356-4bc2-9104-c4ed5b4abe8c
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GRPC
+  udp: true
+
+- name: "sg1"
+  server: sg-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 93791f4a-66ac-40ee-9770-ff7d7f1e27c8
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GRPC
+  udp: true
+
+- name: "sg2"
+  server: sg2-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 39e3412a-ba27-4bb2-b7a4-a247403dfb57
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GRPC
+  udp: true
+
+- name: "DynaSG25march"
+  server: dynamic-sg2b.obfs.xyz
+  port: 443
+  type: vmess
+  uuid: 7e118270-d0b9-4cc5-a525-14d93b30a3dc
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -49,41 +248,11 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "sg1"
-  server: sg1-full.privateip.net
-  port: 2003
-  type: vless
-  uuid: ebf5a2bd-fe1f-481e-bcd4-2abdfd94cf45
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "sg2"
-  server: sg2-full.privateip.nety
-  port: 2003
-  type: vless
-  uuid: 1dadb8bf-b0ab-4dc5-9b7b-410f83b3d513
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: mobilelegends.com
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-
-- name: "Howdytro29sep"
+- name: "HowdyTr15march"
   type: trojan
-  server: trojan1.udpgw.comy
+  server: trojan3.udpgw.com
   port: 443
-  password: d63ec210-5462-11ee-9ac4-1239d0255272
+  password: 4db71850-cfcc-11ee-959d-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -91,11 +260,11 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-- name: "HowdyVr15dec"
-  server: v2ray2.udpgw.com
+- name: "HowdyVr15march"
+  server: v2ray3.udpgw.com
   port: 443
   type: vmess
-  uuid: 99286c5c-86ba-472b-89ce-d5b505fed769
+  uuid: f2dfaae3-d46b-42fb-9d32-9136ad6bfd3a
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
@@ -108,37 +277,37 @@ proxies:
    headers:
     Host: mobilelegends.com
 
-- name: "ssocvmes5"
-  server: sg5.xv2ray.net
+- name: "opensg3"
+  server: sgv-3.openv2ray.com
   port: 443
   type: vmess
-  uuid: a68f542e-3196-4dc7-bc4c-bf1ed5396f85
+  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
   sni: mobilelegends.com
-  alterId: 0
+  alterId: 16
   cipher: auto
   tls: true
   skip-cert-verify: true
   udp: true
   network: ws
   ws-opts:
-   path: /vmess
+   path: /u/opentunnel.net-jj7ddiy
    headers:
     Host: mobilelegends.com
 
-- name: "ssocvmes6"
-  server: sg6.xv2ray.net
+- name: "opensg4"
+  server: sgv-4.openv2ray.com
   port: 443
   type: vmess
-  uuid: 7d0d487b-a0b2-484a-8d42-4783b83b62b0
+  uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
   sni: mobilelegends.com
-  alterId: 0
+  alterId: 16
   cipher: auto
   tls: true
   skip-cert-verify: true
   udp: true
   network: ws
   ws-opts:
-   path: /vmess
+   path: /u/opentunnel.net-trasziu5
    headers:
     Host: mobilelegends.com
 
@@ -153,10 +322,5 @@ proxies:
      - h2
      - http/1.1
   skip-cert-verify: true
-
-
-
-
-
 
 
