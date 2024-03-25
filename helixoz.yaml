@@ -80,9 +80,9 @@ tun:
 proxies:
 - name: "HowdyTrojan30day_15-20gbx"
   type: trojan
-  server: fr1.test3.netyy
+  server: sg3-trojan.bonds.id
   port: 443
-  password: b1f16a20-8fc3-11ee-91af-1239d0255272
+  password: b8845c20-dd55-11ee-8e37-1239d0255272
   udp: true
   sni: mobilelegends.com
   alpn:
@@ -90,34 +90,30 @@ proxies:
      - http/1.1
   skip-cert-verify: true
 
-
 proxy-groups: 
 - name: All 
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   proxies:
-  - RobinZ
-  - Fallback
   - FallbackX
   - Manual1
   - Manual2
-  - Manual1x
-  - Manual2x
-  - Manual1y
-  - Manual2y
+  - Manual3
+  - Manual4
+  - Manual5
+  - BingX
   - Youtube
-  - superfastlane
-  - Fastb
-  - multimedia
-  - specialcore
+  - YoutubeChat
+  - Fastx
+  - special
   - Ping++
   - DIRECT
   - HowdyTrojan30day_15-20gbx
 - name: Manual1
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
@@ -126,43 +122,52 @@ proxy-groups:
 - name: Manual2
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
   - sall3
   - sall4
-- name: Manual1x
+- name: Manual3
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
   - sall3
   - sall4
-- name: Manual2x
+- name: Manual4
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
   - sall3
   - sall4
-- name: Manual1y
+- name: Manual5
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
   - sall3
   - sall4
-- name: Manual2y
+- name: BingX
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
+  use:
+  - sall
+  - sall2
+  - sall3
+  - sall4
+- name: Fastx
+  type: select
+  url: 'https://duckduckgo.com'
+  interval: 300
   use:
   - sall
   - sall2
@@ -171,78 +176,73 @@ proxy-groups:
 - name: Youtube
   type: select
   url: 'https://duckduckgo.com'
-  interval: 12
+  interval: 300
   use:
   - sall
   - sall2
   - sall3
   - sall4
-- name: RobinZ
-  type: load-balance
+- name: YoutubeChat
+  type: select
   url: 'https://duckduckgo.com'
   interval: 300
-  strategy: round-robin
-  disable-udp: false
-  tolerance: 6000
-  lazy: true
-  proxies:
-  - FallbackX
-  - FallbackY
+  use:
+  - sall
+  - sall2
+  - sall3
+  - sall4
 - name: FallbackX
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 26
-  lazy: false
+  interval: 34
+  lazy: true
   proxies:
   - Manual1
-  - Manual1x
-  - Manual1y
-  - DIRECT
-  - Fallback
-  - Fallbackc
-  - Fallbackb
-- name: FallbackY
-  type: fallback
-  url: 'https://duckduckgo.com'
-  tolerance: 6000
-  interval: 26
-  lazy: false
-  proxies:
   - Manual2
-  - Manual2x
-  - Manual2y
-  - DIRECT
+  - Manual3
+  - Manual4
+  - Manual5
   - Fallback
   - Fallbackc
   - Fallbackb
 - name: superfastlane
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 1600
-  interval: 26
+  tolerance: 6000
+  interval: 32
   lazy: true
   proxies:
+  - Fastx
   - Fastb
   - Fastc
-  - DIRECT
 - name: multimedia
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 26
-  lazy: true
+  interval: 32
+  lazy: false
   proxies:
   - Youtube
   - PingMedia
   - Fastb
   - Fastc
-  - DIRECT
+- name: bing
+  type: fallback
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 32
+  lazy: false
+  proxies:
+  - BingX
+  - PingMedia
+  - Fastb
+  - Fastc
 - name: Ping++
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 26
-  tolerance: 600
+  interval: 30
+  tolerance: 900
   lazy: true
   use:
   - sall
@@ -251,17 +251,18 @@ proxy-groups:
 - name: PingMedia
   type: url-test
   url: 'https://duckduckgo.com'
-  interval: 12
-  tolerance: 600
+  interval: 30
+  tolerance: 100
   lazy: false
   use:
   - sall
+  - sall2
   - sall3
 - name: Fallback
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 16
   lazy: false
   use:
   - sall
@@ -270,7 +271,7 @@ proxy-groups:
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 16
   lazy: false
   use:
   - sall2
@@ -279,15 +280,15 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 6000
-  interval: 12
+  interval: 16
   lazy: false
   use:
   - sall3
 - name: Fastb
   type: fallback
   url: 'https://duckduckgo.com'
-  tolerance: 600
-  interval: 12
+  tolerance: 300
+  interval: 30
   lazy: false
   use:
   - sall2
@@ -296,7 +297,7 @@ proxy-groups:
   type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 900
-  interval: 12
+  interval: 30
   lazy: false
   use:
   - sall3
@@ -305,28 +306,36 @@ proxy-groups:
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 30
-  lazy: false
+  lazy: true
   use:
   - sall4
+- name: specialcoreb
+  type: url-test
+  url: 'https://duckduckgo.com'
+  tolerance: 6000
+  interval: 30
+  lazy: true
+  use:
+  - sall3
 - name: special
   type: fallback
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 62
-  lazy: false
+  lazy: true
   proxies:
   - specialcore
-  - DIRECT
+  - specialcoreb
+  - Fallbackb
 - name: HowdyTrojan30day_15-20gb
-  type: fallback
+  type: url-test
   url: 'https://duckduckgo.com'
   tolerance: 6000
   interval: 62
-  lazy: false
+  lazy: true
   proxies:
-  - DIRECT
   - HowdyTrojan30day_15-20gbx
-  - specialcore
+  - special
 
 proxy-providers:
   sall:
@@ -404,42 +413,67 @@ rules:
   - DOMAIN-SUFFIX,v-sg.likee.video,superfastlane
   - DOMAIN-SUFFIX,socks.live.bigo.sg,superfastlane
   - DOMAIN-SUFFIX,asiabigosocks.like.bigo.sg,superfastlane
-  - DOMAIN-KEYWORD,tiktokcdn.com,superfastlane
-  - DOMAIN-KEYWORD,tiktokv.com,superfastlane
-  - DOMAIN-KEYWORD,tiktok.com,superfastlane
+  - DOMAIN-KEYWORD,like,superfastlane
+  - DOMAIN-KEYWORD,tiktokcdn,superfastlane
+  - DOMAIN-KEYWORD,tiktokv,superfastlane
   - DOMAIN-KEYWORD,tiktok,superfastlane
-  - DOMAIN-KEYWORD,akamai.net,superfastlane
-  - DOMAIN-KEYWORD,akamaiedge.net,superfastlane
+  - DOMAIN-KEYWORD,tiktok,superfastlane
+  - DOMAIN-KEYWORD,ibytedtos,superfastlane
+  - DOMAIN-KEYWORD,ttlivecdn,superfastlane
+  - DOMAIN-KEYWORD,tiktokcdn-us,superfastlane
+  - DOMAIN-KEYWORD,bytedance,superfastlane
+  - DOMAIN-KEYWORD,rocket-cdn,superfastlane
+  - DOMAIN-KEYWORD,worldfcdn,superfastlane
+  - DOMAIN-KEYWORD,worldfcdn2,superfastlane
+  - DOMAIN-KEYWORD,ovscdns,superfastlane
+  - DOMAIN-KEYWORD,cdn77,superfastlane
+  - DOMAIN-KEYWORD,cdn,superfastlane
+  - DOMAIN-KEYWORD,bytetcdn,superfastlane
+  - DOMAIN-KEYWORD,bytefcdn-oversea,superfastlane
+  - DOMAIN-KEYWORD,bytedapm,superfastlane
+  - DOMAIN-KEYWORD,wsdvs,superfastlane
+  - DOMAIN-KEYWORD,spbycdn,superfastlane
+  - DOMAIN-KEYWORD,atomile,superfastlane
+  - DOMAIN-KEYWORD,gvt,multimedia
+  - DOMAIN-KEYWORD,apple.com,superfastlane
+  - DOMAIN-KEYWORD,akamai,superfastlane
+  - DOMAIN-KEYWORD,akamaiedge,superfastlane
   - DOMAIN-KEYWORD,sponsor.ajay.app,superfastlane
   - DOMAIN-KEYWORD,returnyoutubedislikeapi,superfastlane
   - DOMAIN-KEYWORD,bigo,superfastlane
-  - DOMAIN,bing.com,superfastlane
-  - DOMAIN-SUFFIX,bing.com,superfastlane
-  - DOMAIN-KEYWORD,bing,superfastlane
+  - DOMAIN-KEYWORD,bing,bing
+  - DOMAIN-KEYWORD,designerapp,bing
+  - DOMAIN-KEYWORD,live.com,bing
+  - DOMAIN-KEYWORD,microsoft,bing
+  - DOMAIN-KEYWORD,creator,bing
+  - DOMAIN-KEYWORD,azure,bing
+  - DOMAIN-KEYWORD,office,bing
+  - DOMAIN-KEYWORD,edge,bing
+  - DOMAIN-KEYWORD,a-msedge,bing
+  - DOMAIN-KEYWORD,akadns,bing
   - DOMAIN,mtalk.google.com,special
   - DOMAIN,mobile-gtalk.l.google.com,special
   - DOMAIN-KEYWORD,clients,special
   - DOMAIN,android.apis.google.com,special
-  - DOMAIN,engage.cloudflareclient.com,DIRECT
-  - DOMAIN-KEYWORD,googleapis.com,special
+  - DOMAIN,engage.cloudflareclient.com,bing
+  - DOMAIN-KEYWORD,googleapis.com,YoutubeChat
+  - DOMAIN-KEYWORD,googleapis,YoutubeChat
+  - DOMAIN-KEYWORD,youtubei,YoutubeChat
+  - DOMAIN-KEYWORD,youtube-ui,YoutubeChat
   - DOMAIN-KEYWORD,googlevideo.com,multimedia
-  - DOMAIN-KEYWORD,googleapis,special
   - DOMAIN-KEYWORD,googlevideo,multimedia
   - DOMAIN-KEYWORD,googleusercontent,multimedia
-  - DOMAIN-KEYWORD,youtubei,multimedia
-  - DOMAIN-KEYWORD,ytimg,multimedia
-  - DOMAIN-KEYWORD,ggpht,multimedia
-  - DOMAIN-KEYWORD,youtube,multimedia
-  - DOMAIN-KEYWORD,ytimg.com,multimedia
-  - DOMAIN-KEYWORD,youtube.com,multimedia
-  - DOMAIN-KEYWORD,gvt,multimedia
+  - DOMAIN-KEYWORD,ytimg,YoutubeChat
+  - DOMAIN-KEYWORD,ggpht,YoutubeChat
+  - DOMAIN-KEYWORD,youtube,YoutubeChat
+  - DOMAIN-KEYWORD,ytimg.com,YoutubeChat
+  - DOMAIN-KEYWORD,youtube.com,YoutubeChat
   - DOMAIN-KEYWORD,shazam,multimedia
   - DOMAIN-KEYWORD,scdnco,multimedia
   - DOMAIN-KEYWORD,scdn,multimedia
   - DOMAIN-KEYWORD,Spotify,multimedia
   - DOMAIN-KEYWORD,spotifycdn,multimedia
   - DOMAIN-KEYWORD,gstatic,multimedia
-  - DOMAIN-KEYWORD,bing,superfastlane
   - DOMAIN-KEYWORD,yahoo,superfastlane
   - DOMAIN-KEYWORD,instagram,superfastlane
   - DOMAIN-KEYWORD,image,superfastlane
@@ -463,11 +497,11 @@ rules:
   - DOMAIN-KEYWORD,analytics,REJECT
   - DOMAIN-KEYWORD,analysis,REJECT
   - DOMAIN-KEYWORD,ads,REJECT
-  - DOMAIN-KEYWORD,cloudflare,DIRECT
-  - DOMAIN-KEYWORD,teamviewer,DIRECT
-  - SRC-PORT,5938,DIRECT
-  - DST-PORT,5938,DIRECT
-  - IP-CIDR,178.77.120.0/24,DIRECT
+  - DOMAIN-KEYWORD,cloudflare,bing
+  - DOMAIN-KEYWORD,teamviewer,superfastlane
+  - SRC-PORT,5938,superfastlane
+  - DST-PORT,5938,superfastlane
+  - IP-CIDR,178.77.120.0/24,superfastlane
   - IP-CIDR,127.0.0.1/32,DIRECT
   - IP-CIDR,192.168.43.1/32,DIRECT
   - GEOIP,MY,superfastlane
