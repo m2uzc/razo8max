@@ -22,7 +22,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: m.pokemon.com
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -37,7 +37,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: m.pokemon.com
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -52,7 +52,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: m.pokemon.com
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -67,7 +67,7 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: m.pokemon.com
+  servername: mobilelegends.com
   network: grpc
   grpc-opts:
     grpc-mode: gun
@@ -79,7 +79,7 @@ proxies:
   port: 443
   type: vmess
   uuid: 4ed7663d-ffb2-4975-91c2-89107a70b675
-  sni: m.pokemon.com
+  sni: mobilelegends.com
   alterId: 0
   cipher: auto
   tls: true
@@ -89,7 +89,7 @@ proxies:
   ws-opts:
    path: /worryfree
    headers:
-    Host: m.pokemon.com
+    Host: mobilelegends.com
 
 - name: "freevpnUs"
   server: v2-us-1.v2ray.cc
@@ -97,12 +97,12 @@ proxies:
   type: trojan
   password: 7772bb24-976a-45ca-aa76-f4f1b7f50923
   skip-cert-verify: true
-  sni: m.pokemon.com
+  sni: mobilelegends.com
   network: ws
   ws-opts:
    path: /anything/freevpn.us-ekga78/trojan
    headers:
-    Host: m.pokemon.com
+    Host: mobilelegends.com
   udp: true
 
 - name: "freevpnUk"
@@ -111,12 +111,12 @@ proxies:
   type: trojan
   password: 7772bb24-976a-45ca-aa76-f4f1b7f50923
   skip-cert-verify: true
-  sni: m.pokemon.com
+  sni: mobilelegends.com
   network: ws
   ws-opts:
    path: /anything/freevpn.us-struyt8/trojan
    headers:
-    Host: m.pokemon.com
+    Host: mobilelegends.com
   udp: true
 
 - name: "JanSg1Docean"
@@ -124,7 +124,7 @@ proxies:
   port: 10001
   type: vmess
   uuid: 6a3ce29e-e6ba-11ee-a2be-0401634a3101
-  sni: m.pokemon.com
+  sni: mobilelegends.com
   alterId: 0
   cipher: auto
   tls: true
@@ -134,7 +134,7 @@ proxies:
   ws-opts:
    path: /vpnjantit
    headers:
-    Host: m.pokemon.com
+    Host: mobilelegends.com
 
 
 - name: "JanSg3Docean"
@@ -142,7 +142,7 @@ proxies:
   port: 10001
   type: vmess
   uuid: 3af41380-e094-11ee-8fe1-8348ec85b7c2
-  sni: m.pokemon.com
+  sni: mobilelegends.com
   alterId: 0
   cipher: auto
   tls: true
@@ -152,14 +152,14 @@ proxies:
   ws-opts:
    path: /vpnjantit
    headers:
-    Host: m.pokemon.com
+    Host: mobilelegends.com
 
 - name: "JanInDocean1"
   server: in1.vpnjantit.com
   port: 10001
   type: vmess
   uuid: 3651b21c-e6b9-11ee-a591-1f86f15413be
-  sni: m.pokemon.com
+  sni: mobilelegends.com
   alterId: 0
   cipher: auto
   tls: true
@@ -169,7 +169,7 @@ proxies:
   ws-opts:
    path: /vpnjantit
    headers:
-    Host: m.pokemon.com
+    Host: mobilelegends.com
 
 
 - name: "JanKoreaVultur"
@@ -177,7 +177,7 @@ proxies:
   port: 10001
   type: vmess
   uuid: 1e960ac6-e095-11ee-a073-83e7858fcd34
-  sni: m.pokemon.com
+  sni: mobilelegends.com
   alterId: 0
   cipher: auto
   tls: true
@@ -187,7 +187,7 @@ proxies:
   ws-opts:
    path: /vpnjantit
    headers:
-    Host: m.pokemon.com
+    Host: mobilelegends.com
 
 
 - name: "VpnStuMyherza"
@@ -198,10 +198,10 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: m.pokemon.com
+  servername: mobilelegends.com
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: m.pokemon.com
+      Host: mobilelegends.com
   udp: true
