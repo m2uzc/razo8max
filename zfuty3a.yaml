@@ -123,7 +123,7 @@ proxies:
   server: sg1.vpnjantit.com
   port: 10001
   type: vmess
-  uuid: 6a3ce29e-e6ba-11ee-a2be-0401634a3101
+  uuid: 05817a7e-eaf5-11ee-b5db-5b1228f8a087
   sni: mobilelegends.com
   alterId: 0
   cipher: auto
