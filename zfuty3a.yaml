@@ -206,7 +206,7 @@ proxies:
       Host: mobilelegends.com
   udp: true
   
-  - name: "racejp1"
+- name: "racejp1"
   server: jp-full.privateip.net
   port: 2003
   type: vless
