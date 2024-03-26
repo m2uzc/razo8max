@@ -100,7 +100,7 @@ proxies:
   sni: mobilelegends.com
   network: ws
   ws-opts:
-   path: /anything/freevpn.us-ekga78/trojan
+   path: /anything/freevpn.us-ghanab88/trojan
    headers:
     Host: mobilelegends.com
   udp: true
