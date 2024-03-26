@@ -205,3 +205,18 @@ proxies:
     headers:
       Host: mobilelegends.com
   udp: true
+  
+  - name: "racejp1"
+  server: jp-full.privateip.net
+  port: 2003
+  type: vless
+  uuid: 9c7285cc-67ea-40c8-97a9-1b08229db605
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: mobilelegends.com
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GRPC
+  udp: true
